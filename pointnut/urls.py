@@ -15,19 +15,27 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from pointnut.views import HomeView
+from pointnut import views
 
 urlpatterns = [
     # www.pointnut.com/
-    path('', HomeView.as_view(), name='home'),
+    path('', views.IndexView.as_view(), name='index'),
     # /accounts/
     path('accounts/', include('django.contrib.auth.urls')),
+    # /accounts/login/redirect
+    path('accounts/login/redirect/', views.login_redirect, name='login_redirect'),
     # /admin/
     path('admin/', admin.site.urls),
+    # /creators/
+    path('creators/', include('creators.urls')),
     # /events/
     path('events/', include('events.urls')),
+    # /havister/
+    path('havister/', include('havister.urls')),
     # /players/
     path('players/', include('players.urls')),
     # /signals/
     path('signals/', include('signals.urls')),
+    # /USER/
+    path('<user>/', views.UserView.as_view(), name='user'),
 ]
