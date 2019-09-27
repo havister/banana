@@ -8,8 +8,8 @@ def login_redirect(request):
     return redirect('user', request.user.username)
 
 
-def password_change_done(request):
-    return redirect('user', request.user.username)
+def password_reset_done(request):
+    return redirect('/')
 
 
 class IndexView(TemplateView):

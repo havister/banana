@@ -11,6 +11,11 @@
 {% endblock %}
 
 {% block nav-link %}
+  {% if user.is_active %}
+    <a class="btn btn-success btn-xm" href="{% url 'user' user.username %}" role="button">{{ user.username|upper }}</a>
+    {% else %}
+    <a class="btn btn-success btn-xm" href="{% url 'login' %}" role="button">Login</a>
+  {% endif %}
 {% endblock %}
 
 {% block header %}
@@ -18,7 +23,7 @@
 <header class="box">
   <div class="jumbotron text-center">
     <h1>로봇 #하비스터 출시 이벤트</h1>
-    <h4 class="mb-3 text-green">재테크, 이제 로봇으로 하자!</h4>
+    <h4 class="mb-3 text-orange">재테크, 이제 로봇으로 하자!</h4>
     <p class="lead">로봇으로 모의 계좌를 운영해 보세요. 수익이 나면 현금을 지급합니다.</p>
     <span class="text-muted">2019년 10월 ~ 12월</span>
   </div>
@@ -105,8 +110,7 @@
       <span class="mr-2">#로봇하비스터</span>
       <span>#로봇재테크</span>
     </p>
-    <p>베스킨라빈스 파인트 기프트콘 100명 (추첨 증정)</p>
-    <a class="btn btn-yellow px-4" href="" role="button">포인트넛 인스타그램</a>
+    <span>베스킨라빈스 파인트 기프트콘 100명 (추첨 증정)</span>
   </div>
 </section>
 {% endblock %}
