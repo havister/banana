@@ -20,12 +20,16 @@ from pointnut import views
 urlpatterns = [
     # www.pointnut.com/
     path('', views.IndexView.as_view(), name='index'),
-    # /accounts/
-    path('accounts/', include('django.contrib.auth.urls')),
-    # /accounts/login/redirect
-    path('accounts/login/redirect/', views.login_redirect, name='login_redirect'),
     # /admin/
     path('admin/', admin.site.urls),
+
+    # /accounts/login/redirect/
+    path('accounts/login/redirect/', views.login_redirect, name='login_redirect'),
+    # /accounts/password_change/done/
+    path('accounts/password_change/done/', views.password_change_done, name='password_change_done'),
+    # /accounts/
+    path('accounts/', include('django.contrib.auth.urls')),
+    
     # /creators/
     path('creators/', include('creators.urls')),
     # /events/
@@ -36,6 +40,7 @@ urlpatterns = [
     path('players/', include('players.urls')),
     # /signals/
     path('signals/', include('signals.urls')),
+    
     # /USER/
     path('<user>/', views.UserView.as_view(), name='user'),
 ]
