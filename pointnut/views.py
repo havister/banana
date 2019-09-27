@@ -8,6 +8,10 @@ def login_redirect(request):
     return redirect('user', request.user.username)
 
 
+def password_change_done(request):
+    return redirect('user', request.user.username)
+
+
 class IndexView(TemplateView):
     template_name = 'index.html'
 
@@ -25,8 +29,6 @@ class UserView(LoginRequiredMixin, TemplateView):
         # User
         user = self.request.user
         context['user'] = user
-        # Group list
-        context['group_list'] = user.groups.all()
         # Opened trade list
         context['opened_trade_list'] = Trade.objects.filter(
             player=user, date_closed__isnull=True).order_by('-date_opened')[:5]
