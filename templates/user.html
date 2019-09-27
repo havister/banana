@@ -1,26 +1,40 @@
 {% extends "base.html" %}
 
 {% block title %}
-<title>{{ player.username|upper }} - Pointnut</title>
+<title>{{ user|upper }} - Pointnut</title>
 {% endblock %}
 
 {% block nav-title %}
-<a class="mr-2" href="{% url 'players:index' %}"><i class="fas fa-chevron-left"></i></a>
-<span>{{ player.username|upper }}</span>
+<a class="mr-2 green" href="/"><i class="fas fa-chevron-left"></i></a>
+<span>{{ user|upper }}</span>
 {% endblock %}
 
 {% block nav-link %}
-<a class="btn btn-outline-primary btn-xm" href="{% url 'logout' %}" role="button">Logout</a>
+<div class="dropdown">
+  <button class="btn btn-success btn-xm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="fas fa-user"></i>
+  </button>
+  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Profile</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Havister</a>
+    <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Trades</a>
+    <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Returns</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Settings</a>
+    <a class="dropdown-item" href="{% url 'logout' %}">Logout</a>
+  </div>
+</div>
 {% endblock %}
 
 {% block header %}
 <!-- Header -->
 <header class="box">
   <div class="box-pad d-flex align-items-center">
-    <h4 class="my-1 text-darkgray mr-auto">{{ player.first_name }}</h4>
+    <h4 class="my-1 mr-auto">{{ user.first_name }}</h4>
     <p class="mb-0 text-capitalize">
-    {% for group in group_list %}
-      <span class="badge badge-green font-weight-normal">{{ group.name }}</span>
+    {% for group in user.groups.all %}
+      <span class="badge badge-darkgray font-weight-normal">{{ group.name }}</span>
     {% endfor %}
     </p>
   </div>
@@ -39,7 +53,7 @@
     {% for trade in opened_trade_list %}
     <div class="box-pad d-flex align-items-center border-top">
       <div class="d-none d-sm-block w-25 text-center pr-3">
-        <p class="h3 font-weight-normal text-green">{{ forloop.counter }}</p>
+        <p class="h3 font-weight-normal text-gray">{{ forloop.counter }}</p>
       </div>
       <div class="box">
         <div class="d-flex align-items-center">
@@ -64,7 +78,7 @@
   </div>
   {% else %}
   <div class="box-pad">
-    <p>지금은 거래 기록이 없습니다.</p>
+    <p>거래 기록이 없습니다.</p>
   </div>
   {% endif %}
 </section>
@@ -80,7 +94,7 @@
     {% for trade in closed_trade_list %}
     <div class="box-pad d-flex align-items-center border-top">
       <div class="d-none d-sm-block w-25 text-center pr-3">
-        <p class="h3 font-weight-normal text-green">{{ forloop.counter }}</p>
+        <p class="h3 font-weight-normal text-gray">{{ forloop.counter }}</p>
       </div>
       <div class="box">
         <div class="d-flex align-items-center">
@@ -105,7 +119,7 @@
   </div>
   {% else %}
   <div class="box-pad">
-    <p>지금은 거래 기록이 없습니다.</p>
+    <p>거래 기록이 없습니다.</p>
   </div>
   {% endif %}
 </section>

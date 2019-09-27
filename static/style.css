@@ -27,6 +27,12 @@ main, footer {
 a {
   text-decoration: none !important;
 }
+a.green {
+  color: #28a745;
+}
+a.green:hover {
+  filter: brightness(80%);
+}
 
 /* Font */
 .text-kr {
@@ -71,65 +77,10 @@ a {
   line-height: 1.5;
   border-radius: .2rem;
 }
-.btn-blue {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
-}
-.btn-indigo {
-  color: #fff;
-  background-color: #6610f2;
-  border-color: #6610f2;
-}
-.btn-purple {
-  color: #fff;
-  background-color: #6f42c1;
-  border-color: #6f42c1;
-}
-.btn-pink {
-  color: #fff;
-  background-color: #e83e8c;
-  border-color: #e83e8c;
-}
-.btn-red {
-  color: #fff;
-  background-color: #dc3545;
-  border-color: #dc3545;
-}
-.btn-orange {
-  color: #fff;
-  background-color: #fd7e14;
-  border-color: #fd7e14;
-}
-.btn-yellow {
-  color: #212529;
-  background-color: #ffc107;
-  border-color: #ffc107;
-}
-.btn-green {
+.btn-success {
   color: #fff;
   background-color: #28a745;
-  border-color: #28a745;
-}
-.btn-teal {
-  color: #fff;
-  background-color: #20c997;
-  border-color: #20c997;
-}
-.btn-cyan {
-  color: #fff;
-  background-color: #17a2b8;
-  border-color: #17a2b8;
-}
-.btn-gray {
-  color: #212529;
-  background-color: #9e9e9e;
-  border-color: #9e9e9e;
-}
-.btn-darkgray {
-  color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  border-color: #218838;
 }
 
 /* Badge Color */
@@ -154,7 +105,7 @@ a {
   background-color: #dc3545;
 }
 .badge-orange {
-  color: #212529;
+  color: #fff;
   background-color: #fd7e14;
 }
 .badge-yellow {

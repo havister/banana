@@ -16,7 +16,7 @@
 <main class="box-pad">
   <!-- Header -->
   <header class="bg-light">
-    <h1 class="my-4 text-center"><a class="text-dark" href="/">POINTNUT</a></h1>
+    <h1 class="my-4 text-center"><a class="green" href="/">POINTNUT</a></h1>
   </header>
   <!-- Section -->
   <section class="card">
@@ -33,7 +33,7 @@
           <label for="{{ form.password.id_for_label }}"><strong>패스워드</strong></label>
           <input class="form-control" id="{{ form.password.id_for_label }}" maxlength="120" name="{{ form.password.html_name }}" type="password" placeholder="Password">
         </div>
-        <button type="submit" class="btn btn-primary py-2 w-100">로그인</button>
+        <button type="submit" class="btn btn-success py-2 w-100">로그인</button>
       </form>
     </div>
     {% if form.errors %}

@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block nav-link %}
-<a class="btn btn-outline-primary btn-xm" href="{% url 'players:player' user.username %}" role="button">{{ user.username|upper }}</a>
+<a class="btn btn-outline-primary btn-xm" href="" role="button">{{ user.username|upper }}</a>
 {% endblock %}
 
 {% block header %}
@@ -44,7 +44,7 @@
           <h5 class="text-uppercase">{{ trade.player.username }}</h5>
           <h6 class="px-2 text-kr text-muted mr-auto">{{ trade.player.first_name }}</h6>
           <p class="h5">
-            <a href="{% url 'players:returns' trade.player.username %}" ><i class="fas fa-chevron-right"></i></a>
+            <a href="" ><i class="fas fa-chevron-right"></i></a>
           </p>
         </div>
         <div class="d-flex">
