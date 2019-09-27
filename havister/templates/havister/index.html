@@ -11,6 +11,11 @@
 {% endblock %}
 
 {% block nav-link %}
+  {% if user.is_active %}
+    <a class="btn btn-success btn-xm" href="{% url 'user' user.username %}" role="button">{{ user.username|upper }}</a>
+    {% else %}
+    <a class="btn btn-success btn-xm" href="{% url 'login' %}" role="button">Login</a>
+  {% endif %}
 {% endblock %}
 
 {% block header %}

@@ -25,8 +25,8 @@ urlpatterns = [
 
     # /accounts/login/redirect/
     path('accounts/login/redirect/', views.login_redirect, name='login_redirect'),
-    # /accounts/password_change/done/
-    path('accounts/password_change/done/', views.password_change_done, name='password_change_done'),
+    # /accounts/reset/done/
+    path('accounts/reset/done/', views.password_reset_done, name='password_reset_done'),
     # /accounts/
     path('accounts/', include('django.contrib.auth.urls')),
     

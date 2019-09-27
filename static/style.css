@@ -17,12 +17,9 @@ body {
 nav {
   border-bottom: 1px solid #dee2e6;
 }
-nav, header, section {
+nav, header, section, footer {
   margin-bottom: .5rem;
   background-color: white;
-}
-main, footer {
-  margin-bottom: 1rem;
 }
 a {
   text-decoration: none !important;
