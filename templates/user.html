@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 
 {% block title %}
-<title>{{ user|upper }} - Pointnut</title>
+<title>{{ user.username|upper }} - Pointnut</title>
 {% endblock %}
 
 {% block nav-title %}
 <a class="mr-2 green" href="/"><i class="fas fa-chevron-left"></i></a>
-<span>{{ user|upper }}</span>
+<span>{{ user.username|upper }}</span>
 {% endblock %}
 
 {% block nav-link %}

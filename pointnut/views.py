@@ -19,10 +19,10 @@ class IndexView(TemplateView):
 class UserView(LoginRequiredMixin, TemplateView):
     template_name = 'user.html'
     
-    def get(self, request, *args, **kwargs):
+    def dispatch(self, request, *args, **kwargs):
         if request.user.username != kwargs['user']:
             return redirect('/')
-        return super().get(request, *args, **kwargs)
+        return super().dispatch(request, *args, **kwargs)
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
