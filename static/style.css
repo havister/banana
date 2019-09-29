@@ -17,8 +17,11 @@ body {
 nav {
   border-bottom: 1px solid #dee2e6;
 }
-nav, header, section, footer {
+nav, header, section {
   margin-bottom: .5rem;
+  background-color: white;
+}
+footer {
   background-color: white;
 }
 a {
