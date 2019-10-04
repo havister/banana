@@ -1,3 +1,4 @@
+from django.http import Http404
 from django.shortcuts import redirect
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.base import TemplateView
@@ -8,8 +9,8 @@ def login_redirect(request):
     return redirect('user', request.user.username)
 
 
-def password_reset_done(request):
-    return redirect('/')
+def password_reset_complete(request):
+    raise Http404
 
 
 class IndexView(TemplateView):
