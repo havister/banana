@@ -5,8 +5,8 @@
 {% endblock %}
 
 {% block nav-title %}
-<a class="mr-2 green" href="/"><i class="fas fa-chevron-left"></i></a>
-<span>{{ user.username|upper }}</span>
+<a class="mr-2 green" href="{% url 'users:index' user.username %}"><i class="fas fa-chevron-left"></i></a>
+<span>Returns</span>
 {% endblock %}
 
 {% block nav-link %}
@@ -19,7 +19,7 @@
     <div class="dropdown-divider"></div>
     <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Havister</a>
     <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Trades</a>
-    <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Returns</a>
+    <a class="dropdown-item active" href="#">Returns</a>
     <div class="dropdown-divider"></div>
     <a class="dropdown-item" href="{% url 'password_change' %}">Settings</a>
     <a class="dropdown-item" href="{% url 'logout' %}">Logout</a>
@@ -28,18 +28,6 @@
 {% endblock %}
 
 {% block header %}
-<!-- Alert -->
-{% if alert %}
-<div class="box mb-2">
-  <div class="alert alert-success alert-dismissible fade show mb-0" role="alert">
-    {{ alert }}
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-</div>
-{% endif %}
-
 <!-- Header -->
 <header class="box">
   <div class="box-pad d-flex align-items-center">
@@ -57,12 +45,12 @@
 <!-- Section -->
 <section class="box">
   <div class="box-pad">
-    <h4 class="my-1 text-darkgray">Latest Returns</h4>
+    <h4 class="my-1 text-darkgray">{{ trade_list.count }} Returns</h4>
   </div>
   <!-- Section Body -->
-  {% if closed_trade_list %}
+  {% if trade_list %}
   <div class="box">
-    {% for trade in closed_trade_list %}
+    {% for trade in trade_list %}
     <div class="box-pad d-flex align-items-center border-top">
       <div class="d-none d-sm-block w-25 text-center pr-3">
         <p class="h3 font-weight-normal text-gray">{{ forloop.counter }}</p>
@@ -79,47 +67,6 @@
             <span>{{ trade.date_opened|date:'Y.m.d' }}</span>
             <span>~</span>
             <span>{{ trade.date_closed|date:'Y.m.d' }}</span>
-          </p>
-          <p class="mb-0 small">
-            <span class="text-muted">{% if trade.position == 'L' %}LONG{% else %}SHORT{% endif %}</span>
-          </p>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-  {% else %}
-  <div class="box-pad">
-    <p>거래 기록이 없습니다.</p>
-  </div>
-  {% endif %}
-</section>
-
-<!-- Section -->
-<section class="box">
-  <div class="box-pad">
-    <h4 class="my-1 text-darkgray">Latest Trades</h4>
-  </div>
-  <!-- Section Body -->
-  {% if opened_trade_list %}
-  <div class="box">
-    {% for trade in opened_trade_list %}
-    <div class="box-pad d-flex align-items-center border-top">
-      <div class="d-none d-sm-block w-25 text-center pr-3">
-        <p class="h3 font-weight-normal text-gray">{{ forloop.counter }}</p>
-      </div>
-      <div class="box flex-grow-1">
-        <div class="d-flex align-items-center">
-          <h5 class="text-kr mr-auto">{{ trade|upper }}</h5>
-          <p class="h5 text-muted">
-            <span></span>
-          </p>
-        </div>
-        <div class="d-flex">
-          <p class="mb-0 small text-muted mr-auto">
-            <span>{{ trade.date_opened|date:'Y.m.d' }}</span>
-            <span>~</span>
-            <span></span>
           </p>
           <p class="mb-0 small">
             <span class="text-muted">{% if trade.position == 'L' %}LONG{% else %}SHORT{% endif %}</span>
