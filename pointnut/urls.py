@@ -42,7 +42,6 @@ urlpatterns = [
     path('players/', include('players.urls')),
     # /signals/
     path('signals/', include('signals.urls')),
-    
-    # /USER/
-    path('<username>/', views.UserView.as_view(), name='user_index'),
+    # /users/
+    path('users/', include('users.urls')),
 ]

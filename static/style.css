@@ -83,6 +83,13 @@ a.green:hover {
   border-color: #218838;
 }
 
+/* Dropdown */
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #28a745;
+}
+
 /* Badge Color */
 .badge-blue {
   color: #fff;
