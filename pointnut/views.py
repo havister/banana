@@ -9,7 +9,7 @@ def login_redirect(request):
     return redirect('user_index', request.user.username)
 
 
-def password_reset_complete(request):
+def http404_redirect(request):
     raise Http404
 
 
