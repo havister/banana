@@ -42,5 +42,5 @@ urlpatterns = [
     path('signals/', include('signals.urls')),
     
     # /USER/
-    path('<user>/', views.UserView.as_view(), name='user'),
+    path('<username>/', views.UserView.as_view(), name='user_index'),
 ]

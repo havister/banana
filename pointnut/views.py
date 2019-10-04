@@ -6,7 +6,7 @@ from trades.models import Trade
 
 
 def login_redirect(request):
-    return redirect('user', request.user.username)
+    return redirect('user_index', request.user.username)
 
 
 def password_reset_complete(request):
@@ -18,18 +18,16 @@ class IndexView(TemplateView):
 
 
 class UserView(LoginRequiredMixin, TemplateView):
-    template_name = 'user.html'
+    template_name = 'user/index.html'
     
     def dispatch(self, request, *args, **kwargs):
-        if request.user.username != kwargs['user']:
+        if request.user.username != kwargs['username']:
             return redirect('/')
         return super().dispatch(request, *args, **kwargs)
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        # User
         user = self.request.user
-        context['user'] = user
         # Opened trade list
         context['opened_trade_list'] = Trade.objects.filter(
             player=user, date_closed__isnull=True).order_by('-date_opened')[:5]
