@@ -25,8 +25,10 @@ urlpatterns = [
 
     # /accounts/login/redirect/
     path('accounts/login/redirect/', views.login_redirect, name='login_redirect'),
-    # /accounts/reset/done/
-    path('accounts/reset/done/', views.password_reset_done, name='password_reset_done'),
+    # /accounts/password_reset/...
+    path('accounts/password_reset/', views.http404_redirect, name='password_reset'),
+    path('accounts/password_reset/done/', views.http404_redirect, name='password_reset_done'),
+    path('accounts/reset/done/', views.http404_redirect, name='password_reset_complete'),
     # /accounts/
     path('accounts/', include('django.contrib.auth.urls')),
     
@@ -42,5 +44,5 @@ urlpatterns = [
     path('signals/', include('signals.urls')),
     
     # /USER/
-    path('<user>/', views.UserView.as_view(), name='user'),
+    path('<username>/', views.UserView.as_view(), name='user_index'),
 ]
