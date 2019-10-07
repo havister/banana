@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+{% load static %}
+{% load form_extras %}
+
+{% block title %}
+<title>Events - Pointnut</title>
+{% endblock %}
+
+{% block nav-title %}
+<a class="mr-2 green" href="{% url 'events:index' %}"><i class="fas fa-chevron-left"></i></a>
+<span>Events</span>
+{% endblock %}
+
+{% block nav-link %}
+{% endblock %}
+
+{% block header %}
+<!-- Header -->
+<header class="box">
+  <div class="box-pad">
+    <h4 class="mb-3">이벤트 신청하기</h4>
+    <p class="mb-0">아래 양식을 올바르게 입력한 다음 신청하기 버튼을 눌러주십시오.</p>
+  </div>
+</header>
+{% endblock %}
+
+{% block main %}
+<!-- Section -->
+<section class="box-pad">
+  <div class="card mb-0">
+    <div class="card-body">
+      <!-- Form -->
+      <form class="needs-validation" method="post" novalidate>
+        {% csrf_token %}
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label" for="{{ form.name.id_for_label }}"><strong>이름</strong></label>
+          <div class="col-sm-8">
+            {{ form.name|tag_class:"form-control" }}
+          </div>
+        </div>
+        <div class="form-group row">
+          <legend class="col-sm-4 col-form-label"><strong>성별</strong></legend>
+          <div class="col-sm-8 d-flex align-items-center">
+            {% for radio in form.gender %} 
+            <div class="form-check form-check-inline">
+              {{ radio.tag }}
+              <label class="form-check-label" for="{{ radio.id_for_label }}">{{ radio.choice_label }}</label>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label" for="{{ form.age.id_for_label }}"><strong>나이</strong></label>
+          <div class="col-sm-8">
+            {{ form.age|tag_class:"form-control" }}
+            <small class="form-text text-muted">20 ~ 99까지 숫자로 작성해야 합니다.</small>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label" for="{{ form.phone.id_for_label }}"><strong>휴대폰</strong></label>
+          <div class="col-sm-8">
+            {{ form.phone|tag_class:"form-control" }}
+            {% if form.phone.errors %}
+            <strong class="form-text text-danger">형식이 틀렸습니다.</strong>
+            {% endif %}
+            <small class="form-text text-muted">하이픈(-) 없이 숫자로 작성해야 합니다.</small>
+          </div>
+        </div>
+        <div class="form-group row">
+          <legend class="col-sm-4 col-form-label"><strong>결혼 유무</strong></legend>
+          <div class="col-sm-8 d-flex align-items-center">
+            <div class="form-check">
+              {{ form.is_married|tag_class:"form-check-input" }}
+              <label class="form-check-label" for="{{ form.is_married.id_for_label }}">기혼</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label" for="{{ form.job.id_for_label }}"><strong>직업</strong></label>
+          <div class="col-sm-8">
+            {{ form.job|tag_class:"form-control" }}
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label" for="{{ form.city.id_for_label }}"><strong>주소</strong></label>
+          <div class="col-sm-8">
+            {{ form.city|tag_class:"form-control" }}
+            <small class="form-text text-muted">간략히 시(도), 구(군)까지 작성할 수 있습니다.</small>
+          </div>
+        </div>
+        <div class="form-group row">
+          <legend class="col-sm-4 col-form-label"><strong>투자 경험</strong></legend>
+          <div class="col-sm-8 d-flex align-items-center">
+            <div class="form-check form-check-inline">
+              {{ form.has_fund|tag_class:"form-check-input" }}
+              <label class="form-check-label" for="{{ form.has_fund.id_for_label }}">펀드</label>
+            </div>
+            <div class="form-check form-check-inline">
+              {{ form.has_stock|tag_class:"form-check-input" }}
+              <label class="form-check-label" for="{{ form.has_stock.id_for_label }}">주식</label>
+            </div>
+            <div class="form-check form-check-inline">
+              {{ form.has_derivative|tag_class:"form-check-input" }}
+              <label class="form-check-label" for="{{ form.has_derivative.id_for_label }}">파생상품</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label" for="{{ form.recommender.id_for_label }}"><strong>추천인</strong> <sup class="text-muted">(선택)</sup></label>
+          <div class="col-sm-8">
+            {{ form.recommender|tag_class:"form-control" }}
+            <small class="form-text text-muted">이름을 작성하거나 생략할 수 있습니다.</small>
+          </div>
+        </div>
+        <hr>
+        <div class="form-group row mb-0">
+          <div class="col-sm-4">
+            <button type="submit" class="btn btn-success py-2 px-4">신청하기</button>
+          </div>
+          <div class="col-sm-8"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'js/validation.js' %}"></script>
+{% endblock %}

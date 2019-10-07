@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+<title>Events - Pointnut</title>
+{% endblock %}
+
+{% block nav-title %}
+<a class="mr-2 green" href="{% url 'events:index' %}"><i class="fas fa-chevron-left"></i></a>
+<span>Launching Event</span>
+{% endblock %}
+
+{% block nav-link %}
+{% endblock %}
+
+{% block header %}
+<!-- Header -->
+<header class="box">
+  <div class="box-pad">
+    <h4 class="mb-0">Thank You!</h4>
+  </div>
+</header>
+{% endblock %}
+
+{% block main %}
+<!-- Section -->
+<section class="box-pad">
+  <div class="my-2">
+    <p>이벤트 신청이 완료되었습니다.</p>
+    <a class="btn btn-success px-4" href="{% url 'events:index' %}" role="button">확인</a>
+  </div>
+</section>
+{% endblock %}

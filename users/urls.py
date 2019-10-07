@@ -4,8 +4,8 @@ from users import views
 app_name = 'users'
 
 urlpatterns = [
-    # /users/USER/
-    path('<username>/', views.IndexView.as_view(), name='index'),
-    # /users/USER/returns/
-    path('<username>/returns/', views.ReturnsView.as_view(), name='returns'),
+    # /users/
+    path('', views.IndexView.as_view(), name='index'),
+    # /users/returns/
+    path('returns/', views.ReturnsView.as_view(), name='returns'),
 ]
