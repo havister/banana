@@ -23,16 +23,16 @@
   <section class="card">
     <div class="card-body m-3">
       <!-- Form -->
-      <form method="post" action="{% url 'login' %}">
+      <form class="needs-validation" action="{% url 'login' %}" method="post" novalidate>
         {% csrf_token %}
         <input type="hidden" name="next" value="{{ next }}">
         <div class="form-group">
           <label for="{{ form.username.id_for_label }}"><strong>아이디</strong></label>
-          <input class="form-control" id="{{ form.username.id_for_label }}" maxlength="15" name="{{ form.username.html_name }}" type="text" placeholder="ID">
+          <input class="form-control" type="text" name="{{ form.username.html_name }}" id="{{ form.username.id_for_label }}" maxlength="15" placeholder="ID" required>
         </div>
         <div class="form-group">
           <label for="{{ form.password.id_for_label }}"><strong>패스워드</strong></label>
-          <input class="form-control" id="{{ form.password.id_for_label }}" maxlength="120" name="{{ form.password.html_name }}" type="password" placeholder="Password">
+          <input class="form-control" type="password" name="{{ form.password.html_name }}" id="{{ form.password.id_for_label }}" maxlength="120" placeholder="Password" required>
         </div>
         <hr>
         <button type="submit" class="btn btn-success py-2 w-100">로그인</button>
@@ -58,6 +58,9 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- Custom Script -->
+<script src="{% static 'js/validation.js' %}"></script>
 
 </body>
 </html>

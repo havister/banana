@@ -1,4 +1,3 @@
-from django.shortcuts import get_object_or_404, redirect
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.base import TemplateView
 from trades.models import Trade
@@ -6,12 +5,6 @@ from trades.models import Trade
 
 class IndexView(LoginRequiredMixin, TemplateView):
     template_name = 'users/index.html'
-    
-    def dispatch(self, request, *args, **kwargs):
-        username = request.user.username
-        if kwargs['username'] != username:
-            return redirect('users:index', username)
-        return super().dispatch(request, *args, **kwargs)
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -27,12 +20,6 @@ class IndexView(LoginRequiredMixin, TemplateView):
 
 class ReturnsView(LoginRequiredMixin, TemplateView):
     template_name = 'users/returns.html'
-
-    def dispatch(self, request, *args, **kwargs):
-        username = request.user.username
-        if kwargs['username'] != username:
-            return redirect('users:returns', username)
-        return super().dispatch(request, *args, **kwargs)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

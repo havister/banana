@@ -10,23 +10,10 @@
 <span>Events</span>
 {% endblock %}
 
-{% block nav-link %}
-  {% if user.is_active %}
-    <a class="btn btn-success btn-xm" href="{% url 'users:index' user.username %}" role="button">{{ user.username|upper }}</a>
-    {% else %}
-    <a class="btn btn-success btn-xm" href="{% url 'login' %}" role="button">Login</a>
-  {% endif %}
-{% endblock %}
-
 {% block header %}
 <!-- Header -->
 <header class="box">
-  <div class="jumbotron text-center">
-    <h1>로봇 #하비스터 출시 이벤트</h1>
-    <h4 class="mb-3 text-orange">재테크, 이제 로봇으로 하자!</h4>
-    <p class="lead">로봇으로 모의 계좌를 운영해 보세요. 수익이 나면 현금을 지급합니다.</p>
-    <span class="text-muted">2019년 10월 ~ 12월</span>
-  </div>
+  <img class="box-img" src="{% static 'images/events/launch.jpg' %}" alt="Launch Poster">
 </header>
 {% endblock %}
 
@@ -41,8 +28,8 @@
       </div>
       <p><strong class="text-orange">신청 양식</strong>을 작성해 주세요.
         신청 양식은 이벤트 참여자를 추첨하고 발표하기 위해 사용됩니다.
-        양식이 작성되면 신청이 완료됩니다.
-      </p>
+        양식이 작성되면 신청이 완료됩니다.</p>
+      <p><a class="btn btn-success px-4" href="{% url 'events:launch' %}" role="button">이벤트 신청하기</a></p>
     </li>
     <li class="list-group-item">
       <div class="d-flex justify-content-between my-2">
@@ -51,8 +38,8 @@
       </div>
       <p><strong class="text-orange">매월 10명</strong>을 추첨하여 발표합니다.
         이벤트 추첨은 당사의 내부 규정에 따라 진행되며, <strong class="text-orange">매월 20일</strong> 참여자를 발표합니다.
-        개별 연락이 진행되며, 웹사이트에서 확인할 수 있습니다.
-      </p>
+        개별 연락이 진행되며, 웹사이트에서 확인할 수 있습니다.</p>
+      <p><a class="btn btn-secondary px-4 disabled" href="#" role="button">10월 참여자 보기</a></p>
     </li>
     <li class="list-group-item">
       <div class="d-flex justify-content-between my-2">
@@ -96,21 +83,5 @@
       </p>
     </li>
   </ul>
-</section>
-
-<!-- Section -->
-<section class="box">
-  <div class="jumbotron bg-cyan text-center text-white">
-    <h1>"인스타 리그램"</h1>
-    <p class="lead text-yellow">리그램 이벤트 참여만 해도 추첨 후 기프트콘 증정!!</p>
-    <p class="mb-0">포인트넛의 이벤트 페이지를 필수 해시태그와 함께 인스타그램에 리그램 후 댓글 남기자~~</p>
-    <p class="text-yellow">
-      <span class="mr-2">#포인트넛</span>
-      <span class="mr-2">#하비스터</span>
-      <span class="mr-2">#로봇하비스터</span>
-      <span>#로봇재테크</span>
-    </p>
-    <span>베스킨라빈스 파인트 기프트콘 100명 (추첨 증정)</span>
-  </div>
 </section>
 {% endblock %}

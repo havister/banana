@@ -4,11 +4,11 @@ from django.views.generic.base import TemplateView
 
 
 def http404_redirect(request):
-    raise Http404
+    raise Http404()
 
 
 def login_redirect(request):
-    return redirect('users:index', request.user.username)
+    return redirect('users:index')
 
 
 class IndexView(TemplateView):
