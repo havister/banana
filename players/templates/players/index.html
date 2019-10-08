@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load extras %}
 
 {% block title %}
 <title>Players - Pointnut</title>
@@ -25,35 +26,41 @@
 <!-- Section -->
 <section class="box">
   <div class="box-pad">
-    <h4 class="my-1 text-darkgray">Best Players</h4>
+    <h1 class="my-1 text-darkgray">Best Players</h1>
   </div>
   <!-- Section Body -->
   {% if player_trade_list %}
-  <div class="box">
+  <div class="box text-kr">
     {% for trade in player_trade_list %}
     <div class="box-pad d-flex align-items-center border-top">
       <div class="d-none d-sm-block w-25 text-center pr-3">
-        <p class="h3 font-weight-normal text-gray">{{ forloop.counter }}</p>
+        <p class="h3 font-weight-normal text-darkgray">{{ forloop.counter }}</p>
       </div>
-      <div class="box flex-grow-1 pr-3">
+      <div class="box flex-grow-1">   
         <div class="d-flex align-items-center">
           <h5 class="mr-2">{{ trade.player.username|upper }}</h5>
-          <h6 class="text-kr text-muted mr-auto">{{ trade.player.first_name }}</h6>
+          <h6 class="text-muted mr-auto">{{ trade.player.first_name }}</h6>
+          <p class="h5 {{ trade.change|change_class }}">
+            <span>{{ trade.change|stringformat:"+0.2f" }}%</span>
+          </p>
         </div>
-        <p class="mb-0 small">
-          <span class="mr-2 text-kr">{{ trade }}</span>
-          <span class="text-muted">{{ trade.date_closed|date:'Y.m.d' }}</span>
-        </p>
+        <div class="d-flex">
+          <p class="mb-0 small text-muted mr-auto">
+            <span class="mr-2">{{ trade }}</span>
+            <span class="text-muted">{{ trade.date_closed|date:'Y.m.d' }}</span>
+          </p>
+          <p class="mb-0 small text-muted">
+            <span>{{ trade.signal }}</span> /
+            <span>{{ trade.position|position_word }}</span>
+          </p>
+        </div>
       </div>
-      <p class="h4 mb-0 text-right"><span class="text-{% if trade.change >= 0 %}orange{% else %}cyan{% endif %}">
-        {{ trade.change|stringformat:"+0.2f" }}%</span>
-      </p>
     </div>
     {% endfor %}
   </div>
   {% else %}
   <div class="box-pad">
-    <p>지금은 플레이어가 없습니다.</p>
+    <p>플레이어가 없습니다.</p>
   </div>
   {% endif %}
 </section>
@@ -61,32 +68,32 @@
 <!-- Section -->
 <section class="box">
   <div class="box-pad">
-    <h4 class="my-1 text-darkgray">New Players</h4>
+    <h1 class="my-1 text-darkgray">New Players</h1>
   </div>
   <!-- Section Body -->
   {% if new_player_list %}
-  <div class="box">
+  <div class="box text-kr">
     {% for player in new_player_list %}
     <div class="box-pad d-flex align-items-center border-top">
       <div class="d-none d-sm-block w-25 text-center pr-3">
-        <p class="h3 font-weight-normal text-gray">{{ forloop.counter }}</p>
+        <p class="h3 font-weight-normal text-darkgray">{{ forloop.counter }}</p>
       </div>
       <div class="box flex-grow-1 pr-3">
         <div class="d-flex align-items-center">
           <h5 class="mr-2">{{ player.username|upper }}</h5>
-          <h6 class="text-kr text-muted mr-auto">{{ player.first_name }}</h6>
+          <h6 class="text-muted mr-auto">{{ player.first_name }}</h6>
         </div>
-        <p class="mb-0 text-kr small">시그널 대기 중...</p>
+        <p class="mb-0 small"><i class="far fa-hourglass"></i> Signal Waiting</p>
       </div>
-      <p class="h4 mb-0 text-right"><span class="text-gray">
-        <i class="fas fa-flag-checkered"></i></span>
+      <p class="h5 mb-0 text-muted">
+        <span class="text-cyan"><i class="fas fa-flag-checkered"></i></span>
       </p>
     </div>
     {% endfor %}
   </div>
   {% else %}
   <div class="box-pad">
-    <p>지금은 플레이어가 없습니다.</p>
+    <p>플레이어가 없습니다.</p>
   </div>
   {% endif %}
 </section>

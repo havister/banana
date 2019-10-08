@@ -1,4 +1,5 @@
 {% extends "user_base.html" %}
+{% load extras %}
 
 {% block title %}
 <title>{{ user.username|upper }} - Pointnut</title>
@@ -6,28 +7,18 @@
 
 {% block nav-title %}
 <a class="mr-2 green" href="{% url 'users:index' %}"><i class="fas fa-chevron-left"></i></a>
-<span>Returns</span>
+<span>Trades</span>
 {% endblock %}
 
 {% block header %}
-<!-- Header -->
-<header class="box">
-  <div class="box-pad d-flex align-items-center">
-    <h4 class="my-1 mr-auto">{{ user.first_name }}</h4>
-    <p class="mb-0 text-capitalize">
-    {% for group in user.groups.all %}
-      <span class="badge badge-darkgray font-weight-normal">{{ group.name }}</span>
-    {% endfor %}
-    </p>
-  </div>
-</header>
 {% endblock %}
 
 {% block main %}
 <!-- Section -->
-<section class="box">
-  <div class="box-pad">
-    <h4 class="my-1 text-darkgray">{{ trade_list.count }} Returns</h4>
+<section class="box text-kr">
+  <div class="box-pad d-flex align-items-center">
+    <h1 class="my-1 mr-auto">청산 거래</h1>
+    <p class="my-1 h2 text-darkgray">{{ trade_list.count }}건</p>
   </div>
   <!-- Section Body -->
   {% if trade_list %}
@@ -35,12 +26,12 @@
     {% for trade in trade_list %}
     <div class="box-pad d-flex align-items-center border-top">
       <div class="d-none d-sm-block w-25 text-center pr-3">
-        <p class="h3 font-weight-normal text-gray">{{ forloop.counter }}</p>
+        <p class="h3 font-weight-normal text-darkgray">{{ forloop.counter }}</p>
       </div>
       <div class="box flex-grow-1">
         <div class="d-flex align-items-center">
-          <h5 class="text-kr mr-auto">{{ trade|upper }}</h5>
-          <p class="h5 text-{% if trade.change >= 0 %}orange{% else %}cyan{% endif %}">
+          <h5 class="mr-auto">{{ trade|upper }}</h5>
+          <p class="h5 {{ trade.change|change_class }}">
             <span>{{ trade.change|stringformat:"+0.2f" }}%</span>
           </p>
         </div>
@@ -50,8 +41,9 @@
             <span>~</span>
             <span>{{ trade.date_closed|date:'Y.m.d' }}</span>
           </p>
-          <p class="mb-0 small">
-            <span class="text-muted">{% if trade.position == 'L' %}LONG{% else %}SHORT{% endif %}</span>
+          <p class="mb-0 small text-muted">
+            <span>{{ trade.signal }}</span> /
+            <span>{{ trade.position|position_word }}</span>
           </p>
         </div>
       </div>

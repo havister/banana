@@ -1,4 +1,5 @@
 {% extends "user_base.html" %}
+{% load extras %}
 
 {% block title %}
 <title>{{ user.username|upper }} - Pointnut</title>
@@ -10,25 +11,13 @@
 {% endblock %}
 
 {% block header %}
-<!-- Alert -->
-{% if alert %}
-<div class="box mb-2">
-  <div class="alert alert-success alert-dismissible fade show mb-0" role="alert">
-    {{ alert }}
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-</div>
-{% endif %}
-
 <!-- Header -->
 <header class="box">
   <div class="box-pad d-flex align-items-center">
-    <h4 class="my-1 mr-auto">{{ user.first_name }}</h4>
+    <h1 class="my-1 mr-auto">{{ user.first_name }}</h1>
     <p class="mb-0 text-capitalize">
     {% for group in user.groups.all %}
-      <span class="badge badge-darkgray font-weight-normal">{{ group.name }}</span>
+      <span class="badge badge-orange font-weight-normal">{{ group.name }}</span>
     {% endfor %}
     </p>
   </div>
@@ -37,9 +26,10 @@
 
 {% block main %}
 <!-- Section -->
-<section class="box">
-  <div class="box-pad">
-    <h4 class="my-1 text-darkgray">Latest Returns</h4>
+<section class="box text-kr">
+  <div class="box-pad d-flex align-items-center">
+    <h2 class="my-1 text-darkgray mr-auto">최근 청산 거래</h2>
+    <div><a class="btn btn-success btn-xm" href="{% url 'users:trades_closed' %}" role="button">더보기</a></div>
   </div>
   <!-- Section Body -->
   {% if closed_trade_list %}
@@ -47,12 +37,12 @@
     {% for trade in closed_trade_list %}
     <div class="box-pad d-flex align-items-center border-top">
       <div class="d-none d-sm-block w-25 text-center pr-3">
-        <p class="h3 font-weight-normal text-gray">{{ forloop.counter }}</p>
+        <p class="h3 font-weight-normal text-darkgray">{{ forloop.counter }}</p>
       </div>
       <div class="box flex-grow-1">
         <div class="d-flex align-items-center">
-          <h5 class="text-kr mr-auto">{{ trade|upper }}</h5>
-          <p class="h5 text-{% if trade.change >= 0 %}orange{% else %}cyan{% endif %}">
+          <h5 class="mr-auto">{{ trade|upper }}</h5>
+          <p class="h5 {{ trade.change|change_class }}">
             <span>{{ trade.change|stringformat:"+0.2f" }}%</span>
           </p>
         </div>
@@ -62,8 +52,9 @@
             <span>~</span>
             <span>{{ trade.date_closed|date:'Y.m.d' }}</span>
           </p>
-          <p class="mb-0 small">
-            <span class="text-muted">{% if trade.position == 'L' %}LONG{% else %}SHORT{% endif %}</span>
+          <p class="mb-0 small text-muted">
+            <span>{{ trade.signal }}</span> /
+            <span>{{ trade.position|position_word }}</span>
           </p>
         </div>
       </div>
@@ -78,9 +69,10 @@
 </section>
 
 <!-- Section -->
-<section class="box">
-  <div class="box-pad">
-    <h4 class="my-1 text-darkgray">Latest Trades</h4>
+<section class="box text-kr">
+  <div class="box-pad d-flex align-items-center">
+    <h2 class="my-1 text-darkgray mr-auto">최근 진입 거래</h2>
+    <div><a class="btn btn-success btn-xm" href="{% url 'users:trades_opened' %}" role="button">더보기</a></div>
   </div>
   <!-- Section Body -->
   {% if opened_trade_list %}
@@ -88,23 +80,24 @@
     {% for trade in opened_trade_list %}
     <div class="box-pad d-flex align-items-center border-top">
       <div class="d-none d-sm-block w-25 text-center pr-3">
-        <p class="h3 font-weight-normal text-gray">{{ forloop.counter }}</p>
+        <p class="h3 font-weight-normal text-darkgray">{{ forloop.counter }}</p>
       </div>
       <div class="box flex-grow-1">
         <div class="d-flex align-items-center">
-          <h5 class="text-kr mr-auto">{{ trade|upper }}</h5>
+          <h5 class="mr-auto">{{ trade|upper }}</h5>
           <p class="h5 text-muted">
-            <span></span>
+            <span class="text-cyan"><i class="fas fa-plane-departure"></i></span>
           </p>
         </div>
         <div class="d-flex">
           <p class="mb-0 small text-muted mr-auto">
             <span>{{ trade.date_opened|date:'Y.m.d' }}</span>
-            <span>~</span>
-            <span></span>
+            <span class="mr-3">~</span>
+            <span><i class="far fa-hourglass"></i> Signal Waiting</span>
           </p>
-          <p class="mb-0 small">
-            <span class="text-muted">{% if trade.position == 'L' %}LONG{% else %}SHORT{% endif %}</span>
+          <p class="mb-0 small text-muted">
+            <span>{{ trade.signal }}</span> /
+            <span>{{ trade.position|position_word }}</span>
           </p>
         </div>
       </div>

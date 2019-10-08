@@ -1,6 +1,6 @@
 from django.views.generic import TemplateView
 from django.contrib.auth.models import User
-from trades.models import Trade
+from players.models import Trade
 
 
 class IndexView(TemplateView):

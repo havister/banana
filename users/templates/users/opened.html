@@ -1,0 +1,60 @@
+{% extends "user_base.html" %}
+{% load extras %}
+
+{% block title %}
+<title>{{ user.username|upper }} - Pointnut</title>
+{% endblock %}
+
+{% block nav-title %}
+<a class="mr-2 green" href="{% url 'users:index' %}"><i class="fas fa-chevron-left"></i></a>
+<span>Trades</span>
+{% endblock %}
+
+{% block header %}
+{% endblock %}
+
+{% block main %}
+<!-- Section -->
+<section class="box text-kr">
+  <div class="box-pad d-flex align-items-center">
+    <h1 class="my-1 mr-auto">진입 거래</h1>
+    <p class="my-1 h2 text-darkgray">{{ trade_list.count }}건</p>
+  </div>
+  <!-- Section Body -->
+  {% if trade_list %}
+  <div class="box">
+    {% for trade in trade_list %}
+    <div class="box-pad d-flex align-items-center border-top">
+      <div class="d-none d-sm-block w-25 text-center pr-3">
+        <p class="h3 font-weight-normal text-darkgray">{{ forloop.counter }}</p>
+      </div>
+      <div class="box flex-grow-1">
+        <div class="d-flex align-items-center">
+          <h5 class="mr-auto">{{ trade|upper }}</h5>
+          <p class="h5 text-muted">
+            <span class="text-cyan"><i class="fas fa-plane-departure"></i></span>
+          </p>
+        </div>
+        <div class="d-flex">
+          <p class="mb-0 small text-muted mr-auto">
+            <span>{{ trade.date_opened|date:'Y.m.d' }}</span>
+            <span class="mr-3">~</span>
+            <span><i class="far fa-hourglass"></i> Signal Waiting</span>
+          </p>
+          <p class="mb-0 small text-muted">
+            <span>{{ trade.signal }}</span> /
+            <span>{{ trade.position|position_word }}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="box-pad">
+    <p>거래 기록이 없습니다.</p>
+  </div>
+  {% endif %}
+</section>
+
+{% endblock %}
