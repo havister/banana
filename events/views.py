@@ -28,11 +28,10 @@ class LaunchView(FormView):
         has_derivative = form.cleaned_data['has_derivative']
         recommender = form.cleaned_data['recommender']
         # Launch Create
-        launch = Launch(
+        Launch.objects.create(
             name=name, gender=gender, age=age, phone=phone, is_married=is_married, job=job, city=city, 
             has_fund=has_fund, has_stock=has_stock, has_derivative=has_derivative, recommender=recommender,
         )
-        launch.save()
         return super().form_valid(form)
 
 
