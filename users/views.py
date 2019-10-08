@@ -1,6 +1,6 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.base import TemplateView
-from trades.models import Trade
+from players.models import Trade
 
 
 class IndexView(LoginRequiredMixin, TemplateView):

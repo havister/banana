@@ -6,7 +6,7 @@
     Service
   </button>
   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="{% url 'users:index' %}" tabindex="-1" aria-disabled="true">Profile</a>
+    <a class="dropdown-item" href="{% url 'users:index' %}" tabindex="-1" aria-disabled="true">{{ user.username|upper }}</a>
     <div class="dropdown-divider"></div>
     <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Havister</a>
     <a class="dropdown-item" href="{% url 'users:trades_closed' %}">청산 거래</a>
