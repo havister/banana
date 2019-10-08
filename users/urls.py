@@ -6,6 +6,8 @@ app_name = 'users'
 urlpatterns = [
     # /users/
     path('', views.IndexView.as_view(), name='index'),
-    # /users/returns/
-    path('returns/', views.ReturnsView.as_view(), name='returns'),
+    # /users/trades/closed/
+    path('trades/closed/', views.ClosedView.as_view(), name='trades_closed'),
+    # /users/trades/opened/
+    path('trades/opened/', views.OpenedView.as_view(), name='trades_opened'),
 ]

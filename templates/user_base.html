@@ -9,8 +9,8 @@
     <a class="dropdown-item" href="{% url 'users:index' %}" tabindex="-1" aria-disabled="true">Profile</a>
     <div class="dropdown-divider"></div>
     <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Havister</a>
-    <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Trades</a>
-    <a class="dropdown-item" href="{% url 'users:returns' %}">Returns</a>
+    <a class="dropdown-item" href="{% url 'users:trades_closed' %}">청산 거래</a>
+    <a class="dropdown-item" href="{% url 'users:trades_opened' %}">진입 거래</a>
     <div class="dropdown-divider"></div>
     <a class="dropdown-item" href="{% url 'password_change' %}">Settings</a>
     <a class="dropdown-item" href="{% url 'logout' %}">Logout</a>
