@@ -1,6 +1,6 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.base import TemplateView
-from players.models import Trade
+from players.models import Account, Trade
 
 
 class IndexView(LoginRequiredMixin, TemplateView):
@@ -9,6 +9,8 @@ class IndexView(LoginRequiredMixin, TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         user = self.request.user
+        # Account
+        context['account'] = Account.objects.filter(player=user).first()
         # Closed trade list
         context['closed_trade_list'] = Trade.objects.filter(
             player=user, date_closed__isnull=False).order_by('-date_closed')[:5]
