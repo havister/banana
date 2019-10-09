@@ -13,5 +13,7 @@ class IndexView(TemplateView):
             date_closed__isnull=False).order_by('player', '-date_closed').distinct('player')
         # New player list
         context['new_player_list'] = User.objects.filter(
-            groups__name='player', trade=None).order_by('-date_joined')
+            groups__name='player'
+            ).exclude(trades__date_closed__isnull=False
+            ).order_by('-date_joined')
         return context
