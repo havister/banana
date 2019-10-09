@@ -44,7 +44,7 @@ class Etf(models.Model):
         (UP, 'Up'),
         (DOWN, 'Down'),
     ]
-    asset = models.ForeignKey(Asset, on_delete=models.CASCADE)
+    asset = models.ForeignKey(Asset, on_delete=models.CASCADE, related_name='etfs')
     code = models.CharField(max_length=20, unique=True)
     name = models.CharField(max_length=20)
     direction = models.CharField(max_length=1, choices=DIRECTION_CHOICES)
@@ -55,7 +55,7 @@ class Etf(models.Model):
 
 
 class Future(models.Model):
-    asset = models.ForeignKey(Asset, on_delete=models.CASCADE)
+    asset = models.ForeignKey(Asset, on_delete=models.CASCADE, related_name='futures')
     code = models.CharField(max_length=20, unique=True)
     expiration = models.ForeignKey(Expiration, on_delete=models.CASCADE)
     is_active = models.BooleanField(default=True)

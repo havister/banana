@@ -6,7 +6,7 @@ from signals.models import Signal
 
 
 class Account(models.Model):
-    player = models.ForeignKey(User, on_delete=models.CASCADE)
+    player = models.OneToOneField(User, on_delete=models.CASCADE, related_name='account')
     long_fund = models.DecimalField(max_digits=10, decimal_places=0)
     short_fund = models.DecimalField(max_digits=10, decimal_places=0)
     is_active = models.BooleanField(default=True)
@@ -24,9 +24,9 @@ class Trade(models.Model):
         (LONG, 'Long'),
         (SHORT, 'Short'),
     ]
-    player = models.ForeignKey(User, on_delete=models.CASCADE)
-    signal = models.ForeignKey(Signal, on_delete=models.CASCADE)
-    asset = models.ForeignKey(Asset, on_delete=models.CASCADE)
+    player = models.ForeignKey(User, on_delete=models.CASCADE, related_name='trades')
+    signal = models.ForeignKey(Signal, on_delete=models.CASCADE, related_name='trades')
+    asset = models.ForeignKey(Asset, on_delete=models.CASCADE, related_name='trades')
     position = models.CharField(max_length=1, choices=POSITION_CHOICES)
     date_opened = models.DateTimeField(default=timezone.now)
     price_opened = models.DecimalField(max_digits=9, decimal_places=2)
