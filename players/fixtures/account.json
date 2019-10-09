@@ -1,0 +1,156 @@
+[
+{
+  "model": "players.account",
+  "pk": 1,
+  "fields": {
+    "player": 3,
+    "long_fund": "35000000",
+    "short_fund": "15000000",
+    "is_active": true,
+    "date_bound": "2019-01-01"
+  }
+},
+{
+  "model": "players.account",
+  "pk": 2,
+  "fields": {
+    "player": 2,
+    "long_fund": "35000000",
+    "short_fund": "15000000",
+    "is_active": true,
+    "date_bound": "2019-01-01"
+  }
+},
+{
+  "model": "players.account",
+  "pk": 3,
+  "fields": {
+    "player": 5,
+    "long_fund": "15000000",
+    "short_fund": "15000000",
+    "is_active": true,
+    "date_bound": "2019-03-13"
+  }
+},
+{
+  "model": "players.account",
+  "pk": 4,
+  "fields": {
+    "player": 6,
+    "long_fund": "15000000",
+    "short_fund": "15000000",
+    "is_active": true,
+    "date_bound": "2019-03-14"
+  }
+},
+{
+  "model": "players.account",
+  "pk": 5,
+  "fields": {
+    "player": 7,
+    "long_fund": "35000000",
+    "short_fund": "15000000",
+    "is_active": true,
+    "date_bound": "2019-03-20"
+  }
+},
+{
+  "model": "players.account",
+  "pk": 6,
+  "fields": {
+    "player": 8,
+    "long_fund": "35000000",
+    "short_fund": "15000000",
+    "is_active": true,
+    "date_bound": "2019-06-13"
+  }
+},
+{
+  "model": "players.account",
+  "pk": 7,
+  "fields": {
+    "player": 9,
+    "long_fund": "15000000",
+    "short_fund": "15000000",
+    "is_active": true,
+    "date_bound": "2019-07-16"
+  }
+},
+{
+  "model": "players.account",
+  "pk": 8,
+  "fields": {
+    "player": 4,
+    "long_fund": "15000000",
+    "short_fund": "15000000",
+    "is_active": true,
+    "date_bound": "2019-03-05"
+  }
+},
+{
+  "model": "players.account",
+  "pk": 9,
+  "fields": {
+    "player": 10,
+    "long_fund": "35000000",
+    "short_fund": "15000000",
+    "is_active": true,
+    "date_bound": "2019-09-18"
+  }
+},
+{
+  "model": "players.account",
+  "pk": 10,
+  "fields": {
+    "player": 11,
+    "long_fund": "35000000",
+    "short_fund": "15000000",
+    "is_active": true,
+    "date_bound": "2019-05-31"
+  }
+},
+{
+  "model": "players.account",
+  "pk": 11,
+  "fields": {
+    "player": 12,
+    "long_fund": "35000000",
+    "short_fund": "15000000",
+    "is_active": true,
+    "date_bound": "2019-09-26"
+  }
+},
+{
+  "model": "players.account",
+  "pk": 12,
+  "fields": {
+    "player": 13,
+    "long_fund": "15000000",
+    "short_fund": "15000000",
+    "is_active": true,
+    "date_bound": "2019-08-26"
+  }
+},
+{
+  "model": "players.account",
+  "pk": 13,
+  "fields": {
+    "player": 14,
+    "long_fund": "15000000",
+    "short_fund": "15000000",
+    "is_active": true,
+    "date_bound": "2019-09-10"
+  }
+},
+{
+  "model": "players.account",
+  "pk": 14,
+  "fields": {
+    "player": 15,
+    "long_fund": "15000000",
+    "short_fund": "15000000",
+    "is_active": true,
+    "date_bound": "2019-09-18"
+  }
+}
+]
