@@ -20,7 +20,12 @@
     <p class="mb-0">시그널과 기초자산을 선택하고, 사용가능 예산 내에서 설정금액을 작성하십시오.</p>
   </div>
 </header>
-<header class="box">
+{% endblock %}
+
+{% block main %}
+{% if user.account.has_havister %}
+<!-- Section -->
+<section class="box">
   <div class="box-pad">
     <ul class="list-group">
       <li class="list-group-item item-gray d-flex justify-content-between">
@@ -33,10 +38,8 @@
       </li>
     </ul>
   </div>
-</header>
-{% endblock %}
+</section>
 
-{% block main %}
 <!-- Section -->
 <section class="box-pad">
   <div class="card mb-0">
@@ -86,6 +89,11 @@
     {% endif %}
   </div>
 </section>
+{% else %}
+<section class="box-pad">
+  <span class="text-danger">하비스터 사용권 등록이 필요합니다.</span>
+</section>
+{% endif %}
 {% endblock %}
 
 {% block script %}
