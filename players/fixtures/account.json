@@ -6,6 +6,7 @@
     "player": 3,
     "long_fund": "35000000",
     "short_fund": "15000000",
+    "has_havister": true,
     "is_active": true,
     "date_bound": "2019-01-01"
   }
@@ -17,6 +18,7 @@
     "player": 2,
     "long_fund": "35000000",
     "short_fund": "15000000",
+    "has_havister": true,
     "is_active": true,
     "date_bound": "2019-01-01"
   }
@@ -28,6 +30,7 @@
     "player": 5,
     "long_fund": "15000000",
     "short_fund": "15000000",
+    "has_havister": false,
     "is_active": true,
     "date_bound": "2019-03-13"
   }
@@ -39,6 +42,7 @@
     "player": 6,
     "long_fund": "15000000",
     "short_fund": "15000000",
+    "has_havister": false,
     "is_active": true,
     "date_bound": "2019-03-14"
   }
@@ -50,6 +54,7 @@
     "player": 7,
     "long_fund": "35000000",
     "short_fund": "15000000",
+    "has_havister": false,
     "is_active": true,
     "date_bound": "2019-03-20"
   }
@@ -61,6 +66,7 @@
     "player": 8,
     "long_fund": "35000000",
     "short_fund": "15000000",
+    "has_havister": false,
     "is_active": true,
     "date_bound": "2019-06-13"
   }
@@ -72,6 +78,7 @@
     "player": 9,
     "long_fund": "15000000",
     "short_fund": "15000000",
+    "has_havister": false,
     "is_active": true,
     "date_bound": "2019-07-16"
   }
@@ -83,6 +90,7 @@
     "player": 4,
     "long_fund": "15000000",
     "short_fund": "15000000",
+    "has_havister": false,
     "is_active": true,
     "date_bound": "2019-03-05"
   }
@@ -94,6 +102,7 @@
     "player": 10,
     "long_fund": "35000000",
     "short_fund": "15000000",
+    "has_havister": false,
     "is_active": true,
     "date_bound": "2019-09-18"
   }
@@ -105,6 +114,7 @@
     "player": 11,
     "long_fund": "35000000",
     "short_fund": "15000000",
+    "has_havister": false,
     "is_active": true,
     "date_bound": "2019-05-31"
   }
@@ -116,6 +126,7 @@
     "player": 12,
     "long_fund": "35000000",
     "short_fund": "15000000",
+    "has_havister": false,
     "is_active": true,
     "date_bound": "2019-09-26"
   }
@@ -127,6 +138,7 @@
     "player": 13,
     "long_fund": "15000000",
     "short_fund": "15000000",
+    "has_havister": false,
     "is_active": true,
     "date_bound": "2019-08-26"
   }
@@ -138,6 +150,7 @@
     "player": 14,
     "long_fund": "15000000",
     "short_fund": "15000000",
+    "has_havister": false,
     "is_active": true,
     "date_bound": "2019-09-10"
   }
@@ -149,6 +162,7 @@
     "player": 15,
     "long_fund": "15000000",
     "short_fund": "15000000",
+    "has_havister": false,
     "is_active": true,
     "date_bound": "2019-09-18"
   }
