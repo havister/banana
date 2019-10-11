@@ -18,6 +18,18 @@ class IndexView(LoginRequiredMixin, TemplateView):
         return context
 
 
+class SignalView(LoginRequiredMixin, TemplateView):
+    template_name = 'users/signal.html'
+
+
+class SignalAddView(LoginRequiredMixin, TemplateView):
+    template_name = 'users/signal_add.html'
+
+
+class HavisterView(LoginRequiredMixin, TemplateView):
+    template_name = 'users/havister.html'
+
+
 class ClosedView(LoginRequiredMixin, TemplateView):
     template_name = 'users/closed.html'
 

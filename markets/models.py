@@ -37,7 +37,7 @@ class Asset(models.Model):
 
 
 class Etf(models.Model):
-    # Position choices
+    # Direction choices
     UP = 'U'
     DOWN = 'D'
     DIRECTION_CHOICES = [

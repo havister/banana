@@ -1,0 +1,93 @@
+{% extends "user_base.html" %}
+{% load static %}
+{% load humanize %}
+{% load extras %}
+
+{% block title %}
+<title>{{ user.username|upper }} - Signal | Pointnut</title>
+{% endblock %}
+
+{% block nav-title %}
+<a class="mr-2 green" href="{% url 'users:signal' %}"><i class="fas fa-chevron-left"></i></a>
+<span>Signal</span>
+{% endblock %}
+
+{% block header %}
+<!-- Header -->
+<header class="box">
+  <div class="box-pad">
+    <h1>시그널 추가</h1>
+    <p class="mb-0">시그널과 기초자산을 선택하고, 사용가능 예산 내에서 설정금액을 작성하십시오.</p>
+  </div>
+</header>
+<header class="box">
+  <div class="box-pad">
+    <ul class="list-group">
+      <li class="list-group-item item-gray d-flex justify-content-between">
+        <span>운용중인 예산</span>
+        <span><strong>30,000,000</strong> 원</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between">
+        <span>사용가능 예산</span>
+        <span><strong>10,000,000</strong> 원</span>
+      </li>
+    </ul>
+  </div>
+</header>
+{% endblock %}
+
+{% block main %}
+<!-- Section -->
+<section class="box-pad">
+  <div class="card mb-0">
+    <div class="card-body">
+      <!-- Form -->
+      <form class="needs-validation" method="post" novalidate>
+        {% csrf_token %}
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label" for=""><strong>시그널</strong></label>
+          <div class="col-sm-8">
+            <select class="form-control">
+              <option value="1">Balance</option>
+              <option value="2" selected>Cycle 7</option>
+              <option value="3">Cycle 5</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label" for=""><strong>기초자산</strong></label>
+          <div class="col-sm-8">
+            <select class="form-control">
+              <option value="1" selected>KOSPI 200</option>
+              <option value="2">KOSDAQ 150</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label" for=""><strong>설정금액</strong></label>
+          <div class="col-sm-8">
+            <input class="form-control" type="number" name="" id="" required>
+            <small class="form-text text-muted">쉼표(,) 없이 숫자로 작성해야 합니다.</small>
+          </div>
+        </div>
+        <hr>
+        <div class="form-group row mb-0">
+          <div class="col-sm-4">
+            <button type="submit" class="btn btn-success py-2 px-4">추가하기</button>
+          </div>
+          <div class="col-sm-8"></div>
+        </div>
+      </form>
+    </div>
+    {% if form.errors %}
+    <div class="card-footer">
+      <small class="text-danger">시그널을 추가할 수 없습니다. 양식을 올바르게 작성했는지 확인하십시오.</small>
+    </div>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'js/validation.js' %}"></script>
+{% endblock %}
