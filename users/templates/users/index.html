@@ -13,9 +13,9 @@
 
 {% block header %}
 <!-- Header -->
-<header class="box-pad text-kr">
-  <div class="box mb-3 d-flex align-items-center">
-    <h1 class="mb-0 mr-auto">{{ user.first_name }}</h1>
+<header class="box text-kr">
+  <div class="box-pad d-flex justify-content-between align-items-center">
+    <h1 class="my-1">{{ user.first_name }}</h1>
     <p class="mb-0 h5 text-capitalize">
     {% for group in user.groups.all %}
       <span class="badge badge-pill badge-orange font-weight-normal">{{ group.name }}</span>
@@ -23,32 +23,32 @@
     </p>
   </div>
   {% if user.account %}
-  <div class="card">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item d-flex align-items-center">
-        <p class="h5 my-2 mr-auto">계좌 설정 일자</p>
+  <div class="box-pad-x">
+    <ul class="list-group pb-3">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <p class="h5 my-2">계좌 설정 일자</p>
         <p class="h5 my-2">{{ user.account.date_bound|date:'Y년 m월 d일' }}</p>
       </li>
-      <li class="list-group-item d-flex align-items-center">
-        <p class="h5 my-2 mr-auto">계좌 활성 상태</p>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <p class="h5 my-2">계좌 활성 상태</p>
         <p class="h5 my-2">
           {% if user.account.is_active %}활성 <i class="fas fa-check-circle text-info"></i>
           {% else %}비활성 <i class="fas fa-minus-circle text-gray"></i>{% endif %}
         </p>
       </li>
-      <li class="list-group-item d-flex align-items-center">
-        <p class="h5 my-2 mr-auto">주식계좌 설정 금액</p>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <p class="h5 my-2">주식계좌 설정 금액</p>
         <p class="h5 my-2">{{ user.account.long_fund|intcomma }}원</p>
       </li>
-      <li class="list-group-item d-flex align-items-center">
-        <p class="h5 my-2 mr-auto">파생계좌 설정 금액</p>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <p class="h5 my-2">파생계좌 설정 금액</p>
         <p class="h5 my-2">{{ user.account.short_fund|intcomma }}원</p>
       </li>
     </ul>
   </div>
   {% else %}
-  <div class="box">
-    <p>계좌 정보가 없습니다.</p>
+  <div class="box-pad">
+    <span>계좌 정보가 없습니다.</span>
   </div>
   {% endif %}
 </header>
@@ -57,9 +57,11 @@
 {% block main %}
 <!-- Section -->
 <section class="box text-kr">
-  <div class="box-pad d-flex align-items-center">
-    <h2 class="my-1 text-darkgray mr-auto">최근 청산 거래</h2>
-    <div><a class="btn btn-success btn-xm" href="{% url 'users:trades_closed' %}" role="button">더보기</a></div>
+  <div class="box-pad d-flex justify-content-between align-items-center">
+    <h2 class="my-1 text-darkgray">최근 청산 거래</h2>
+    <div class="mb-0 h4">
+      <a class="green" href="{% url 'users:trades_closed' %}"><i class="fas fa-chevron-right"></i></a>
+    </div>
   </div>
   <!-- Section Body -->
   {% if closed_trade_list %}
@@ -93,16 +95,18 @@
   </div>
   {% else %}
   <div class="box-pad">
-    <p>거래 기록이 없습니다.</p>
+    <span>거래 기록이 없습니다.</span>
   </div>
   {% endif %}
 </section>
 
 <!-- Section -->
 <section class="box text-kr">
-  <div class="box-pad d-flex align-items-center">
-    <h2 class="my-1 text-darkgray mr-auto">최근 진입 거래</h2>
-    <div><a class="btn btn-success btn-xm" href="{% url 'users:trades_opened' %}" role="button">더보기</a></div>
+  <div class="box-pad d-flex justify-content-between align-items-center">
+    <h2 class="my-1 text-darkgray">최근 진입 거래</h2>
+    <div class="mb-0 h4">
+      <a class="green" href="{% url 'users:trades_opened' %}"><i class="fas fa-chevron-right"></i></a>
+    </div>
   </div>
   <!-- Section Body -->
   {% if opened_trade_list %}
@@ -136,7 +140,7 @@
   </div>
   {% else %}
   <div class="box-pad">
-    <p>거래 기록이 없습니다.</p>
+    <span>거래 기록이 없습니다.</span>
   </div>
   {% endif %}
 </section>

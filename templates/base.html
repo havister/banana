@@ -15,16 +15,16 @@
 
 <!-- Navigation -->
 <nav class="box-pad">
-  <div class="d-flex align-items-center">
-    <div class="mb-0 h4 mr-auto">
+  <div class="d-flex justify-content-between align-items-center">
+    <div class="mb-0 h4">
     {% block nav-title %}{% endblock %}
     </div>
     <div class="mb-0 h6">
     {% block nav-link %}
       {% if user.is_active %}
-      <a class="btn btn-success btn-xm" href="{% url 'users:index' %}" role="button">{{ user.username|upper }}</a>
+      <a class="btn btn-outline-success btn-sm" href="{% url 'users:index' %}" role="button">{{ user.username|upper }}</a>
       {% else %}
-      <a class="btn btn-success btn-xm" href="{% url 'login' %}" role="button">Login</a>
+      <a class="btn btn-outline-success btn-sm" href="{% url 'login' %}" role="button">Login</a>
       {% endif %}
     {% endblock %}
     </div>

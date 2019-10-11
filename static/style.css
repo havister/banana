@@ -24,13 +24,65 @@ nav, header, section {
 footer {
   background-color: white;
 }
+textarea.havister {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+  background-color: #343a40;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: .25rem;
+  resize: none;
+}
+
+/* A */
 a {
   text-decoration: none !important;
+}
+a.blue {
+  color: #007bff;
+}
+a.blue:hover {
+  filter: brightness(80%);
+}
+a.red {
+  color: #dc3545;
+}
+a.red:hover {
+  filter: brightness(80%);
+}
+a.orange {
+  color: #fd7e14;
+}
+a.orange:hover {
+  filter: brightness(80%);
 }
 a.green {
   color: #28a745;
 }
 a.green:hover {
+  filter: brightness(80%);
+}
+a.cyan {
+  color: #17a2b8;
+}
+a.cyan:hover {
+  filter: brightness(80%);
+}
+a.light {
+  color: #ddd;
+}
+a.light:hover {
+  color: #fff;
+}
+a.dark {
+  color: #343a40;
+}
+a.dark:hover {
   filter: brightness(80%);
 }
 
@@ -39,7 +91,7 @@ a.green:hover {
   font-family: 'Malgun Gothic', Dotum, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
-/* Bootstrap Class */
+/* Jumbotron */
 .jumbotron {
   background-color: white;
   border-radius: 0 !important;
@@ -88,6 +140,40 @@ a.green:hover {
   color: #fff;
   text-decoration: none;
   background-color: #28a745;
+}
+
+/* Item Color */
+.item-blue {
+  color: #004085;
+  background-color: #cce5ff;
+}
+.item-red {
+  color: #721c24;
+  background-color: #f8d7da;
+}
+.item-yellow {
+  color: #856404;
+  background-color: #fff3cd;
+}
+.item-green {
+  color: #155724;
+  background-color: #d4edda;
+}
+.item-cyan {
+  color: #0c5460;
+  background-color: #d1ecf1;
+}
+.item-light {
+  color: #818182;
+  background-color: #fdfdfe;
+}
+.item-gray {
+  color: #383d41;
+  background-color: #e2e3e5;
+}
+.item-dark {
+  color: #1b1e21;
+  background-color: #d6d8d9;
 }
 
 /* Badge Color */

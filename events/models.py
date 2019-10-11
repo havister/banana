@@ -3,6 +3,7 @@ from django.utils import timezone
 
 
 class Launch(models.Model):
+    # Gender choices
     MALE = 'M'
     FEMALE = 'F'
     GENDER_CHOICES = [
@@ -24,9 +25,8 @@ class Launch(models.Model):
     date_been_tester = models.DateField(null=True, blank=True)
     date_been_observer = models.DateField(null=True, blank=True)
 
-    def __str__(self):
-        return self.name
-
     class Meta:
         verbose_name_plural = "launches"
 
+    def __str__(self):
+        return self.name

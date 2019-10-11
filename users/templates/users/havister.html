@@ -1,0 +1,70 @@
+{% extends "user_base.html" %}
+{% load humanize %}
+{% load extras %}
+
+{% block title %}
+<title>{{ user.username|upper }} - Havister | Pointnut</title>
+{% endblock %}
+
+{% block nav-title %}
+<a class="mr-2 green" href="{% url 'users:index' %}"><i class="fas fa-chevron-left"></i></a>
+<span>Havister</span>
+{% endblock %}
+
+{% block header %}
+<!-- Header -->
+<header class="box text-kr">
+  <div class="box-pad d-flex justify-content-between align-items-center">
+    <h1 class="my-1"><i class="fas fa-desktop text-gray"></i> 하비스터</h1>
+    <p class="mb-0 h5">{% now "Y년 m월 d일" %}</p>
+  </div>
+  <div class="box-pad-x">
+    <form class="pb-3">
+      <div class="form-group mb-0 p-2 border">
+        {% if user.account.has_havister %}
+        <textarea class="havister" id="havister-status" rows="10" disabled>>>> 오늘은 휴장일 입니다.</textarea>
+        {% else %}
+        <textarea class="havister" rows="10" disabled>>>> 하비스터 사용권 등록이 필요합니다.</textarea>
+        {% endif %}
+      </div>
+    </form>
+  </div>
+</header>
+{% endblock %}
+
+{% block main %}
+<!-- Section -->
+<section class="box text-kr">
+  <div class="box-pad d-flex align-items-center">
+    <h2 class="my-1 text-darkgray mr-auto">오늘 청산 거래</h2>
+    <div></div>
+  </div>
+  <!-- Section Body -->
+  {% if closed_trade_list %}
+  <div class="box">
+  </div>
+  {% else %}
+  <div class="box-pad">
+    <span class="text-muted">거래 기록이 없습니다.</span>
+  </div>
+  {% endif %}
+</section>
+
+<!-- Section -->
+<section class="box text-kr">
+  <div class="box-pad d-flex align-items-center">
+    <h2 class="my-1 text-darkgray mr-auto">오늘 진입 거래</h2>
+    <div></div>
+  </div>
+  <!-- Section Body -->
+  {% if opened_trade_list %}
+  <div class="box">
+  </div>
+  {% else %}
+  <div class="box-pad">
+    <span class="text-muted">거래 기록이 없습니다.</span>
+  </div>
+  {% endif %}
+</section>
+
+{% endblock %}
