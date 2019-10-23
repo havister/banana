@@ -1,17 +1,11 @@
 from django.db import models
 from django.utils import timezone
+from pointnut.commons import ChoiceInfo
 
 
 class Launch(models.Model):
-    # Gender choices
-    MALE = 'M'
-    FEMALE = 'F'
-    GENDER_CHOICES = [
-        (MALE, 'Male'),
-        (FEMALE, 'Female')
-    ]
     name = models.CharField(max_length=30)
-    gender = models.CharField(max_length=1, choices=GENDER_CHOICES)    
+    gender_choice = models.CharField(max_length=1, choices=ChoiceInfo.GENDER_CHOICES)    
     age = models.PositiveSmallIntegerField()
     phone = models.CharField(max_length=11)
     is_married = models.BooleanField(default=False)
@@ -30,3 +24,7 @@ class Launch(models.Model):
 
     def __str__(self):
         return self.name
+
+    @property
+    def gender(self):
+        return ChoiceInfo.GENDERS[self.gender_choice]

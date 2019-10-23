@@ -10,17 +10,18 @@ class Expiration(models.Model):
         return self.code
 
 
-class Asset(models.Model):
-    # Market choices
-    INDEX = 'I'
-    STOCK = 'S'
-    MARKET_CHOICES = [
-        (INDEX, 'Index'),
-        (STOCK, 'Stock'),
-    ]
-    market = models.CharField(max_length=2, choices=MARKET_CHOICES)
-    code = models.CharField(max_length=20, unique=True)
+class Index(models.Model):
     name = models.CharField(max_length=20)
+    code = models.CharField(max_length=20, unique=True)
+    is_active = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.name
+
+
+class Stock(models.Model):
+    name = models.CharField(max_length=20)
+    code = models.CharField(max_length=20, unique=True)
     has_future = models.BooleanField(default=False)
     has_option = models.BooleanField(default=False)
     is_kospi = models.BooleanField(default=False)
@@ -37,17 +38,10 @@ class Asset(models.Model):
 
 
 class Etf(models.Model):
-    # Direction choices
-    UP = 'U'
-    DOWN = 'D'
-    DIRECTION_CHOICES = [
-        (UP, 'Up'),
-        (DOWN, 'Down'),
-    ]
-    asset = models.ForeignKey(Asset, on_delete=models.CASCADE, related_name='etfs')
-    code = models.CharField(max_length=20, unique=True)
+    index = models.ForeignKey(Index, on_delete=models.CASCADE, related_name='etfs')
     name = models.CharField(max_length=20)
-    direction = models.CharField(max_length=1, choices=DIRECTION_CHOICES)
+    code = models.CharField(max_length=20, unique=True)
+    is_inverse = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
 
     def __str__(self):
@@ -55,11 +49,12 @@ class Etf(models.Model):
 
 
 class Future(models.Model):
-    asset = models.ForeignKey(Asset, on_delete=models.CASCADE, related_name='futures')
+    index_asset = models.ForeignKey(Index, on_delete=models.CASCADE, null=True, blank=True, related_name='futures')
+    stock_asset = models.ForeignKey(Stock, on_delete=models.CASCADE, null=True, blank=True, related_name='futures')
     code = models.CharField(max_length=20, unique=True)
     expiration = models.ForeignKey(Expiration, on_delete=models.CASCADE)
     is_active = models.BooleanField(default=True)
 
     def __str__(self):
-        name = f'{self.asset} F {self.expiration}'
-        return name
+        asset = self.index_asset if self.index_asset else self.stock_asset
+        return f'{asset.name} F {self.expiration.code}'
