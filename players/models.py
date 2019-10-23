@@ -44,11 +44,8 @@ class Play(models.Model):
 class Trade(models.Model):
     player = models.ForeignKey(User, on_delete=models.CASCADE, related_name='trades')
     signal = models.ForeignKey(Signal, on_delete=models.CASCADE, related_name='trades')
-    level = models.PositiveSmallIntegerField()
-    position_choice = models.CharField(max_length=1, choices=ChoiceInfo.POSITION_CHOICES)
-    piece = models.PositiveSmallIntegerField()
-    order_opened = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='trades_opened')
-    order_closed = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='trades_closed')
+    order_opened = models.ForeignKey(Order, on_delete=models.CASCADE, null=True, blank=True, related_name='trades_opened')
+    order_closed = models.ForeignKey(Order, on_delete=models.CASCADE, null=True, blank=True, related_name='trades_closed')
     quantity = models.PositiveIntegerField()
     price_opened = models.DecimalField(max_digits=9, decimal_places=2)
     price_closed = models.DecimalField(max_digits=9, decimal_places=2, null=True, blank=True)

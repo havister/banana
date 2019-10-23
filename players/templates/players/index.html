@@ -50,8 +50,8 @@
             <span class="text-muted">{{ trade.date_closed|date:'Y.m.d' }}</span>
           </p>
           <p class="mb-0 small text-muted">
-            <span>{{ trade.signal }}</span> /
-            <span>{{ trade.position|position_word }}</span>
+            <span>{{ trade.signal.strategy }}</span> /
+            <span>{{ trade.position }}</span>
           </p>
         </div>
       </div>

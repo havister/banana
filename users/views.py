@@ -11,10 +11,10 @@ class IndexView(LoginRequiredMixin, TemplateView):
         user = self.request.user
         # Closed trade list
         context['closed_trade_list'] = user.trades.filter(
-            date_closed__isnull=False).order_by('-date_closed')[:5]
+            date_closed__isnull=False).order_by('-date_closed')[:3]
         # Opened trade list
         context['opened_trade_list'] = user.trades.filter(
-            date_closed__isnull=True).order_by('-date_opened')[:5]
+            date_closed__isnull=True).order_by('-date_opened')[:3]
         return context
 
 
@@ -31,7 +31,7 @@ class HavisterView(LoginRequiredMixin, TemplateView):
 
 
 class ClosedView(LoginRequiredMixin, TemplateView):
-    template_name = 'users/closed.html'
+    template_name = 'users/closed_trade_list.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -43,7 +43,7 @@ class ClosedView(LoginRequiredMixin, TemplateView):
 
 
 class OpenedView(LoginRequiredMixin, TemplateView):
-    template_name = 'users/opened.html'
+    template_name = 'users/opened_trade_list.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
