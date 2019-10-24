@@ -7,7 +7,7 @@
 
 {% block nav-title %}
 <a class="mr-2 green" href="{% url 'events:index' %}"><i class="fas fa-chevron-left"></i></a>
-<span>Launching Event</span>
+<span>Events</span>
 {% endblock %}
 
 {% block nav-link %}
@@ -17,7 +17,7 @@
 <!-- Header -->
 <header class="box">
   <div class="box-pad">
-    <h1 class="mb-0">Thank You!</h1>
+    <h1 class="mb-0">런칭 이벤트</h1>
   </div>
 </header>
 {% endblock %}
@@ -26,6 +26,7 @@
 <!-- Section -->
 <section class="box-pad">
   <div class="my-2">
+    <h2>Thanks!</h2>
     <p>이벤트 신청이 완료되었습니다.</p>
     <a class="btn btn-success px-4" href="{% url 'events:index' %}" role="button">확인</a>
   </div>

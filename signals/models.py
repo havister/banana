@@ -37,7 +37,7 @@ class Signal(models.Model):
 
     def __str__(self):
         asset = self.index_asset if self.index_asset else self.stock_asset
-        return f'{self.asset.name}'
+        return f'{asset.name}'
     
 
 class Watch(models.Model):

@@ -1,0 +1,178 @@
+[
+{
+  "model": "markets.future",
+  "pk": 1,
+  "fields": {
+    "index_asset": 1,
+    "stock_asset": 3,
+    "code": "132P7",
+    "expiration": "1907",
+    "is_active": true
+  }
+},
+{
+  "model": "markets.future",
+  "pk": 2,
+  "fields": {
+    "index_asset": 1,
+    "stock_asset": 3,
+    "code": "132P8",
+    "expiration": "1908",
+    "is_active": true
+  }
+},
+{
+  "model": "markets.future",
+  "pk": 3,
+  "fields": {
+    "index_asset": 1,
+    "stock_asset": 31,
+    "code": "146P7",
+    "expiration": "1907",
+    "is_active": true
+  }
+},
+{
+  "model": "markets.future",
+  "pk": 4,
+  "fields": {
+    "index_asset": 1,
+    "stock_asset": 31,
+    "code": "146P8",
+    "expiration": "1908",
+    "is_active": true
+  }
+},
+{
+  "model": "markets.future",
+  "pk": 5,
+  "fields": {
+    "index_asset": 1,
+    "stock_asset": 18,
+    "code": "1B0P8",
+    "expiration": "1908",
+    "is_active": true
+  }
+},
+{
+  "model": "markets.future",
+  "pk": 6,
+  "fields": {
+    "index_asset": 1,
+    "stock_asset": 7,
+    "code": "148P7",
+    "expiration": "1907",
+    "is_active": true
+  }
+},
+{
+  "model": "markets.future",
+  "pk": 7,
+  "fields": {
+    "index_asset": 1,
+    "stock_asset": 7,
+    "code": "148P8",
+    "expiration": "1908",
+    "is_active": true
+  }
+},
+{
+  "model": "markets.future",
+  "pk": 8,
+  "fields": {
+    "index_asset": 1,
+    "stock_asset": 24,
+    "code": "118P8",
+    "expiration": "1908",
+    "is_active": true
+  }
+},
+{
+  "model": "markets.future",
+  "pk": 9,
+  "fields": {
+    "index_asset": 1,
+    "stock_asset": 24,
+    "code": "118P9",
+    "expiration": "1909",
+    "is_active": true
+  }
+},
+{
+  "model": "markets.future",
+  "pk": 10,
+  "fields": {
+    "index_asset": 2,
+    "stock_asset": 27,
+    "code": "1CKP8",
+    "expiration": "1908",
+    "is_active": true
+  }
+},
+{
+  "model": "markets.future",
+  "pk": 11,
+  "fields": {
+    "index_asset": 1,
+    "stock_asset": 13,
+    "code": "115P7",
+    "expiration": "1907",
+    "is_active": true
+  }
+},
+{
+  "model": "markets.future",
+  "pk": 12,
+  "fields": {
+    "index_asset": 1,
+    "stock_asset": 13,
+    "code": "115P8",
+    "expiration": "1908",
+    "is_active": true
+  }
+},
+{
+  "model": "markets.future",
+  "pk": 13,
+  "fields": {
+    "index_asset": 1,
+    "stock_asset": 13,
+    "code": "115P9",
+    "expiration": "1909",
+    "is_active": true
+  }
+},
+{
+  "model": "markets.future",
+  "pk": 14,
+  "fields": {
+    "index_asset": 1,
+    "stock_asset": 22,
+    "code": "1BMP8",
+    "expiration": "1908",
+    "is_active": true
+  }
+},
+{
+  "model": "markets.future",
+  "pk": 15,
+  "fields": {
+    "index_asset": 1,
+    "stock_asset": 38,
+    "code": "1CBP7",
+    "expiration": "1907",
+    "is_active": true
+  }
+},
+{
+  "model": "markets.future",
+  "pk": 16,
+  "fields": {
+    "index_asset": 1,
+    "stock_asset": 38,
+    "code": "1CBP8",
+    "expiration": "1908",
+    "is_active": true
+  }
+}
+]

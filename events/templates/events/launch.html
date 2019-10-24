@@ -18,7 +18,7 @@
 <!-- Header -->
 <header class="box">
   <div class="box-pad">
-    <h1>이벤트 신청하기</h1>
+    <h1>런칭 이벤트</h1>
     <p class="mb-0">아래 양식을 올바르게 입력한 다음 신청하기 버튼을 눌러주십시오.</p>
   </div>
 </header>
@@ -41,7 +41,7 @@
         <div class="form-group row">
           <legend class="col-sm-4 col-form-label"><strong>성별</strong></legend>
           <div class="col-sm-8 d-flex align-items-center">
-            {% for radio in form.gender %} 
+            {% for radio in form.gender_choice %} 
             <div class="form-check form-check-inline">
               {{ radio.tag }}
               <label class="form-check-label" for="{{ radio.id_for_label }}">{{ radio.choice_label }}</label>

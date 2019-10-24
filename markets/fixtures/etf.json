@@ -1,0 +1,90 @@
+[
+{
+  "model": "markets.etf",
+  "pk": 1,
+  "fields": {
+    "index": 1,
+    "name": "KODEX 200 ",
+    "code": "69500",
+    "is_inverse": false,
+    "is_active": true
+  }
+},
+{
+  "model": "markets.etf",
+  "pk": 2,
+  "fields": {
+    "index": 1,
+    "name": "KODEX 200TR",
+    "code": "278530",
+    "is_inverse": false,
+    "is_active": true
+  }
+},
+{
+  "model": "markets.etf",
+  "pk": 3,
+  "fields": {
+    "index": 1,
+    "name": "KODEX \ub808\ubc84\ub9ac\uc9c0",
+    "code": "122630",
+    "is_inverse": false,
+    "is_active": true
+  }
+},
+{
+  "model": "markets.etf",
+  "pk": 4,
+  "fields": {
+    "index": 1,
+    "name": "KODEX \uc778\ubc84\uc2a4",
+    "code": "114800",
+    "is_inverse": true,
+    "is_active": true
+  }
+},
+{
+  "model": "markets.etf",
+  "pk": 5,
+  "fields": {
+    "index": 1,
+    "name": "KODEX 200\uc120\ubb3c\uc778\ubc84\uc2a42X",
+    "code": "252670",
+    "is_inverse": true,
+    "is_active": true
+  }
+},
+{
+  "model": "markets.etf",
+  "pk": 6,
+  "fields": {
+    "index": 2,
+    "name": "KODEX \ucf54\uc2a4\ub2e5 150",
+    "code": "229200",
+    "is_inverse": false,
+    "is_active": true
+  }
+},
+{
+  "model": "markets.etf",
+  "pk": 7,
+  "fields": {
+    "index": 2,
+    "name": "KODEX \ucf54\uc2a4\ub2e5150 \ub808\ubc84\ub9ac\uc9c0",
+    "code": "233740",
+    "is_inverse": false,
+    "is_active": true
+  }
+},
+{
+  "model": "markets.etf",
+  "pk": 8,
+  "fields": {
+    "index": 2,
+    "name": "KODEX \ucf54\uc2a4\ub2e5150\uc120\ubb3c\uc778\ubc84\uc2a4",
+    "code": "251340",
+    "is_inverse": true,
+    "is_active": true
+  }
+}
+]

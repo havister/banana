@@ -1,0 +1,20 @@
+[
+{
+  "model": "markets.index",
+  "pk": 1,
+  "fields": {
+    "name": "KOSPI 200",
+    "code": "2001",
+    "is_active": true
+  }
+},
+{
+  "model": "markets.index",
+  "pk": 2,
+  "fields": {
+    "name": "KOSDAQ 150",
+    "code": "3003",
+    "is_active": true
+  }
+}
+]

@@ -166,5 +166,89 @@
   "fields": {
     "date_expired": "2019-12-12"
   }
+},
+{
+  "model": "markets.expiration",
+  "pk": "2001",
+  "fields": {
+    "date_expired": "2020-01-09"
+  }
+},
+{
+  "model": "markets.expiration",
+  "pk": "2002",
+  "fields": {
+    "date_expired": "2020-02-13"
+  }
+},
+{
+  "model": "markets.expiration",
+  "pk": "2003",
+  "fields": {
+    "date_expired": "2020-03-12"
+  }
+},
+{
+  "model": "markets.expiration",
+  "pk": "2004",
+  "fields": {
+    "date_expired": "2020-04-09"
+  }
+},
+{
+  "model": "markets.expiration",
+  "pk": "2005",
+  "fields": {
+    "date_expired": "2020-05-14"
+  }
+},
+{
+  "model": "markets.expiration",
+  "pk": "2006",
+  "fields": {
+    "date_expired": "2020-06-11"
+  }
+},
+{
+  "model": "markets.expiration",
+  "pk": "2007",
+  "fields": {
+    "date_expired": "2020-07-09"
+  }
+},
+{
+  "model": "markets.expiration",
+  "pk": "2008",
+  "fields": {
+    "date_expired": "2020-08-13"
+  }
+},
+{
+  "model": "markets.expiration",
+  "pk": "2009",
+  "fields": {
+    "date_expired": "2020-09-10"
+  }
+},
+{
+  "model": "markets.expiration",
+  "pk": "2010",
+  "fields": {
+    "date_expired": "2020-10-08"
+  }
+},
+{
+  "model": "markets.expiration",
+  "pk": "2011",
+  "fields": {
+    "date_expired": "2020-11-12"
+  }
+},
+{
+  "model": "markets.expiration",
+  "pk": "2012",
+  "fields": {
+    "date_expired": "2020-12-10"
+  }
 }
 ]

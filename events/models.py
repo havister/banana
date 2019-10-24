@@ -25,6 +25,15 @@ class Launch(models.Model):
     def __str__(self):
         return self.name
 
+    def masked_name(self):
+        return f'{self.name[:2]}*'
+
     @property
     def gender(self):
         return ChoiceInfo.GENDERS[self.gender_choice]
+
+    @property
+    def masked_phone(self):
+        part_one = self.phone[:3]
+        part_three = self.phone[-4:]
+        return f'{part_one}-****-{part_three}'
