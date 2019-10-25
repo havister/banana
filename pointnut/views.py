@@ -13,4 +13,9 @@ def login_redirect(request):
 
 class IndexView(TemplateView):
     template_name = 'index.html'
+
+
+class RobotsView(TemplateView):
+    template_name = 'robots.txt'
+    content_type = 'text/plain'
   

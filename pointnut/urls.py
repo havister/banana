@@ -20,6 +20,8 @@ from pointnut import views
 urlpatterns = [
     # www.pointnut.com/
     path('', views.IndexView.as_view(), name='index'),
+    # /robots.txt/
+    path('robots.txt/', views.RobotsView.as_view(), name="robots"),
     # /admin/
     path('admin/', admin.site.urls),
 
@@ -43,5 +45,5 @@ urlpatterns = [
     # /signals/
     path('signals/', include('signals.urls')),
     # /users/
-    path('users/', include('users.urls')),
+    path('users/', include('users.urls')), 
 ]
