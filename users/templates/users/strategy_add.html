@@ -1,0 +1,63 @@
+{% extends "user_base.html" %}
+{% load humanize %}
+
+{% block title %}
+<title>{{ user.username|upper }} - Strategy - Pointnut</title>
+{% endblock %}
+
+{% block nav-title %}
+<a class="mr-2 green" href="{% url 'users:strategy' %}"><i class="fas fa-chevron-left"></i></a>
+<span>Strategy</span>
+{% endblock %}
+
+{% block header %}
+<!-- Header -->
+<header class="box text-kr">
+  <div class="box-pad">
+    <h1>전략 추가</h1>
+    <p class="mb-0">포트폴리오에 맞는 전략을 선택하십시오. 유료 전략의 경우 포인트넛의 승인이 필요합니다.</p>
+  </div>
+</header>
+{% endblock %}
+
+{% block main %}
+<section class="box text-kr">
+  <!-- Section Body -->
+  {% if strategy_list %}
+  <div class="box-pad">
+    {% for strategy in strategy_list %}
+    <!-- Card -->
+    <div class="card mb-3">
+      <div class="card-header d-flex align-items-center">
+        <h4 class="mb-0 mr-3">{{ strategy }}</h4>
+        <span class="mr-auto text-dark">{{ strategy.price|intcomma }}원 </span>
+        <a class="btn btn-success btn-xm" href="#" role="button">추가</a>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          <small class="text-muted">{{ strategy.summary|linebreaksbr }}</small>
+        </p>
+        <hr>
+        <p class="card-text d-flex justify-content-between">
+          <span>Long Positions</span>
+          <span>최대 {{ strategy.long_positions }}</span>
+        </p>
+        <p class="card-text d-flex justify-content-between">
+          <span>Short Positions</span>
+          <span>최대 {{ strategy.short_positions }}</span>
+        </p>
+        <hr>
+        <p class="card-text">
+          <small class="text-muted">{{ strategy.date_created|date:'Y-m-d' }} 등록</small>
+        </p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="box-pad">
+    <span>구매한 전략이 없습니다.</span>
+  </div>
+  {% endif %}
+</section>
+{% endblock %}

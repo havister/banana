@@ -1,0 +1,22 @@
+[
+{
+  "model": "players.play",
+  "pk": 1,
+  "fields": {
+    "player": 2,
+    "signal": 1,
+    "date_bound": "2019-10-26T11:04:25",
+    "is_active": true
+  }
+},
+{
+  "model": "players.play",
+  "pk": 2,
+  "fields": {
+    "player": 2,
+    "signal": 3,
+    "date_bound": "2019-10-26T11:05:15",
+    "is_active": true
+  }
+}
+]

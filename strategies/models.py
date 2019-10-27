@@ -6,11 +6,13 @@ from markets.models import Index, Stock, Etf, Future
 
 
 class Strategy(models.Model):
-    name = models.CharField(max_length=20)
+    name = models.CharField(max_length=50)
+    slug = models.SlugField(max_length=50, unique=True)
+    summary = models.TextField()
     creator = models.ForeignKey(User, on_delete=models.CASCADE, related_name='strategies')
-    price = models.PositiveIntegerField(default=0)
-    long_positions = models.DecimalField(max_digits=10, decimal_places=0)
-    short_positions = models.DecimalField(max_digits=10, decimal_places=0)
+    price = models.DecimalField(max_digits=8, decimal_places=0)
+    long_positions = models.PositiveSmallIntegerField()
+    short_positions = models.PositiveSmallIntegerField(default=0)
     date_created = models.DateField(default=timezone.now)
     is_active = models.BooleanField(default=True)
 
@@ -31,6 +33,7 @@ class Signal(models.Model):
     short_future = models.ForeignKey(Future, on_delete=models.CASCADE, null=True, blank=True, related_name='signals_short')
     long_fund = models.DecimalField(max_digits=10, decimal_places=0)
     short_fund = models.DecimalField(max_digits=10, decimal_places=0)
+    #unit_amount = models.DecimalField(max_digits=8, decimal_places=0)
     date_created = models.DateField(default=timezone.now)
     date_updated = models.DateField(default=timezone.now)
     is_active = models.BooleanField(default=True)
@@ -38,7 +41,21 @@ class Signal(models.Model):
     def __str__(self):
         asset = self.index_asset if self.index_asset else self.stock_asset
         return f'{asset.name}'
-    
+
+    @property
+    def long_item(self):
+        long_item = self.long_etf if self.long_etf else self.long_stock
+        return f'{long_item}'
+
+    @property
+    def short_item(self):
+        short_item = None
+        if self.short_etf:
+            short_item = self.short_etf
+        elif self.short_future:
+            short_item = self.short_future
+        return f'{short_item}'
+
 
 class Watch(models.Model):
     signal = models.ForeignKey(Signal, on_delete=models.CASCADE, related_name='watches')

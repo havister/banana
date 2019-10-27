@@ -1,22 +1,20 @@
 {% extends "user_base.html" %}
-{% load humanize %}
-{% load extras %}
 
 {% block title %}
-<title>{{ user.username|upper }} - Signal - Pointnut</title>
+<title>{{ user.username|upper }} - Strategy - Pointnut</title>
 {% endblock %}
 
 {% block nav-title %}
 <a class="mr-2 green" href="{% url 'users:index' %}"><i class="fas fa-chevron-left"></i></a>
-<span>Signal</span>
+<span>Strategy</span>
 {% endblock %}
 
 {% block header %}
 <!-- Header -->
 <header class="box text-kr">
   <div class="box-pad d-flex justify-content-between align-items-center">
-    <h1 class="my-1">보유 시그널</h1>
-    <a class="btn btn-success" href="{% url 'users:signal_add' %}" role="button">시그널 추가</a>
+    <h1 class="my-1">보유 전략</h1>
+    <a class="btn btn-success" href="{% url 'users:strategy_add' %}" role="button">전략 추가</a>
   </div>
 </header>
 {% endblock %}
@@ -25,33 +23,30 @@
 <!-- Section -->
 {% if user.account.has_havister %}
 <section class="box text-kr">
-  {% if play_list %}
+  {% if basket_list %}
   <div class="box-pad">
-    {% for play in play_list %}
+    {% for basket in basket_list %}
     <!-- Card -->
     <div class="card mb-3">
-      <h5 class="card-header d-flex justify-content-between">
-        <span>{{ play.signal.strategy }}</span>
-        <a class="card-link green" href="#"><i class="fas fa-chevron-right"></i></a>
-      </h5>
+      <h4 class="card-header d-flex justify-content-between">
+        <span>{{ basket.strategy }}</span>
+      </h4>
       <div class="card-body">
-        <h4 class="card-title font-weight-bold">{{ play.signal }}</h4>
+        <p class="card-text">
+          <small class="text-muted">{{ basket.strategy.summary|linebreaksbr }}</small>
+        </p>
         <hr>
         <p class="card-text d-flex justify-content-between">
-          <span>Long</span>
-          <strong>{{ play.signal.long_item }}</strong>
+          <span>Long Positions</span>
+          <span>최대 {{ basket.strategy.long_positions }}</span>
         </p>
         <p class="card-text d-flex justify-content-between">
-          <span>Short</span>
-          {% if play.signal.short_item %}
-          <strong>{{ play.signal.short_item }}</strong>
-          {% else %}
-          <span>없음</span>
-          {% endif %}
+          <span>Short Positions</span>
+          <span>최대 {{ basket.strategy.short_positions }}</span>
         </p>
         <hr>
         <p class="card-text">
-          <small class="text-muted">{{ play.date_bound|date:'Y-m-d' }} 추가</small>
+          <small class="text-muted">{{ basket.date_bound|date:'Y-m-d' }} 추가</small>
         </p>
       </div>
     </div>
@@ -59,7 +54,7 @@
   </div>
   {% else %}
   <div class="box-pad">
-    <span>보유 시그널이 없습니다.</span>
+    <span>보유 전략이 없습니다.</span>
   </div>
   {% endif %}
 </section>

@@ -1,9 +1,9 @@
 from django.urls import path
-from signals.views import IndexView
+from strategies.views import IndexView
 
-app_name = 'signals'
+app_name = 'strategies'
 
 urlpatterns = [
-    # /signals/
+    # /strategies/
     path('', IndexView.as_view(), name='index'),
 ]

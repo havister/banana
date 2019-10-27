@@ -42,8 +42,8 @@ urlpatterns = [
     path('havister/', include('havister.urls')),
     # /players/
     path('players/', include('players.urls')),
-    # /signals/
-    path('signals/', include('signals.urls')),
+    # /strategies/
+    path('strategies/', include('strategies.urls')),
     # /users/
     path('users/', include('users.urls')), 
 ]

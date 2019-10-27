@@ -1,5 +1,5 @@
 from django.contrib import admin
-from signals import models
+from strategies import models
 
 admin.site.register(models.Strategy)
 admin.site.register(models.Signal)

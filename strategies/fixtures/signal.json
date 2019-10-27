@@ -1,6 +1,6 @@
 [
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 1,
   "fields": {
     "strategy": 1,
@@ -18,7 +18,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 2,
   "fields": {
     "strategy": 1,
@@ -36,7 +36,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 3,
   "fields": {
     "strategy": 1,
@@ -54,7 +54,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 4,
   "fields": {
     "strategy": 6,
@@ -72,7 +72,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 5,
   "fields": {
     "strategy": 6,
@@ -90,7 +90,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 6,
   "fields": {
     "strategy": 6,
@@ -108,7 +108,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 7,
   "fields": {
     "strategy": 6,
@@ -126,7 +126,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 8,
   "fields": {
     "strategy": 6,
@@ -144,7 +144,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 9,
   "fields": {
     "strategy": 6,
@@ -162,7 +162,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 10,
   "fields": {
     "strategy": 6,
@@ -180,7 +180,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 11,
   "fields": {
     "strategy": 6,
@@ -198,7 +198,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 12,
   "fields": {
     "strategy": 6,
@@ -216,7 +216,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 13,
   "fields": {
     "strategy": 6,
@@ -234,7 +234,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 14,
   "fields": {
     "strategy": 6,
@@ -252,7 +252,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 15,
   "fields": {
     "strategy": 6,
@@ -270,7 +270,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 16,
   "fields": {
     "strategy": 6,
@@ -288,7 +288,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 17,
   "fields": {
     "strategy": 6,
@@ -306,7 +306,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 18,
   "fields": {
     "strategy": 6,
@@ -324,7 +324,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 19,
   "fields": {
     "strategy": 6,
@@ -342,7 +342,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 20,
   "fields": {
     "strategy": 6,
@@ -360,7 +360,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 21,
   "fields": {
     "strategy": 6,
@@ -378,7 +378,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 22,
   "fields": {
     "strategy": 6,
@@ -396,7 +396,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 23,
   "fields": {
     "strategy": 6,
@@ -414,7 +414,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 24,
   "fields": {
     "strategy": 6,
@@ -432,7 +432,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 25,
   "fields": {
     "strategy": 6,
@@ -450,7 +450,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 26,
   "fields": {
     "strategy": 6,
@@ -468,7 +468,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 27,
   "fields": {
     "strategy": 6,
@@ -486,7 +486,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 28,
   "fields": {
     "strategy": 6,
@@ -504,7 +504,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 29,
   "fields": {
     "strategy": 6,
@@ -522,7 +522,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 30,
   "fields": {
     "strategy": 6,
@@ -540,7 +540,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 31,
   "fields": {
     "strategy": 6,
@@ -558,7 +558,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 32,
   "fields": {
     "strategy": 6,
@@ -576,7 +576,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 33,
   "fields": {
     "strategy": 6,
@@ -594,7 +594,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 34,
   "fields": {
     "strategy": 6,
@@ -612,7 +612,7 @@
   }
 },
 {
-  "model": "signals.signal",
+  "model": "strategies.signal",
   "pk": 35,
   "fields": {
     "strategy": 6,

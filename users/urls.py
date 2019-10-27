@@ -6,6 +6,10 @@ app_name = 'users'
 urlpatterns = [
     # /users/
     path('', views.IndexView.as_view(), name='index'),
+    # /users/strategy/
+    path('strategy/', views.StrategyView.as_view(), name='strategy'),
+    # /users/strategy/add/
+    path('strategy/add/', views.StrategyAddView.as_view(), name='strategy_add'),
     # /users/signal/
     path('signal/', views.SignalView.as_view(), name='signal'),
     # /users/signal/add/

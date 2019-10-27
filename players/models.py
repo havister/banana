@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.utils import timezone
 from pointnut.commons import ChoiceInfo
 from markets.models import Index, Stock
-from signals.models import Strategy, Signal, Order
+from strategies.models import Strategy, Signal, Order
 
 
 class Account(models.Model):
@@ -22,7 +22,7 @@ class Account(models.Model):
 class Basket(models.Model):
     player = models.ForeignKey(User, on_delete=models.CASCADE, related_name='baskets')
     strategy = models.ForeignKey(Strategy, on_delete=models.CASCADE, related_name='baskets')
-    date_paid = models.DateField(default=timezone.now)
+    date_bound = models.DateField(default=timezone.now)
     is_active = models.BooleanField(default=True)
 
     def __str__(self):
@@ -32,9 +32,7 @@ class Basket(models.Model):
 class Play(models.Model):
     player = models.ForeignKey(User, on_delete=models.CASCADE, related_name='plays')
     signal = models.OneToOneField(Signal, on_delete=models.CASCADE, related_name='plays')
-    unit_amount = models.DecimalField(max_digits=8, decimal_places=0)
-    date_created = models.DateTimeField(default=timezone.now)
-    date_updated = models.DateTimeField(default=timezone.now)
+    date_bound = models.DateTimeField(default=timezone.now)
     is_active = models.BooleanField(default=True)
 
     def __str__(self):

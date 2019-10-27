@@ -1,0 +1,122 @@
+[
+{
+  "model": "strategies.strategy",
+  "pk": 1,
+  "fields": {
+    "name": "Balance 7",
+    "slug": "balance-7",
+    "summary": "Balance 7 \uc804\ub7b5\uc740 \ubb34\uc704\ud5d8\uc744 \uae30\ubc18\uc73c\ub85c \uc124\uacc4\ub418\uc5c8\uc2b5\ub2c8\ub2e4.\r\n\uc774 \uc804\ub7b5\uc740 \ubc29\ud5a5\uacfc \uac70\ub9ac \uadf8\ub9ac\uace0 \uc2dc\uac04\uc758 \uade0\ud615(Balance)\uc744 \ubc14\ud0d5\uc73c\ub85c \uc7a5\uae30 \uc218\uc775\uc744 \ubaa9\ud45c\ub85c \ud569\ub2c8\ub2e4.",
+    "creator": 16,
+    "price": "10000000",
+    "long_positions": 6,
+    "short_positions": 6,
+    "date_created": "2019-01-01",
+    "is_active": true
+  }
+},
+{
+  "model": "strategies.strategy",
+  "pk": 2,
+  "fields": {
+    "name": "Balance 5",
+    "slug": "balance-5",
+    "summary": "Balance 5",
+    "creator": 16,
+    "price": "10000000",
+    "long_positions": 6,
+    "short_positions": 6,
+    "date_created": "2019-01-01",
+    "is_active": true
+  }
+},
+{
+  "model": "strategies.strategy",
+  "pk": 3,
+  "fields": {
+    "name": "Balance 3",
+    "slug": "balance-3",
+    "summary": "Balance 3",
+    "creator": 16,
+    "price": "10000000",
+    "long_positions": 1,
+    "short_positions": 1,
+    "date_created": "2019-01-01",
+    "is_active": true
+  }
+},
+{
+  "model": "strategies.strategy",
+  "pk": 4,
+  "fields": {
+    "name": "Balance 1",
+    "slug": "balance-1",
+    "summary": "Balance 1",
+    "creator": 16,
+    "price": "10000000",
+    "long_positions": 1,
+    "short_positions": 1,
+    "date_created": "2019-01-01",
+    "is_active": true
+  }
+},
+{
+  "model": "strategies.strategy",
+  "pk": 5,
+  "fields": {
+    "name": "Cycle 7",
+    "slug": "cycle-7",
+    "summary": "Cycle 7",
+    "creator": 16,
+    "price": "0",
+    "long_positions": 6,
+    "short_positions": 0,
+    "date_created": "2019-01-01",
+    "is_active": true
+  }
+},
+{
+  "model": "strategies.strategy",
+  "pk": 6,
+  "fields": {
+    "name": "Cycle 5",
+    "slug": "cycle-5",
+    "summary": "Cycle 5",
+    "creator": 16,
+    "price": "0",
+    "long_positions": 12,
+    "short_positions": 1,
+    "date_created": "2019-01-01",
+    "is_active": true
+  }
+},
+{
+  "model": "strategies.strategy",
+  "pk": 7,
+  "fields": {
+    "name": "Dahee 3",
+    "slug": "dahee-3",
+    "summary": "Dahee 3",
+    "creator": 3,
+    "price": "10000000",
+    "long_positions": 5,
+    "short_positions": 5,
+    "date_created": "2019-09-01",
+    "is_active": true
+  }
+},
+{
+  "model": "strategies.strategy",
+  "pk": 8,
+  "fields": {
+    "name": "Line 3",
+    "slug": "line-3",
+    "summary": "Line 3",
+    "creator": 2,
+    "price": "10000000",
+    "long_positions": 8,
+    "short_positions": 8,
+    "date_created": "2019-09-01",
+    "is_active": true
+  }
+}
+]
