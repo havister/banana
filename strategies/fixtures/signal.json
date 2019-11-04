@@ -10,11 +10,11 @@
     "long_etf": 2,
     "short_etf": 4,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
@@ -28,11 +28,11 @@
     "long_etf": 3,
     "short_etf": 5,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
@@ -46,26 +46,26 @@
     "long_etf": 6,
     "short_etf": 8,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 4,
   "fields": {
-    "strategy": 6,
-    "index_asset": null,
-    "stock_asset": 19,
-    "long_stock": 19,
-    "long_etf": null,
+    "strategy": 2,
+    "index_asset": 1,
+    "stock_asset": null,
+    "long_stock": null,
+    "long_etf": 3,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
     "is_active": true
@@ -75,15 +75,15 @@
   "model": "strategies.signal",
   "pk": 5,
   "fields": {
-    "strategy": 6,
-    "index_asset": null,
-    "stock_asset": 11,
-    "long_stock": 11,
-    "long_etf": null,
+    "strategy": 2,
+    "index_asset": 2,
+    "stock_asset": null,
+    "long_stock": null,
+    "long_etf": 7,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
     "is_active": true
@@ -93,15 +93,15 @@
   "model": "strategies.signal",
   "pk": 6,
   "fields": {
-    "strategy": 6,
-    "index_asset": null,
-    "stock_asset": 13,
-    "long_stock": 13,
-    "long_etf": null,
-    "short_etf": null,
+    "strategy": 3,
+    "index_asset": 1,
+    "stock_asset": null,
+    "long_stock": null,
+    "long_etf": 3,
+    "short_etf": 5,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
     "is_active": true
@@ -111,15 +111,15 @@
   "model": "strategies.signal",
   "pk": 7,
   "fields": {
-    "strategy": 6,
-    "index_asset": null,
-    "stock_asset": 22,
-    "long_stock": 22,
-    "long_etf": null,
-    "short_etf": null,
+    "strategy": 3,
+    "index_asset": 2,
+    "stock_asset": null,
+    "long_stock": null,
+    "long_etf": 6,
+    "short_etf": 8,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
     "is_active": true
@@ -129,504 +129,594 @@
   "model": "strategies.signal",
   "pk": 8,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 7,
-    "long_stock": 7,
+    "stock_asset": 19,
+    "long_stock": 19,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 9,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 1,
-    "long_stock": 1,
+    "stock_asset": 11,
+    "long_stock": 11,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 10,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 59,
-    "long_stock": 59,
+    "stock_asset": 13,
+    "long_stock": 13,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 11,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 27,
-    "long_stock": 27,
+    "stock_asset": 22,
+    "long_stock": 22,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 12,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 18,
-    "long_stock": 18,
+    "stock_asset": 7,
+    "long_stock": 7,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 13,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 65,
-    "long_stock": 65,
+    "stock_asset": 1,
+    "long_stock": 1,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 14,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 38,
-    "long_stock": 38,
+    "stock_asset": 59,
+    "long_stock": 59,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 15,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 31,
-    "long_stock": 31,
+    "stock_asset": 27,
+    "long_stock": 27,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 16,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 99,
-    "long_stock": 99,
+    "stock_asset": 18,
+    "long_stock": 18,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 17,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 49,
-    "long_stock": 49,
+    "stock_asset": 65,
+    "long_stock": 65,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 18,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 28,
-    "long_stock": 28,
+    "stock_asset": 38,
+    "long_stock": 38,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 19,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 3,
-    "long_stock": 3,
+    "stock_asset": 31,
+    "long_stock": 31,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 20,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 21,
-    "long_stock": 21,
+    "stock_asset": 99,
+    "long_stock": 99,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 21,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 127,
-    "long_stock": 127,
+    "stock_asset": 49,
+    "long_stock": 49,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 22,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 97,
-    "long_stock": 97,
+    "stock_asset": 28,
+    "long_stock": 28,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 23,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 24,
-    "long_stock": 24,
+    "stock_asset": 3,
+    "long_stock": 3,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 24,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 17,
-    "long_stock": 17,
+    "stock_asset": 21,
+    "long_stock": 21,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 25,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 48,
-    "long_stock": 48,
+    "stock_asset": 127,
+    "long_stock": 127,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 26,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 20,
-    "long_stock": 20,
+    "stock_asset": 97,
+    "long_stock": 97,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 27,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 39,
-    "long_stock": 39,
+    "stock_asset": 24,
+    "long_stock": 24,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "13850000",
-    "short_fund": "1150000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 28,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 16,
-    "long_stock": 16,
+    "stock_asset": 17,
+    "long_stock": 17,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "13850000",
-    "short_fund": "1150000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 29,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 56,
-    "long_stock": 56,
+    "stock_asset": 48,
+    "long_stock": 48,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 30,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 90,
-    "long_stock": 90,
+    "stock_asset": 20,
+    "long_stock": 20,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 31,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 113,
-    "long_stock": 113,
+    "stock_asset": 39,
+    "long_stock": 39,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "15000000",
+    "unit_amount": "1250000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 32,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 122,
-    "long_stock": 122,
+    "stock_asset": 16,
+    "long_stock": 16,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "15000000",
+    "unit_amount": "1250000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 33,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 87,
-    "long_stock": 87,
+    "stock_asset": 56,
+    "long_stock": 56,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 34,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
     "index_asset": null,
-    "stock_asset": 9,
-    "long_stock": 9,
+    "stock_asset": 90,
+    "long_stock": 90,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
   }
 },
 {
   "model": "strategies.signal",
   "pk": 35,
   "fields": {
-    "strategy": 6,
+    "strategy": 3,
+    "index_asset": null,
+    "stock_asset": 113,
+    "long_stock": 113,
+    "long_etf": null,
+    "short_etf": null,
+    "short_future": null,
+    "total_amount": "10000000",
+    "unit_amount": "840000",
+    "date_created": "2019-01-01",
+    "date_updated": "2019-01-01",
+    "is_active": false
+  }
+},
+{
+  "model": "strategies.signal",
+  "pk": 36,
+  "fields": {
+    "strategy": 3,
+    "index_asset": null,
+    "stock_asset": 122,
+    "long_stock": 122,
+    "long_etf": null,
+    "short_etf": null,
+    "short_future": null,
+    "total_amount": "10000000",
+    "unit_amount": "840000",
+    "date_created": "2019-01-01",
+    "date_updated": "2019-01-01",
+    "is_active": false
+  }
+},
+{
+  "model": "strategies.signal",
+  "pk": 37,
+  "fields": {
+    "strategy": 3,
+    "index_asset": null,
+    "stock_asset": 87,
+    "long_stock": 87,
+    "long_etf": null,
+    "short_etf": null,
+    "short_future": null,
+    "total_amount": "10000000",
+    "unit_amount": "840000",
+    "date_created": "2019-01-01",
+    "date_updated": "2019-01-01",
+    "is_active": false
+  }
+},
+{
+  "model": "strategies.signal",
+  "pk": 38,
+  "fields": {
+    "strategy": 3,
+    "index_asset": null,
+    "stock_asset": 9,
+    "long_stock": 9,
+    "long_etf": null,
+    "short_etf": null,
+    "short_future": null,
+    "total_amount": "15000000",
+    "unit_amount": "1250000",
+    "date_created": "2019-01-01",
+    "date_updated": "2019-01-01",
+    "is_active": false
+  }
+},
+{
+  "model": "strategies.signal",
+  "pk": 39,
+  "fields": {
+    "strategy": 3,
     "index_asset": null,
     "stock_asset": 120,
     "long_stock": 120,
     "long_etf": null,
     "short_etf": null,
     "short_future": null,
-    "long_fund": "9240000",
-    "short_fund": "760000",
+    "total_amount": "10000000",
+    "unit_amount": "840000",
     "date_created": "2019-01-01",
     "date_updated": "2019-01-01",
-    "is_active": true
+    "is_active": false
+  }
+},
+{
+  "model": "strategies.signal",
+  "pk": 40,
+  "fields": {
+    "strategy": 3,
+    "index_asset": null,
+    "stock_asset": 40,
+    "long_stock": 40,
+    "long_etf": null,
+    "short_etf": null,
+    "short_future": null,
+    "total_amount": "10000000",
+    "unit_amount": "840000",
+    "date_created": "2019-01-01",
+    "date_updated": "2019-01-01",
+    "is_active": false
   }
 }
 ]

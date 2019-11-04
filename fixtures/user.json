@@ -4,7 +4,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$150000$cBcbwjRvp2Il$WU2SGkDWqQBhu7saHo41zW79OPpZ1B4ZFzCJUgKSuco=",
-    "last_login": "2019-10-23T15:08:14",
+    "last_login": "2019-11-04T18:56:44.387",
     "is_superuser": true,
     "username": "superman",
     "first_name": "\uc218\ud37c\ub9e8",
@@ -22,7 +22,7 @@
   "pk": 2,
   "fields": {
     "password": "pbkdf2_sha256$150000$YwmbmgsJyQxJ$VHg6rOEVdMpzI93TuopFmi0B1WAYwjX2CQZxWBh0ZbA=",
-    "last_login": "2019-09-26T14:16:14",
+    "last_login": "2019-11-04T14:43:20.306",
     "is_superuser": false,
     "username": "eric",
     "first_name": "\uc870\uc601\ub85d",
@@ -44,7 +44,7 @@
   "pk": 3,
   "fields": {
     "password": "pbkdf2_sha256$150000$CYequ0hPNipa$kdaZYruhcRYy2ixp4vRJFQxvQrdZjxZq6juxVeWA/u8=",
-    "last_login": "2019-10-08T22:19:03",
+    "last_login": "2019-11-01T15:54:30.990",
     "is_superuser": false,
     "username": "star",
     "first_name": "\ubbfc\uc138\uad11",
@@ -66,7 +66,7 @@
   "pk": 4,
   "fields": {
     "password": "pbkdf2_sha256$150000$Y1LDBVp97wzn$z5dd31S7rsW4o2LLkj73Vt8tA/by6Mfe2ZM0SAGIkbQ=",
-    "last_login": null,
+    "last_login": "2019-11-01T16:01:49.422",
     "is_superuser": false,
     "username": "wise",
     "first_name": "\uc815\ud604\uc218",
@@ -171,7 +171,7 @@
   "pk": 9,
   "fields": {
     "password": "pbkdf2_sha256$150000$R2WDlovPUzoE$a4Bl80LDzv5Q41FnTt433eu5ZVV2b8nG72lQoZ9/RKA=",
-    "last_login": null,
+    "last_login": "2019-11-04T13:55:15.595",
     "is_superuser": false,
     "username": "ace",
     "first_name": "\uc5d0\uc774\uc2a4",
@@ -331,6 +331,27 @@
     "date_joined": "2019-10-23T16:02:24",
     "groups": [
       2,
+      3
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 17,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$rl5QCb9YpzNS$Y6x34sgZHKGe+9f2LzgZAQ72xDrQeMRjIP7xlftOnNU=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "glory",
+    "first_name": "\uc131\uc9c4\uc601",
+    "last_name": "PONTIN",
+    "email": "pointin.net@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2019-11-04T16:33:58",
+    "groups": [
+      1,
       3
     ],
     "user_permissions": []

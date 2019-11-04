@@ -30,7 +30,7 @@
       </div>
       <div class="box flex-grow-1">
         <div class="d-flex align-items-center">
-          <h5 class="mr-auto">{{ trade|upper }}</h5>
+          <h5 class="mr-auto">{{ trade.signal.asset|upper }}</h5>
           <p class="h5 {{ trade.change|change_class }}">
             <span>{{ trade.change|stringformat:"+0.2f" }}%</span>
           </p>

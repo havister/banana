@@ -31,14 +31,17 @@ class Signal(models.Model):
     long_etf = models.ForeignKey(Etf, on_delete=models.CASCADE, null=True, blank=True, related_name='signals_long')
     short_etf = models.ForeignKey(Etf, on_delete=models.CASCADE, null=True, blank=True, related_name='signals_short')
     short_future = models.ForeignKey(Future, on_delete=models.CASCADE, null=True, blank=True, related_name='signals_short')
-    long_fund = models.DecimalField(max_digits=10, decimal_places=0)
-    short_fund = models.DecimalField(max_digits=10, decimal_places=0)
-    #unit_amount = models.DecimalField(max_digits=8, decimal_places=0)
+    total_amount = models.DecimalField(max_digits=10, decimal_places=0)
+    unit_amount = models.DecimalField(max_digits=8, decimal_places=0)
     date_created = models.DateField(default=timezone.now)
     date_updated = models.DateField(default=timezone.now)
     is_active = models.BooleanField(default=True)
 
     def __str__(self):
+        return f'{self.strategy} | {self.asset}'
+
+    @property
+    def asset(self):
         asset = self.index_asset if self.index_asset else self.stock_asset
         return f'{asset.name}'
 
@@ -49,11 +52,7 @@ class Signal(models.Model):
 
     @property
     def short_item(self):
-        short_item = None
-        if self.short_etf:
-            short_item = self.short_etf
-        elif self.short_future:
-            short_item = self.short_future
+        short_item = self.short_etf if self.short_etf else self.short_future
         return f'{short_item}'
 
 
@@ -72,7 +71,7 @@ class Watch(models.Model):
     is_active = models.BooleanField(default=True)
 
     def __str__(self):
-        return f'{self.price} {self.condition}'
+        return f'{self.signal} | {self.price} {self.condition}'
 
     @property
     def condition(self):
@@ -91,7 +90,7 @@ class Order(models.Model):
     is_active = models.BooleanField(default=True)
 
     def __str__(self):
-        return f'{self.series}-{self.position}-{self.piece}'
+        return f'{self.watch} | {self.level}-{self.position}-{self.piece}'
 
     @property
     def position(self):

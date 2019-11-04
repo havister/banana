@@ -15,7 +15,7 @@
 <!-- Header -->
 <header class="box text-kr">
   <div class="box-pad d-flex justify-content-between align-items-center">
-    <h1 class="my-1">보유 시그널</h1>
+    <h1 class="my-1">시그널</h1>
     <a class="btn btn-success" href="{% url 'users:signal_add' %}" role="button">시그널 추가</a>
   </div>
 </header>
@@ -24,45 +24,50 @@
 {% block main %}
 <!-- Section -->
 {% if user.account.has_havister %}
-<section class="box text-kr">
-  {% if play_list %}
-  <div class="box-pad">
-    {% for play in play_list %}
-    <!-- Card -->
-    <div class="card mb-3">
-      <h5 class="card-header d-flex justify-content-between">
-        <span>{{ play.signal.strategy }}</span>
-        <a class="card-link green" href="#"><i class="fas fa-chevron-right"></i></a>
-      </h5>
-      <div class="card-body">
-        <h4 class="card-title font-weight-bold">{{ play.signal }}</h4>
-        <hr>
-        <p class="card-text d-flex justify-content-between">
-          <span>Long</span>
-          <strong>{{ play.signal.long_item }}</strong>
-        </p>
-        <p class="card-text d-flex justify-content-between">
-          <span>Short</span>
-          {% if play.signal.short_item %}
-          <strong>{{ play.signal.short_item }}</strong>
-          {% else %}
-          <span>없음</span>
-          {% endif %}
-        </p>
-        <hr>
-        <p class="card-text">
-          <small class="text-muted">{{ play.date_bound|date:'Y-m-d' }} 추가</small>
-        </p>
-      </div>
+
+{% if play_list %}
+{% for play in play_list %}
+<!-- Signal -->
+<section class="box-pad text-kr">
+  <div class="card">
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <h4 class="mb-0">{{ play.signal.strategy }}</h4>
+      <a class="card-link h4 mb-0 green" href="{% url 'users:signal_detail' play.signal.pk %}"><i class="fas fa-chevron-right"></i></a>
     </div>
-    {% endfor %}
+    <div class="card-body">
+      <div class="card-text d-flex justify-content-between align-items-center">
+        <h4 class="card-title mb-0 font-weight-bold">{{ play.signal.asset }}</h4>
+        <p class="h5 mb-0 text-muted">{{ play.signal.total_amount|intcomma }}원</h4>
+      </div>
+      <hr>
+      <p class="card-text d-flex justify-content-between">
+        <span>Long</span>
+        <strong>{{ play.signal.long_item }}</strong>
+      </p>
+      <p class="card-text d-flex justify-content-between">
+        <span>Short</span>
+        {% if play.signal.short_item %}
+        <strong>{{ play.signal.short_item }}</strong>
+        {% else %}
+        <span>없음</span>
+        {% endif %}
+      </p>
+      <hr>
+      <p class="card-text">
+        <small class="text-muted">{{ play.date_bound|date:'Y-m-d' }} 추가</small>
+      </p>
+    </div>
   </div>
-  {% else %}
+</section>
+{% endfor %}
+{% else %}
+<section class="box text-kr">
   <div class="box-pad">
     <span>보유 시그널이 없습니다.</span>
   </div>
-  {% endif %}
 </section>
+{% endif %}
+
 {% else %}
 <section class="box text-kr">
   <div class="box-pad">

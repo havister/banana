@@ -7,7 +7,7 @@ class Expiration(models.Model):
     date_expired = models.DateField(default=timezone.now)
 
     def __str__(self):
-        return self.code
+        return f'{self.code[:2]}년 {self.code[2:]}월'
 
 
 class Index(models.Model):
@@ -15,6 +15,9 @@ class Index(models.Model):
     code = models.CharField(max_length=20, unique=True)
     is_active = models.BooleanField(default=True)
 
+    class Meta:
+        verbose_name_plural = "indexes"
+    
     def __str__(self):
         return self.name
 

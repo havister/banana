@@ -10,10 +10,9 @@ class IndexView(TemplateView):
         context = super().get_context_data(**kwargs)
         # Closed trade list by player
         context['player_trade_list'] = Trade.objects.filter(
-            date_closed__isnull=False).order_by('player', '-date_closed').distinct('player')
+            date_closed__isnull=False,
+            change__gt=0).order_by('player', '-date_closed').distinct('player')
         # New player list
         context['new_player_list'] = User.objects.filter(
-            groups__name='player'
-            ).exclude(trades__date_closed__isnull=False
-            ).order_by('-date_joined')
+            groups__name='player').exclude(trades__date_closed__isnull=False).order_by('-date_joined')
         return context

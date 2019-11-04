@@ -13,7 +13,7 @@
 <!-- Header -->
 <header class="box text-kr">
   <div class="box-pad d-flex justify-content-between align-items-center">
-    <h1 class="my-1">보유 전략</h1>
+    <h1 class="my-1">전략</h1>
     <a class="btn btn-success" href="{% url 'users:strategy_add' %}" role="button">전략 추가</a>
   </div>
 </header>
@@ -22,42 +22,42 @@
 {% block main %}
 <!-- Section -->
 {% if user.account.has_havister %}
-<section class="box text-kr">
-  {% if basket_list %}
-  <div class="box-pad">
-    {% for basket in basket_list %}
-    <!-- Card -->
-    <div class="card mb-3">
-      <h4 class="card-header d-flex justify-content-between">
-        <span>{{ basket.strategy }}</span>
-      </h4>
-      <div class="card-body">
-        <p class="card-text">
-          <small class="text-muted">{{ basket.strategy.summary|linebreaksbr }}</small>
-        </p>
-        <hr>
-        <p class="card-text d-flex justify-content-between">
-          <span>Long Positions</span>
-          <span>최대 {{ basket.strategy.long_positions }}</span>
-        </p>
-        <p class="card-text d-flex justify-content-between">
-          <span>Short Positions</span>
-          <span>최대 {{ basket.strategy.short_positions }}</span>
-        </p>
-        <hr>
-        <p class="card-text">
-          <small class="text-muted">{{ basket.date_bound|date:'Y-m-d' }} 추가</small>
-        </p>
-      </div>
+
+{% if shopping_list %}
+{% for shopping in shopping_list %}
+<!-- Strategy -->
+<section class="box-pad text-kr">
+  <div class="card">
+    <h4 class="card-header">{{ shopping.strategy }}</h4>
+    <div class="card-body">
+      <p class="card-text">
+        <small class="text-muted">{{ shopping.strategy.summary|linebreaksbr }}</small>
+      </p>
+      <hr>
+      <p class="card-text d-flex justify-content-between">
+        <span>Long Positions</span>
+        <span>최대 {{ shopping.strategy.long_positions }}</span>
+      </p>
+      <p class="card-text d-flex justify-content-between">
+        <span>Short Positions</span>
+        <span>최대 {{ shopping.strategy.short_positions }}</span>
+      </p>
+      <hr>
+      <p class="card-text">
+        <small class="text-muted">{{ shopping.date_bound|date:'Y-m-d' }} 추가</small>
+      </p>
     </div>
-    {% endfor %}
   </div>
-  {% else %}
+</section>
+{% endfor %}
+{% else %}
+<section class="box text-kr">
   <div class="box-pad">
     <span>보유 전략이 없습니다.</span>
   </div>
-  {% endif %}
 </section>
+{% endif %}
+
 {% else %}
 <section class="box text-kr">
   <div class="box-pad">

@@ -17,9 +17,7 @@
   <div class="box-pad d-flex justify-content-between align-items-center">
     <h1 class="my-1">{{ user.first_name }}</h1>
     <p class="mb-0 h5 text-capitalize">
-    {% for group in user.groups.all %}
       <span class="badge badge-pill badge-orange font-weight-normal">{{ group.name }}</span>
-    {% endfor %}
     </p>
   </div>
   {% if user.account %}
@@ -38,11 +36,11 @@
       </li>
       <li class="list-group-item d-flex justify-content-between align-items-center">
         <p class="h5 my-2">주식계좌 설정 금액</p>
-        <p class="h5 my-2">{{ user.account.long_fund|intcomma }}원</p>
+        <p class="h5 my-2">{{ user.account.primary_budget|intcomma }}원</p>
       </li>
       <li class="list-group-item d-flex justify-content-between align-items-center">
         <p class="h5 my-2">파생계좌 설정 금액</p>
-        <p class="h5 my-2">{{ user.account.short_fund|intcomma }}원</p>
+        <p class="h5 my-2">{{ user.account.secondary_budget|intcomma }}원</p>
       </li>
     </ul>
   </div>
@@ -73,7 +71,7 @@
       </div>
       <div class="box flex-grow-1">
         <div class="d-flex align-items-center">
-          <h5 class="mr-auto">{{ trade|upper }}</h5>
+          <h5 class="mr-auto">{{ trade.signal.asset|upper }}</h5>
           <p class="h5 {{ trade.change|change_class }}">
             <span>{{ trade.change|stringformat:"+0.2f" }}%</span>
           </p>
@@ -118,7 +116,7 @@
       </div>
       <div class="box flex-grow-1">
         <div class="d-flex align-items-center">
-          <h5 class="mr-auto">{{ trade|upper }}</h5>
+          <h5 class="mr-auto">{{ trade.signal.asset|upper }}</h5>
           <p class="h5 text-muted">
             <span class="text-cyan"><i class="fas fa-plane-departure"></i></span>
           </p>

@@ -12,25 +12,17 @@
 
 {% block header %}
 <!-- Header -->
-<header class="box">
-  <div class="jumbotron bg-teal text-white text-center">
-    <h1 class="mb-3 display-4">Top Player</h1>
-    <p>탑 플레이어에 도전해 보세요!<br>
-      단지 시그널을 선택하고, 하비스터에 맡기면 됩니다.
-    </p>
-  </div>
-</header>
 {% endblock %}
 
 {% block main %}
 <!-- Section -->
-<section class="box">
+<section class="box text-kr">
   <div class="box-pad">
-    <h1 class="my-1 text-darkgray">Best Players</h1>
+    <h1 class="my-1">Best Players</h1>
   </div>
   <!-- Section Body -->
   {% if player_trade_list %}
-  <div class="box text-kr">
+  <div class="box">
     {% for trade in player_trade_list %}
     <div class="box-pad d-flex align-items-center border-top">
       <div class="d-none d-sm-block w-25 text-center pr-3">
@@ -46,7 +38,7 @@
         </div>
         <div class="d-flex">
           <p class="mb-0 small text-muted mr-auto">
-            <span class="mr-2">{{ trade }}</span>
+            <span class="mr-2">{{ trade.signal.asset }}</span>
             <span class="text-muted">{{ trade.date_closed|date:'Y.m.d' }}</span>
           </p>
           <p class="mb-0 small text-muted">
@@ -66,13 +58,13 @@
 </section>
 
 <!-- Section -->
-<section class="box">
+<section class="box text-kr">
   <div class="box-pad">
-    <h1 class="my-1 text-darkgray">New Players</h1>
+    <h1 class="my-1">New Players</h1>
   </div>
   <!-- Section Body -->
   {% if new_player_list %}
-  <div class="box text-kr">
+  <div class="box">
     {% for player in new_player_list %}
     <div class="box-pad d-flex align-items-center border-top">
       <div class="d-none d-sm-block w-25 text-center pr-3">

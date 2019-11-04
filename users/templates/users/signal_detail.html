@@ -1,0 +1,115 @@
+{% extends "user_base.html" %}
+{% load humanize %}
+{% load extras %}
+
+{% block title %}
+<title>{{ user.username|upper }} - Signal - Pointnut</title>
+{% endblock %}
+
+{% block nav-title %}
+<a class="mr-2 green" href="{% url 'users:signal' %}"><i class="fas fa-chevron-left"></i></a>
+<span>Signal</span>
+{% endblock %}
+
+{% block header %}
+<!-- Header -->
+<header class="box text-kr">
+  <div class="box-pad d-flex justify-content-between align-items-center">
+    <h1 class="my-1">시그널 감시</h1>
+  </div>
+</header>
+{% endblock %}
+
+{% block main %}
+{% if user.account.has_havister %}
+<!-- Section -->
+<section class="box text-kr">
+  <!-- Signal -->
+  <div class="box-pad">
+    <div class="card">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <h4 class="mb-0">{{ signal.strategy }}</h4>
+      </div>
+      <div class="card-body">
+        <div class="card-text d-flex justify-content-between align-items-center">
+          <h4 class="card-title mb-0 font-weight-bold">{{ signal.asset }}</h4>
+          <p class="h5 mb-0 text-muted">{{ signal.total_amount|intcomma }}원</h4>
+        </div>
+        <hr>
+        <p class="card-text d-flex justify-content-between">
+          <span>Long</span>
+          <strong>{{ signal.long_item }}</strong>
+        </p>
+        <p class="card-text d-flex justify-content-between">
+          <span>Short</span>
+          {% if signal.short_item %}
+          <strong>{{ signal.short_item }}</strong>
+          {% else %}
+          <span>없음</span>
+          {% endif %}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if watch_list %}
+{% for watch in watch_list %}
+<!-- Watch -->
+<section class="box-pad text-kr">
+  <div class="card">
+    {% if watch.item.condition_choice == 'P' %}
+    <div class="card-header item-red">
+      <span class="h4 mr-2">{{ watch.item.price|intcomma }}</span> <span class="h5">이상일 때</span>
+    </div>
+    {% else %}
+    <div class="card-header item-blue">
+      <span class="h4 mr-2">{{ watch.item.price|intcomma }}</span> <span class="h5">이하일 때</span>
+    </div>
+    {% endif %}
+    <div class="card-body">
+      {% if watch.close_orders %}
+      {% for order in watch.close_orders %}
+      <p class="card-text d-flex justify-content-between">
+        <span><kbd class="mr-1 item-gray">{{ order.level }}</kbd> {{ order.position }} {{ order.piece }}</span>
+        <strong>{{ order.order }}</strong>
+      </p>
+      {% endfor %}
+      {% else %}
+      <p class="card-text">청산할 주문이 없습니다.</p>
+      {% endif %}
+      <hr>
+      {% if watch.open_orders %}
+      {% for order in watch.open_orders %}
+      <p class="card-text d-flex justify-content-between">
+        <span><kbd class="mr-1 item-gray">{{ order.level }}</kbd> {{ order.position }} {{ order.piece }}</span>
+        <strong>{{ order.order }}</strong>
+      </p>
+      {% endfor %}
+      {% else %}
+      <p class="card-text">진입할 주문이 없습니다.</p>
+      {% endif %}
+    </div>
+    <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+      <small class="text-muted">{{ watch.item.date_updated|date:'Y-m-d' }} 업데이트</small>
+      <small class="text-muted">{{ watch.item.start_time|date:'g:i A' }} ~ {{ watch.item.end_time|date:'g:i A' }} 감시</small>
+    </div>
+  </div>
+</section>
+{% endfor %}
+{% else %}
+<section class="box text-kr">
+  <div class="box-pad">
+    <span>시그널 감시가 없습니다.</span>
+  </div>
+</section>
+{% endif %}
+
+{% else %}
+<section class="box text-kr">
+  <div class="box-pad">
+    <span class="text-danger">하비스터 사용 권한이 필요합니다.</span>
+  </div>
+</section>
+{% endif %}
+{% endblock %}

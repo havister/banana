@@ -444,7 +444,7 @@
   "pk": 21,
   "fields": {
     "player": 3,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -466,7 +466,7 @@
   "pk": 22,
   "fields": {
     "player": 3,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -488,7 +488,7 @@
   "pk": 23,
   "fields": {
     "player": 3,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -510,7 +510,7 @@
   "pk": 24,
   "fields": {
     "player": 3,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -532,7 +532,7 @@
   "pk": 25,
   "fields": {
     "player": 3,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -554,7 +554,7 @@
   "pk": 26,
   "fields": {
     "player": 3,
-    "signal": 9,
+    "signal": 13,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -576,7 +576,7 @@
   "pk": 27,
   "fields": {
     "player": 3,
-    "signal": 9,
+    "signal": 13,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -598,7 +598,7 @@
   "pk": 28,
   "fields": {
     "player": 3,
-    "signal": 7,
+    "signal": 11,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -620,7 +620,7 @@
   "pk": 29,
   "fields": {
     "player": 3,
-    "signal": 7,
+    "signal": 11,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -642,7 +642,7 @@
   "pk": 30,
   "fields": {
     "player": 3,
-    "signal": 7,
+    "signal": 11,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -664,7 +664,7 @@
   "pk": 31,
   "fields": {
     "player": 3,
-    "signal": 7,
+    "signal": 11,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -686,7 +686,7 @@
   "pk": 32,
   "fields": {
     "player": 3,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -708,7 +708,7 @@
   "pk": 33,
   "fields": {
     "player": 3,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -730,7 +730,7 @@
   "pk": 34,
   "fields": {
     "player": 3,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -752,7 +752,7 @@
   "pk": 35,
   "fields": {
     "player": 3,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -774,7 +774,7 @@
   "pk": 36,
   "fields": {
     "player": 3,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -796,7 +796,7 @@
   "pk": 37,
   "fields": {
     "player": 3,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -818,7 +818,7 @@
   "pk": 38,
   "fields": {
     "player": 2,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -840,7 +840,7 @@
   "pk": 39,
   "fields": {
     "player": 2,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -862,7 +862,7 @@
   "pk": 40,
   "fields": {
     "player": 2,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -884,7 +884,7 @@
   "pk": 41,
   "fields": {
     "player": 2,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -906,7 +906,7 @@
   "pk": 42,
   "fields": {
     "player": 2,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -928,7 +928,7 @@
   "pk": 43,
   "fields": {
     "player": 2,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -950,7 +950,7 @@
   "pk": 44,
   "fields": {
     "player": 2,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -972,7 +972,7 @@
   "pk": 45,
   "fields": {
     "player": 2,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -994,7 +994,7 @@
   "pk": 46,
   "fields": {
     "player": 2,
-    "signal": 26,
+    "signal": 30,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1016,7 +1016,7 @@
   "pk": 47,
   "fields": {
     "player": 2,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1038,7 +1038,7 @@
   "pk": 48,
   "fields": {
     "player": 2,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1060,7 +1060,7 @@
   "pk": 49,
   "fields": {
     "player": 2,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1082,7 +1082,7 @@
   "pk": 50,
   "fields": {
     "player": 2,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1104,7 +1104,7 @@
   "pk": 51,
   "fields": {
     "player": 2,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1126,7 +1126,7 @@
   "pk": 52,
   "fields": {
     "player": 2,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1148,7 +1148,7 @@
   "pk": 53,
   "fields": {
     "player": 3,
-    "signal": 24,
+    "signal": 28,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1170,7 +1170,7 @@
   "pk": 54,
   "fields": {
     "player": 3,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1192,7 +1192,7 @@
   "pk": 55,
   "fields": {
     "player": 2,
-    "signal": 30,
+    "signal": 34,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1214,7 +1214,7 @@
   "pk": 56,
   "fields": {
     "player": 2,
-    "signal": 15,
+    "signal": 19,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1236,7 +1236,7 @@
   "pk": 57,
   "fields": {
     "player": 2,
-    "signal": 29,
+    "signal": 33,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1258,7 +1258,7 @@
   "pk": 58,
   "fields": {
     "player": 3,
-    "signal": 29,
+    "signal": 33,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1280,7 +1280,7 @@
   "pk": 59,
   "fields": {
     "player": 3,
-    "signal": 15,
+    "signal": 19,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1302,7 +1302,7 @@
   "pk": 60,
   "fields": {
     "player": 3,
-    "signal": 35,
+    "signal": 39,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1324,7 +1324,7 @@
   "pk": 61,
   "fields": {
     "player": 3,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1346,7 +1346,7 @@
   "pk": 62,
   "fields": {
     "player": 3,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1368,7 +1368,7 @@
   "pk": 63,
   "fields": {
     "player": 2,
-    "signal": 26,
+    "signal": 30,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1390,7 +1390,7 @@
   "pk": 64,
   "fields": {
     "player": 4,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1412,7 +1412,7 @@
   "pk": 65,
   "fields": {
     "player": 4,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1434,7 +1434,7 @@
   "pk": 66,
   "fields": {
     "player": 4,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1456,7 +1456,7 @@
   "pk": 67,
   "fields": {
     "player": 4,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1478,7 +1478,7 @@
   "pk": 68,
   "fields": {
     "player": 7,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1500,7 +1500,7 @@
   "pk": 69,
   "fields": {
     "player": 7,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1522,7 +1522,7 @@
   "pk": 70,
   "fields": {
     "player": 7,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1544,7 +1544,7 @@
   "pk": 71,
   "fields": {
     "player": 7,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1566,7 +1566,7 @@
   "pk": 72,
   "fields": {
     "player": 7,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1588,7 +1588,7 @@
   "pk": 73,
   "fields": {
     "player": 7,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1610,7 +1610,7 @@
   "pk": 74,
   "fields": {
     "player": 7,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1632,7 +1632,7 @@
   "pk": 75,
   "fields": {
     "player": 7,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1654,7 +1654,7 @@
   "pk": 76,
   "fields": {
     "player": 7,
-    "signal": 34,
+    "signal": 38,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1676,7 +1676,7 @@
   "pk": 77,
   "fields": {
     "player": 2,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1698,7 +1698,7 @@
   "pk": 78,
   "fields": {
     "player": 2,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1720,7 +1720,7 @@
   "pk": 79,
   "fields": {
     "player": 7,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1742,7 +1742,7 @@
   "pk": 80,
   "fields": {
     "player": 7,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1764,7 +1764,7 @@
   "pk": 81,
   "fields": {
     "player": 6,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1786,7 +1786,7 @@
   "pk": 82,
   "fields": {
     "player": 6,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1808,7 +1808,7 @@
   "pk": 83,
   "fields": {
     "player": 6,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1830,7 +1830,7 @@
   "pk": 84,
   "fields": {
     "player": 6,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1852,7 +1852,7 @@
   "pk": 85,
   "fields": {
     "player": 6,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1874,7 +1874,7 @@
   "pk": 86,
   "fields": {
     "player": 6,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1896,7 +1896,7 @@
   "pk": 87,
   "fields": {
     "player": 6,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1918,7 +1918,7 @@
   "pk": 88,
   "fields": {
     "player": 6,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1940,7 +1940,7 @@
   "pk": 89,
   "fields": {
     "player": 6,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1962,7 +1962,7 @@
   "pk": 90,
   "fields": {
     "player": 6,
-    "signal": 15,
+    "signal": 19,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -1984,7 +1984,7 @@
   "pk": 91,
   "fields": {
     "player": 6,
-    "signal": 15,
+    "signal": 19,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2006,7 +2006,7 @@
   "pk": 92,
   "fields": {
     "player": 2,
-    "signal": 29,
+    "signal": 33,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2028,7 +2028,7 @@
   "pk": 93,
   "fields": {
     "player": 7,
-    "signal": 20,
+    "signal": 24,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2050,7 +2050,7 @@
   "pk": 94,
   "fields": {
     "player": 7,
-    "signal": 20,
+    "signal": 24,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2072,7 +2072,7 @@
   "pk": 95,
   "fields": {
     "player": 7,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2094,7 +2094,7 @@
   "pk": 96,
   "fields": {
     "player": 7,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2116,7 +2116,7 @@
   "pk": 97,
   "fields": {
     "player": 7,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2138,7 +2138,7 @@
   "pk": 98,
   "fields": {
     "player": 7,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2160,7 +2160,7 @@
   "pk": 99,
   "fields": {
     "player": 7,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2182,7 +2182,7 @@
   "pk": 100,
   "fields": {
     "player": 7,
-    "signal": 28,
+    "signal": 32,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2190,11 +2190,11 @@
     "piece": 0,
     "quantity": 10,
     "price_opened": "100000.00",
-    "price_closed": null,
-    "difference": null,
-    "change": null,
+    "price_closed": "100000.00",
+    "difference": "0.00",
+    "change": "0.00",
     "date_opened": "2019-05-08T09:01:39",
-    "date_closed": null,
+    "date_closed": "2019-10-31T09:01:39",
     "is_manual": true,
     "is_active": true
   }
@@ -2204,7 +2204,7 @@
   "pk": 101,
   "fields": {
     "player": 7,
-    "signal": 20,
+    "signal": 24,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2226,7 +2226,7 @@
   "pk": 102,
   "fields": {
     "player": 7,
-    "signal": 20,
+    "signal": 24,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2248,7 +2248,7 @@
   "pk": 103,
   "fields": {
     "player": 7,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2270,7 +2270,7 @@
   "pk": 104,
   "fields": {
     "player": 2,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2292,7 +2292,7 @@
   "pk": 105,
   "fields": {
     "player": 2,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2314,7 +2314,7 @@
   "pk": 106,
   "fields": {
     "player": 2,
-    "signal": 13,
+    "signal": 17,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2336,7 +2336,7 @@
   "pk": 107,
   "fields": {
     "player": 2,
-    "signal": 16,
+    "signal": 20,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2358,7 +2358,7 @@
   "pk": 108,
   "fields": {
     "player": 2,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2380,7 +2380,7 @@
   "pk": 109,
   "fields": {
     "player": 2,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2402,7 +2402,7 @@
   "pk": 110,
   "fields": {
     "player": 7,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2424,7 +2424,7 @@
   "pk": 111,
   "fields": {
     "player": 7,
-    "signal": 34,
+    "signal": 38,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2446,7 +2446,7 @@
   "pk": 112,
   "fields": {
     "player": 7,
-    "signal": 21,
+    "signal": 25,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2468,7 +2468,7 @@
   "pk": 113,
   "fields": {
     "player": 7,
-    "signal": 27,
+    "signal": 31,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2490,7 +2490,7 @@
   "pk": 114,
   "fields": {
     "player": 4,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2512,7 +2512,7 @@
   "pk": 115,
   "fields": {
     "player": 4,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2534,7 +2534,7 @@
   "pk": 116,
   "fields": {
     "player": 7,
-    "signal": 33,
+    "signal": 37,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2556,7 +2556,7 @@
   "pk": 117,
   "fields": {
     "player": 7,
-    "signal": 22,
+    "signal": 26,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2578,7 +2578,7 @@
   "pk": 118,
   "fields": {
     "player": 7,
-    "signal": 22,
+    "signal": 26,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2600,7 +2600,7 @@
   "pk": 119,
   "fields": {
     "player": 7,
-    "signal": 16,
+    "signal": 20,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2622,7 +2622,7 @@
   "pk": 120,
   "fields": {
     "player": 6,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2644,7 +2644,7 @@
   "pk": 121,
   "fields": {
     "player": 6,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2666,7 +2666,7 @@
   "pk": 122,
   "fields": {
     "player": 7,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2688,7 +2688,7 @@
   "pk": 123,
   "fields": {
     "player": 7,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2710,7 +2710,7 @@
   "pk": 124,
   "fields": {
     "player": 7,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2732,7 +2732,7 @@
   "pk": 125,
   "fields": {
     "player": 3,
-    "signal": 7,
+    "signal": 11,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2754,7 +2754,7 @@
   "pk": 126,
   "fields": {
     "player": 6,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2776,7 +2776,7 @@
   "pk": 127,
   "fields": {
     "player": 6,
-    "signal": 15,
+    "signal": 19,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2798,7 +2798,7 @@
   "pk": 128,
   "fields": {
     "player": 4,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2820,7 +2820,7 @@
   "pk": 129,
   "fields": {
     "player": 4,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2842,7 +2842,7 @@
   "pk": 130,
   "fields": {
     "player": 2,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2864,7 +2864,7 @@
   "pk": 131,
   "fields": {
     "player": 2,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2886,7 +2886,7 @@
   "pk": 132,
   "fields": {
     "player": 2,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2908,7 +2908,7 @@
   "pk": 133,
   "fields": {
     "player": 2,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2930,7 +2930,7 @@
   "pk": 134,
   "fields": {
     "player": 6,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2952,7 +2952,7 @@
   "pk": 135,
   "fields": {
     "player": 8,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2974,7 +2974,7 @@
   "pk": 136,
   "fields": {
     "player": 8,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -2996,7 +2996,7 @@
   "pk": 137,
   "fields": {
     "player": 8,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3018,7 +3018,7 @@
   "pk": 138,
   "fields": {
     "player": 8,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3040,7 +3040,7 @@
   "pk": 139,
   "fields": {
     "player": 8,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3062,7 +3062,7 @@
   "pk": 140,
   "fields": {
     "player": 8,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3084,7 +3084,7 @@
   "pk": 141,
   "fields": {
     "player": 2,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3106,7 +3106,7 @@
   "pk": 142,
   "fields": {
     "player": 4,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3128,7 +3128,7 @@
   "pk": 143,
   "fields": {
     "player": 11,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3150,7 +3150,7 @@
   "pk": 144,
   "fields": {
     "player": 11,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3172,7 +3172,7 @@
   "pk": 145,
   "fields": {
     "player": 5,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3194,7 +3194,7 @@
   "pk": 146,
   "fields": {
     "player": 8,
-    "signal": 15,
+    "signal": 19,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3216,7 +3216,7 @@
   "pk": 147,
   "fields": {
     "player": 8,
-    "signal": 15,
+    "signal": 19,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3238,7 +3238,7 @@
   "pk": 148,
   "fields": {
     "player": 8,
-    "signal": 15,
+    "signal": 19,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3260,19 +3260,19 @@
   "pk": 149,
   "fields": {
     "player": 2,
-    "signal": 3,
+    "signal": 7,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
     "position_choice": "S",
     "piece": 0,
-    "quantity": 24,
+    "quantity": 31,
     "price_opened": "7940.00",
-    "price_closed": null,
-    "difference": null,
-    "change": null,
+    "price_closed": "7775.00",
+    "difference": "-165.00",
+    "change": "-2.08",
     "date_opened": "2019-07-02T09:13:06",
-    "date_closed": null,
+    "date_closed": "2019-10-31T13:26:48",
     "is_manual": true,
     "is_active": true
   }
@@ -3282,7 +3282,7 @@
   "pk": 150,
   "fields": {
     "player": 11,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3304,7 +3304,7 @@
   "pk": 151,
   "fields": {
     "player": 11,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3326,7 +3326,7 @@
   "pk": 152,
   "fields": {
     "player": 2,
-    "signal": 3,
+    "signal": 7,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3334,11 +3334,11 @@
     "piece": 0,
     "quantity": 24,
     "price_opened": "10415.00",
-    "price_closed": null,
-    "difference": null,
-    "change": null,
+    "price_closed": "10320.00",
+    "difference": "-95.00",
+    "change": "-0.91",
     "date_opened": "2019-07-02T09:17:55",
-    "date_closed": null,
+    "date_closed": "2019-10-31T13:26:48",
     "is_manual": true,
     "is_active": true
   }
@@ -3348,19 +3348,19 @@
   "pk": 153,
   "fields": {
     "player": 2,
-    "signal": 3,
+    "signal": 7,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
     "position_choice": "L",
     "piece": 0,
-    "quantity": 31,
+    "quantity": 24,
     "price_opened": "10415.00",
-    "price_closed": null,
-    "difference": null,
-    "change": null,
+    "price_closed": "10320.00",
+    "difference": "-95.00",
+    "change": "-0.91",
     "date_opened": "2019-07-02T09:17:55",
-    "date_closed": null,
+    "date_closed": "2019-10-31T13:26:48",
     "is_manual": true,
     "is_active": true
   }
@@ -3370,7 +3370,7 @@
   "pk": 154,
   "fields": {
     "player": 8,
-    "signal": 2,
+    "signal": 6,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3392,7 +3392,7 @@
   "pk": 155,
   "fields": {
     "player": 8,
-    "signal": 2,
+    "signal": 6,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3400,11 +3400,11 @@
     "piece": 0,
     "quantity": 20,
     "price_opened": "12600.00",
-    "price_closed": null,
-    "difference": null,
-    "change": null,
+    "price_closed": "12630.00",
+    "difference": "30.00",
+    "change": "0.24",
     "date_opened": "2019-07-02T09:23:32",
-    "date_closed": null,
+    "date_closed": "2019-11-01T14:31:00",
     "is_manual": true,
     "is_active": true
   }
@@ -3414,7 +3414,7 @@
   "pk": 156,
   "fields": {
     "player": 8,
-    "signal": 2,
+    "signal": 6,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3422,11 +3422,11 @@
     "piece": 0,
     "quantity": 19,
     "price_opened": "12600.00",
-    "price_closed": null,
-    "difference": null,
-    "change": null,
+    "price_closed": "12630.00",
+    "difference": "30.00",
+    "change": "0.24",
     "date_opened": "2019-07-02T09:23:32",
-    "date_closed": null,
+    "date_closed": "2019-11-01T14:31:00",
     "is_manual": true,
     "is_active": true
   }
@@ -3436,7 +3436,7 @@
   "pk": 157,
   "fields": {
     "player": 2,
-    "signal": 2,
+    "signal": 6,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3458,7 +3458,7 @@
   "pk": 158,
   "fields": {
     "player": 2,
-    "signal": 2,
+    "signal": 6,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3480,7 +3480,7 @@
   "pk": 159,
   "fields": {
     "player": 2,
-    "signal": 2,
+    "signal": 6,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3502,7 +3502,7 @@
   "pk": 160,
   "fields": {
     "player": 11,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3524,7 +3524,7 @@
   "pk": 161,
   "fields": {
     "player": 11,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3546,7 +3546,7 @@
   "pk": 162,
   "fields": {
     "player": 8,
-    "signal": 3,
+    "signal": 7,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3568,7 +3568,7 @@
   "pk": 163,
   "fields": {
     "player": 8,
-    "signal": 3,
+    "signal": 7,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3590,7 +3590,7 @@
   "pk": 164,
   "fields": {
     "player": 8,
-    "signal": 3,
+    "signal": 7,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3612,7 +3612,7 @@
   "pk": 165,
   "fields": {
     "player": 11,
-    "signal": 2,
+    "signal": 6,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3634,7 +3634,7 @@
   "pk": 166,
   "fields": {
     "player": 8,
-    "signal": 2,
+    "signal": 6,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3656,7 +3656,7 @@
   "pk": 167,
   "fields": {
     "player": 8,
-    "signal": 2,
+    "signal": 6,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3678,7 +3678,7 @@
   "pk": 168,
   "fields": {
     "player": 2,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3700,7 +3700,7 @@
   "pk": 169,
   "fields": {
     "player": 2,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3722,7 +3722,7 @@
   "pk": 170,
   "fields": {
     "player": 3,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3744,7 +3744,7 @@
   "pk": 171,
   "fields": {
     "player": 3,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3766,7 +3766,7 @@
   "pk": 172,
   "fields": {
     "player": 3,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3788,7 +3788,7 @@
   "pk": 173,
   "fields": {
     "player": 6,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3810,7 +3810,7 @@
   "pk": 174,
   "fields": {
     "player": 6,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3832,7 +3832,7 @@
   "pk": 175,
   "fields": {
     "player": 6,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3854,7 +3854,7 @@
   "pk": 176,
   "fields": {
     "player": 3,
-    "signal": 2,
+    "signal": 6,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3876,7 +3876,7 @@
   "pk": 177,
   "fields": {
     "player": 11,
-    "signal": 3,
+    "signal": 7,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3898,7 +3898,7 @@
   "pk": 178,
   "fields": {
     "player": 11,
-    "signal": 3,
+    "signal": 7,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3920,7 +3920,7 @@
   "pk": 179,
   "fields": {
     "player": 11,
-    "signal": 3,
+    "signal": 7,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3942,7 +3942,7 @@
   "pk": 180,
   "fields": {
     "player": 11,
-    "signal": 2,
+    "signal": 6,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3964,7 +3964,7 @@
   "pk": 181,
   "fields": {
     "player": 11,
-    "signal": 2,
+    "signal": 6,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -3986,7 +3986,7 @@
   "pk": 182,
   "fields": {
     "player": 8,
-    "signal": 12,
+    "signal": 16,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4008,7 +4008,7 @@
   "pk": 183,
   "fields": {
     "player": 8,
-    "signal": 12,
+    "signal": 16,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4030,7 +4030,7 @@
   "pk": 184,
   "fields": {
     "player": 8,
-    "signal": 12,
+    "signal": 16,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4052,7 +4052,7 @@
   "pk": 185,
   "fields": {
     "player": 8,
-    "signal": 23,
+    "signal": 27,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4074,7 +4074,7 @@
   "pk": 186,
   "fields": {
     "player": 8,
-    "signal": 23,
+    "signal": 27,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4096,7 +4096,7 @@
   "pk": 187,
   "fields": {
     "player": 8,
-    "signal": 23,
+    "signal": 27,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4118,7 +4118,7 @@
   "pk": 188,
   "fields": {
     "player": 8,
-    "signal": 15,
+    "signal": 19,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4140,7 +4140,7 @@
   "pk": 189,
   "fields": {
     "player": 8,
-    "signal": 15,
+    "signal": 19,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4162,7 +4162,7 @@
   "pk": 190,
   "fields": {
     "player": 8,
-    "signal": 15,
+    "signal": 19,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4184,7 +4184,7 @@
   "pk": 191,
   "fields": {
     "player": 6,
-    "signal": 15,
+    "signal": 19,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4206,7 +4206,7 @@
   "pk": 192,
   "fields": {
     "player": 6,
-    "signal": 15,
+    "signal": 19,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4228,7 +4228,7 @@
   "pk": 193,
   "fields": {
     "player": 6,
-    "signal": 15,
+    "signal": 19,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4250,7 +4250,7 @@
   "pk": 194,
   "fields": {
     "player": 11,
-    "signal": 15,
+    "signal": 19,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4272,7 +4272,7 @@
   "pk": 195,
   "fields": {
     "player": 11,
-    "signal": 15,
+    "signal": 19,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4294,7 +4294,7 @@
   "pk": 196,
   "fields": {
     "player": 11,
-    "signal": 15,
+    "signal": 19,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4316,7 +4316,7 @@
   "pk": 197,
   "fields": {
     "player": 11,
-    "signal": 17,
+    "signal": 21,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4338,7 +4338,7 @@
   "pk": 198,
   "fields": {
     "player": 11,
-    "signal": 17,
+    "signal": 21,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4360,7 +4360,7 @@
   "pk": 199,
   "fields": {
     "player": 11,
-    "signal": 17,
+    "signal": 21,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4382,7 +4382,7 @@
   "pk": 200,
   "fields": {
     "player": 7,
-    "signal": 20,
+    "signal": 24,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4404,7 +4404,7 @@
   "pk": 201,
   "fields": {
     "player": 7,
-    "signal": 21,
+    "signal": 25,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4426,7 +4426,7 @@
   "pk": 202,
   "fields": {
     "player": 7,
-    "signal": 21,
+    "signal": 25,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4448,7 +4448,7 @@
   "pk": 203,
   "fields": {
     "player": 7,
-    "signal": 21,
+    "signal": 25,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4470,7 +4470,7 @@
   "pk": 204,
   "fields": {
     "player": 7,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4492,7 +4492,7 @@
   "pk": 205,
   "fields": {
     "player": 7,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4514,7 +4514,7 @@
   "pk": 206,
   "fields": {
     "player": 5,
-    "signal": 11,
+    "signal": 15,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4536,7 +4536,7 @@
   "pk": 207,
   "fields": {
     "player": 7,
-    "signal": 20,
+    "signal": 24,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4558,7 +4558,7 @@
   "pk": 208,
   "fields": {
     "player": 8,
-    "signal": 23,
+    "signal": 27,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4580,7 +4580,7 @@
   "pk": 209,
   "fields": {
     "player": 8,
-    "signal": 23,
+    "signal": 27,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4602,7 +4602,7 @@
   "pk": 210,
   "fields": {
     "player": 8,
-    "signal": 23,
+    "signal": 27,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4624,7 +4624,7 @@
   "pk": 211,
   "fields": {
     "player": 11,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4646,7 +4646,7 @@
   "pk": 212,
   "fields": {
     "player": 11,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4668,7 +4668,7 @@
   "pk": 213,
   "fields": {
     "player": 2,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4690,7 +4690,7 @@
   "pk": 214,
   "fields": {
     "player": 2,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4712,7 +4712,7 @@
   "pk": 215,
   "fields": {
     "player": 3,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4734,7 +4734,7 @@
   "pk": 216,
   "fields": {
     "player": 2,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4756,7 +4756,7 @@
   "pk": 217,
   "fields": {
     "player": 3,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4778,7 +4778,7 @@
   "pk": 218,
   "fields": {
     "player": 3,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4800,7 +4800,7 @@
   "pk": 219,
   "fields": {
     "player": 3,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4822,7 +4822,7 @@
   "pk": 220,
   "fields": {
     "player": 3,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4844,7 +4844,7 @@
   "pk": 221,
   "fields": {
     "player": 2,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4866,7 +4866,7 @@
   "pk": 222,
   "fields": {
     "player": 2,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4888,7 +4888,7 @@
   "pk": 223,
   "fields": {
     "player": 2,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4896,11 +4896,11 @@
     "piece": 0,
     "quantity": 2,
     "price_opened": "20100.00",
-    "price_closed": null,
-    "difference": null,
-    "change": null,
+    "price_closed": "16300.00",
+    "difference": "3800.00",
+    "change": "18.91",
     "date_opened": "2019-07-25T11:05:18",
-    "date_closed": null,
+    "date_closed": "2019-11-01T09:20:19",
     "is_manual": true,
     "is_active": true
   }
@@ -4910,7 +4910,7 @@
   "pk": 224,
   "fields": {
     "player": 6,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4932,7 +4932,7 @@
   "pk": 225,
   "fields": {
     "player": 6,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4954,7 +4954,7 @@
   "pk": 226,
   "fields": {
     "player": 6,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4976,7 +4976,7 @@
   "pk": 227,
   "fields": {
     "player": 8,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -4998,7 +4998,7 @@
   "pk": 228,
   "fields": {
     "player": 8,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5020,7 +5020,7 @@
   "pk": 229,
   "fields": {
     "player": 8,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5028,11 +5028,11 @@
     "piece": 0,
     "quantity": 2,
     "price_opened": "20100.00",
-    "price_closed": null,
-    "difference": null,
-    "change": null,
+    "price_closed": "16550.00",
+    "difference": "3550.00",
+    "change": "17.67",
     "date_opened": "2019-07-25T11:36:54",
-    "date_closed": null,
+    "date_closed": "2019-10-31T14:31:00",
     "is_manual": true,
     "is_active": true
   }
@@ -5042,7 +5042,7 @@
   "pk": 230,
   "fields": {
     "player": 2,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5064,7 +5064,7 @@
   "pk": 231,
   "fields": {
     "player": 2,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5086,7 +5086,7 @@
   "pk": 232,
   "fields": {
     "player": 2,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5108,7 +5108,7 @@
   "pk": 233,
   "fields": {
     "player": 6,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5130,7 +5130,7 @@
   "pk": 234,
   "fields": {
     "player": 6,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5152,7 +5152,7 @@
   "pk": 235,
   "fields": {
     "player": 6,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5174,7 +5174,7 @@
   "pk": 236,
   "fields": {
     "player": 3,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5196,7 +5196,7 @@
   "pk": 237,
   "fields": {
     "player": 8,
-    "signal": 23,
+    "signal": 27,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5218,7 +5218,7 @@
   "pk": 238,
   "fields": {
     "player": 8,
-    "signal": 23,
+    "signal": 27,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5240,7 +5240,7 @@
   "pk": 239,
   "fields": {
     "player": 8,
-    "signal": 23,
+    "signal": 27,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5262,7 +5262,7 @@
   "pk": 240,
   "fields": {
     "player": 9,
-    "signal": 12,
+    "signal": 16,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5284,7 +5284,7 @@
   "pk": 241,
   "fields": {
     "player": 9,
-    "signal": 12,
+    "signal": 16,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5306,7 +5306,7 @@
   "pk": 242,
   "fields": {
     "player": 9,
-    "signal": 12,
+    "signal": 16,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5328,7 +5328,7 @@
   "pk": 243,
   "fields": {
     "player": 9,
-    "signal": 13,
+    "signal": 17,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5350,7 +5350,7 @@
   "pk": 244,
   "fields": {
     "player": 9,
-    "signal": 13,
+    "signal": 17,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5372,7 +5372,7 @@
   "pk": 245,
   "fields": {
     "player": 2,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5394,7 +5394,7 @@
   "pk": 246,
   "fields": {
     "player": 2,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5416,7 +5416,7 @@
   "pk": 247,
   "fields": {
     "player": 2,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5424,11 +5424,11 @@
     "piece": 0,
     "quantity": 1,
     "price_opened": "38300.00",
-    "price_closed": null,
-    "difference": null,
-    "change": null,
+    "price_closed": "35850.00",
+    "difference": "2450.00",
+    "change": "6.40",
     "date_opened": "2019-08-01T09:12:15",
-    "date_closed": null,
+    "date_closed": "2019-10-23T09:45:25",
     "is_manual": true,
     "is_active": true
   }
@@ -5438,7 +5438,7 @@
   "pk": 248,
   "fields": {
     "player": 3,
-    "signal": 7,
+    "signal": 11,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5460,7 +5460,7 @@
   "pk": 249,
   "fields": {
     "player": 3,
-    "signal": 7,
+    "signal": 11,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5482,7 +5482,7 @@
   "pk": 250,
   "fields": {
     "player": 3,
-    "signal": 7,
+    "signal": 11,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5504,7 +5504,7 @@
   "pk": 251,
   "fields": {
     "player": 11,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5526,7 +5526,7 @@
   "pk": 252,
   "fields": {
     "player": 11,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5548,7 +5548,7 @@
   "pk": 253,
   "fields": {
     "player": 11,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5570,7 +5570,7 @@
   "pk": 254,
   "fields": {
     "player": 2,
-    "signal": 2,
+    "signal": 6,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5592,7 +5592,7 @@
   "pk": 255,
   "fields": {
     "player": 2,
-    "signal": 2,
+    "signal": 6,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5614,7 +5614,7 @@
   "pk": 256,
   "fields": {
     "player": 2,
-    "signal": 2,
+    "signal": 6,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5636,7 +5636,7 @@
   "pk": 257,
   "fields": {
     "player": 8,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5658,7 +5658,7 @@
   "pk": 258,
   "fields": {
     "player": 8,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5680,7 +5680,7 @@
   "pk": 259,
   "fields": {
     "player": 8,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5702,7 +5702,7 @@
   "pk": 260,
   "fields": {
     "player": 2,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5724,7 +5724,7 @@
   "pk": 261,
   "fields": {
     "player": 2,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5746,7 +5746,7 @@
   "pk": 262,
   "fields": {
     "player": 2,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5768,7 +5768,7 @@
   "pk": 263,
   "fields": {
     "player": 11,
-    "signal": 2,
+    "signal": 6,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5790,7 +5790,7 @@
   "pk": 264,
   "fields": {
     "player": 11,
-    "signal": 2,
+    "signal": 6,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5798,11 +5798,11 @@
     "piece": 0,
     "quantity": 23,
     "price_opened": "11020.00",
-    "price_closed": null,
-    "difference": null,
-    "change": null,
+    "price_closed": "12620.00",
+    "difference": "1600.00",
+    "change": "14.52",
     "date_opened": "2019-08-05T10:21:34",
-    "date_closed": null,
+    "date_closed": "2019-10-31T10:21:34",
     "is_manual": true,
     "is_active": true
   }
@@ -5812,7 +5812,7 @@
   "pk": 265,
   "fields": {
     "player": 8,
-    "signal": 2,
+    "signal": 6,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5820,11 +5820,11 @@
     "piece": 0,
     "quantity": 23,
     "price_opened": "11000.00",
-    "price_closed": null,
-    "difference": null,
-    "change": null,
+    "price_closed": "12590.00",
+    "difference": "1590.00",
+    "change": "14.45",
     "date_opened": "2019-08-05T10:30:15",
-    "date_closed": null,
+    "date_closed": "2019-11-01T11:40:00",
     "is_manual": true,
     "is_active": true
   }
@@ -5834,7 +5834,7 @@
   "pk": 266,
   "fields": {
     "player": 8,
-    "signal": 2,
+    "signal": 6,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5842,11 +5842,11 @@
     "piece": 0,
     "quantity": 22,
     "price_opened": "11000.00",
-    "price_closed": null,
-    "difference": null,
-    "change": null,
+    "price_closed": "12590.00",
+    "difference": "1590.00",
+    "change": "14.45",
     "date_opened": "2019-08-05T10:30:15",
-    "date_closed": null,
+    "date_closed": "2019-11-01T11:40:00",
     "is_manual": true,
     "is_active": true
   }
@@ -5856,7 +5856,7 @@
   "pk": 267,
   "fields": {
     "player": 8,
-    "signal": 2,
+    "signal": 6,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5864,11 +5864,11 @@
     "piece": 0,
     "quantity": 30,
     "price_opened": "8280.00",
-    "price_closed": null,
-    "difference": null,
-    "change": null,
+    "price_closed": "7100.00",
+    "difference": "-1180.00",
+    "change": "-14.25",
     "date_opened": "2019-08-05T10:30:23",
-    "date_closed": null,
+    "date_closed": "2019-11-01T11:40:00",
     "is_manual": true,
     "is_active": true
   }
@@ -5878,7 +5878,7 @@
   "pk": 268,
   "fields": {
     "player": 11,
-    "signal": 2,
+    "signal": 6,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5900,7 +5900,7 @@
   "pk": 269,
   "fields": {
     "player": 6,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5922,7 +5922,7 @@
   "pk": 270,
   "fields": {
     "player": 6,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5944,7 +5944,7 @@
   "pk": 271,
   "fields": {
     "player": 6,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5966,7 +5966,7 @@
   "pk": 272,
   "fields": {
     "player": 9,
-    "signal": 13,
+    "signal": 17,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -5988,7 +5988,7 @@
   "pk": 273,
   "fields": {
     "player": 9,
-    "signal": 13,
+    "signal": 17,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6010,7 +6010,7 @@
   "pk": 274,
   "fields": {
     "player": 9,
-    "signal": 13,
+    "signal": 17,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6032,7 +6032,7 @@
   "pk": 275,
   "fields": {
     "player": 13,
-    "signal": 10,
+    "signal": 14,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6054,7 +6054,7 @@
   "pk": 276,
   "fields": {
     "player": 13,
-    "signal": 10,
+    "signal": 14,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6076,7 +6076,7 @@
   "pk": 277,
   "fields": {
     "player": 13,
-    "signal": 10,
+    "signal": 14,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6098,7 +6098,7 @@
   "pk": 278,
   "fields": {
     "player": 11,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6120,7 +6120,7 @@
   "pk": 279,
   "fields": {
     "player": 11,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6142,7 +6142,7 @@
   "pk": 280,
   "fields": {
     "player": 11,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6164,7 +6164,7 @@
   "pk": 281,
   "fields": {
     "player": 3,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6186,7 +6186,7 @@
   "pk": 282,
   "fields": {
     "player": 3,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6208,7 +6208,7 @@
   "pk": 283,
   "fields": {
     "player": 3,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6230,7 +6230,7 @@
   "pk": 284,
   "fields": {
     "player": 13,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6252,7 +6252,7 @@
   "pk": 285,
   "fields": {
     "player": 13,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6274,7 +6274,7 @@
   "pk": 286,
   "fields": {
     "player": 13,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6296,7 +6296,7 @@
   "pk": 287,
   "fields": {
     "player": 13,
-    "signal": 11,
+    "signal": 15,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6318,7 +6318,7 @@
   "pk": 288,
   "fields": {
     "player": 13,
-    "signal": 11,
+    "signal": 15,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6340,7 +6340,7 @@
   "pk": 289,
   "fields": {
     "player": 13,
-    "signal": 11,
+    "signal": 15,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6362,7 +6362,7 @@
   "pk": 290,
   "fields": {
     "player": 9,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6384,7 +6384,7 @@
   "pk": 291,
   "fields": {
     "player": 9,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6406,7 +6406,7 @@
   "pk": 292,
   "fields": {
     "player": 9,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6428,7 +6428,7 @@
   "pk": 293,
   "fields": {
     "player": 11,
-    "signal": 16,
+    "signal": 20,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6450,7 +6450,7 @@
   "pk": 294,
   "fields": {
     "player": 11,
-    "signal": 16,
+    "signal": 20,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6472,7 +6472,7 @@
   "pk": 295,
   "fields": {
     "player": 11,
-    "signal": 16,
+    "signal": 20,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6494,7 +6494,7 @@
   "pk": 296,
   "fields": {
     "player": 3,
-    "signal": 9,
+    "signal": 13,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6516,7 +6516,7 @@
   "pk": 297,
   "fields": {
     "player": 3,
-    "signal": 9,
+    "signal": 13,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6538,7 +6538,7 @@
   "pk": 298,
   "fields": {
     "player": 4,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6560,7 +6560,7 @@
   "pk": 299,
   "fields": {
     "player": 4,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6582,7 +6582,7 @@
   "pk": 300,
   "fields": {
     "player": 4,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6604,7 +6604,7 @@
   "pk": 301,
   "fields": {
     "player": 4,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6626,7 +6626,7 @@
   "pk": 302,
   "fields": {
     "player": 4,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6648,7 +6648,7 @@
   "pk": 303,
   "fields": {
     "player": 4,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6670,7 +6670,7 @@
   "pk": 304,
   "fields": {
     "player": 4,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6692,7 +6692,7 @@
   "pk": 305,
   "fields": {
     "player": 4,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6714,7 +6714,7 @@
   "pk": 306,
   "fields": {
     "player": 4,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6736,7 +6736,7 @@
   "pk": 307,
   "fields": {
     "player": 4,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6758,7 +6758,7 @@
   "pk": 308,
   "fields": {
     "player": 4,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6780,7 +6780,7 @@
   "pk": 309,
   "fields": {
     "player": 4,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6802,7 +6802,7 @@
   "pk": 310,
   "fields": {
     "player": 2,
-    "signal": 33,
+    "signal": 37,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6824,7 +6824,7 @@
   "pk": 311,
   "fields": {
     "player": 4,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6846,7 +6846,7 @@
   "pk": 312,
   "fields": {
     "player": 4,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6868,7 +6868,7 @@
   "pk": 313,
   "fields": {
     "player": 7,
-    "signal": 20,
+    "signal": 24,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6890,7 +6890,7 @@
   "pk": 314,
   "fields": {
     "player": 11,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6912,7 +6912,7 @@
   "pk": 315,
   "fields": {
     "player": 4,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6934,7 +6934,7 @@
   "pk": 316,
   "fields": {
     "player": 4,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6956,7 +6956,7 @@
   "pk": 317,
   "fields": {
     "player": 4,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -6978,7 +6978,7 @@
   "pk": 318,
   "fields": {
     "player": 4,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7000,7 +7000,7 @@
   "pk": 319,
   "fields": {
     "player": 4,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7022,7 +7022,7 @@
   "pk": 320,
   "fields": {
     "player": 4,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7044,7 +7044,7 @@
   "pk": 321,
   "fields": {
     "player": 5,
-    "signal": 11,
+    "signal": 15,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7066,7 +7066,7 @@
   "pk": 322,
   "fields": {
     "player": 5,
-    "signal": 11,
+    "signal": 15,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7088,7 +7088,7 @@
   "pk": 323,
   "fields": {
     "player": 9,
-    "signal": 13,
+    "signal": 17,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7110,7 +7110,7 @@
   "pk": 324,
   "fields": {
     "player": 9,
-    "signal": 14,
+    "signal": 18,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7132,7 +7132,7 @@
   "pk": 325,
   "fields": {
     "player": 9,
-    "signal": 14,
+    "signal": 18,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7154,7 +7154,7 @@
   "pk": 326,
   "fields": {
     "player": 9,
-    "signal": 14,
+    "signal": 18,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7176,7 +7176,7 @@
   "pk": 327,
   "fields": {
     "player": 7,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7198,7 +7198,7 @@
   "pk": 328,
   "fields": {
     "player": 3,
-    "signal": 2,
+    "signal": 6,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7220,7 +7220,7 @@
   "pk": 329,
   "fields": {
     "player": 4,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7242,7 +7242,7 @@
   "pk": 330,
   "fields": {
     "player": 3,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7264,7 +7264,7 @@
   "pk": 331,
   "fields": {
     "player": 3,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7286,7 +7286,7 @@
   "pk": 332,
   "fields": {
     "player": 3,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7308,7 +7308,7 @@
   "pk": 333,
   "fields": {
     "player": 3,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7330,7 +7330,7 @@
   "pk": 334,
   "fields": {
     "player": 3,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7352,7 +7352,7 @@
   "pk": 335,
   "fields": {
     "player": 3,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7374,7 +7374,7 @@
   "pk": 336,
   "fields": {
     "player": 3,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7396,7 +7396,7 @@
   "pk": 337,
   "fields": {
     "player": 3,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7418,7 +7418,7 @@
   "pk": 338,
   "fields": {
     "player": 3,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7440,7 +7440,7 @@
   "pk": 339,
   "fields": {
     "player": 5,
-    "signal": 11,
+    "signal": 15,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7462,7 +7462,7 @@
   "pk": 340,
   "fields": {
     "player": 5,
-    "signal": 11,
+    "signal": 15,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7484,7 +7484,7 @@
   "pk": 341,
   "fields": {
     "player": 5,
-    "signal": 11,
+    "signal": 15,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7506,7 +7506,7 @@
   "pk": 342,
   "fields": {
     "player": 5,
-    "signal": 11,
+    "signal": 15,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7528,7 +7528,7 @@
   "pk": 343,
   "fields": {
     "player": 7,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7550,7 +7550,7 @@
   "pk": 344,
   "fields": {
     "player": 7,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7572,7 +7572,7 @@
   "pk": 345,
   "fields": {
     "player": 7,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7594,7 +7594,7 @@
   "pk": 346,
   "fields": {
     "player": 7,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7616,7 +7616,7 @@
   "pk": 347,
   "fields": {
     "player": 7,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7638,7 +7638,7 @@
   "pk": 348,
   "fields": {
     "player": 7,
-    "signal": 4,
+    "signal": 8,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7660,7 +7660,7 @@
   "pk": 349,
   "fields": {
     "player": 11,
-    "signal": 11,
+    "signal": 15,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7682,7 +7682,7 @@
   "pk": 350,
   "fields": {
     "player": 11,
-    "signal": 11,
+    "signal": 15,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7704,7 +7704,7 @@
   "pk": 351,
   "fields": {
     "player": 11,
-    "signal": 11,
+    "signal": 15,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7726,7 +7726,7 @@
   "pk": 352,
   "fields": {
     "player": 5,
-    "signal": 11,
+    "signal": 15,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7748,7 +7748,7 @@
   "pk": 353,
   "fields": {
     "player": 5,
-    "signal": 11,
+    "signal": 15,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7770,7 +7770,7 @@
   "pk": 354,
   "fields": {
     "player": 5,
-    "signal": 11,
+    "signal": 15,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7792,7 +7792,7 @@
   "pk": 355,
   "fields": {
     "player": 5,
-    "signal": 11,
+    "signal": 15,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7814,7 +7814,7 @@
   "pk": 356,
   "fields": {
     "player": 5,
-    "signal": 11,
+    "signal": 15,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7836,7 +7836,7 @@
   "pk": 357,
   "fields": {
     "player": 5,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7858,7 +7858,7 @@
   "pk": 358,
   "fields": {
     "player": 5,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7880,7 +7880,7 @@
   "pk": 359,
   "fields": {
     "player": 5,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7902,7 +7902,7 @@
   "pk": 360,
   "fields": {
     "player": 5,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7924,7 +7924,7 @@
   "pk": 361,
   "fields": {
     "player": 5,
-    "signal": 6,
+    "signal": 10,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7946,7 +7946,7 @@
   "pk": 362,
   "fields": {
     "player": 5,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7968,7 +7968,7 @@
   "pk": 363,
   "fields": {
     "player": 5,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -7990,7 +7990,7 @@
   "pk": 364,
   "fields": {
     "player": 5,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8012,7 +8012,7 @@
   "pk": 365,
   "fields": {
     "player": 5,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8034,7 +8034,7 @@
   "pk": 366,
   "fields": {
     "player": 5,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8056,7 +8056,7 @@
   "pk": 367,
   "fields": {
     "player": 5,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8078,7 +8078,7 @@
   "pk": 368,
   "fields": {
     "player": 5,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8100,7 +8100,7 @@
   "pk": 369,
   "fields": {
     "player": 5,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8108,11 +8108,11 @@
     "piece": 0,
     "quantity": 1,
     "price_opened": "38850.00",
-    "price_closed": null,
-    "difference": null,
-    "change": null,
+    "price_closed": "34550.00",
+    "difference": "4300.00",
+    "change": "11.07",
     "date_opened": "2019-07-30T09:48:34",
-    "date_closed": null,
+    "date_closed": "2019-10-25T11:23:46",
     "is_manual": true,
     "is_active": true
   }
@@ -8122,7 +8122,7 @@
   "pk": 370,
   "fields": {
     "player": 2,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8144,7 +8144,7 @@
   "pk": 371,
   "fields": {
     "player": 2,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8166,7 +8166,7 @@
   "pk": 372,
   "fields": {
     "player": 2,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8188,7 +8188,7 @@
   "pk": 373,
   "fields": {
     "player": 10,
-    "signal": 24,
+    "signal": 28,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8210,7 +8210,7 @@
   "pk": 374,
   "fields": {
     "player": 10,
-    "signal": 24,
+    "signal": 28,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8232,7 +8232,7 @@
   "pk": 375,
   "fields": {
     "player": 10,
-    "signal": 24,
+    "signal": 28,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8254,7 +8254,7 @@
   "pk": 376,
   "fields": {
     "player": 10,
-    "signal": 25,
+    "signal": 29,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8276,7 +8276,7 @@
   "pk": 377,
   "fields": {
     "player": 10,
-    "signal": 25,
+    "signal": 29,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8298,7 +8298,7 @@
   "pk": 378,
   "fields": {
     "player": 10,
-    "signal": 25,
+    "signal": 29,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8320,7 +8320,7 @@
   "pk": 379,
   "fields": {
     "player": 10,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8342,7 +8342,7 @@
   "pk": 380,
   "fields": {
     "player": 10,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8364,7 +8364,7 @@
   "pk": 381,
   "fields": {
     "player": 10,
-    "signal": 19,
+    "signal": 23,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8386,7 +8386,7 @@
   "pk": 382,
   "fields": {
     "player": 12,
-    "signal": 24,
+    "signal": 28,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8408,7 +8408,7 @@
   "pk": 383,
   "fields": {
     "player": 12,
-    "signal": 24,
+    "signal": 28,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8430,7 +8430,7 @@
   "pk": 384,
   "fields": {
     "player": 12,
-    "signal": 24,
+    "signal": 28,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8452,7 +8452,7 @@
   "pk": 385,
   "fields": {
     "player": 4,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8474,7 +8474,7 @@
   "pk": 386,
   "fields": {
     "player": 4,
-    "signal": 8,
+    "signal": 12,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8496,7 +8496,7 @@
   "pk": 387,
   "fields": {
     "player": 6,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8518,7 +8518,7 @@
   "pk": 388,
   "fields": {
     "player": 10,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8540,7 +8540,7 @@
   "pk": 389,
   "fields": {
     "player": 10,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8562,7 +8562,7 @@
   "pk": 390,
   "fields": {
     "player": 10,
-    "signal": 5,
+    "signal": 9,
     "order_opened": null,
     "order_closed": null,
     "level": 0,
@@ -8574,6 +8574,688 @@
     "difference": null,
     "change": null,
     "date_opened": "2019-10-24T09:27:00",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 391,
+  "fields": {
+    "player": 5,
+    "signal": 23,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "L",
+    "piece": 0,
+    "quantity": 14,
+    "price_opened": "34300.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-10-28T09:27:00",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 392,
+  "fields": {
+    "player": 5,
+    "signal": 23,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "L",
+    "piece": 0,
+    "quantity": 14,
+    "price_opened": "34300.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-10-28T09:27:00",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 393,
+  "fields": {
+    "player": 5,
+    "signal": 23,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "S",
+    "piece": 0,
+    "quantity": 1,
+    "price_opened": "34400.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-10-28T09:27:00",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 394,
+  "fields": {
+    "player": 11,
+    "signal": 6,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "S",
+    "piece": 0,
+    "quantity": 35,
+    "price_opened": "7080.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-11-01T10:21:34",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 395,
+  "fields": {
+    "player": 2,
+    "signal": 2,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "L",
+    "piece": 0,
+    "quantity": 152,
+    "price_opened": "13140.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-01-29T12:24:51",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 396,
+  "fields": {
+    "player": 3,
+    "signal": 2,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "L",
+    "piece": 0,
+    "quantity": 160,
+    "price_opened": "12505.00",
+    "price_closed": "12940.00",
+    "difference": "435.00",
+    "change": "3.50",
+    "date_opened": "2019-01-18T15:30:03",
+    "date_closed": "2019-11-04T09:54:54",
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 397,
+  "fields": {
+    "player": 3,
+    "signal": 2,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "L",
+    "piece": 0,
+    "quantity": 160,
+    "price_opened": "12505.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-01-18T15:30:03",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 398,
+  "fields": {
+    "player": 3,
+    "signal": 2,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "S",
+    "piece": 0,
+    "quantity": 266,
+    "price_opened": "7505.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-01-18T15:30:22",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 399,
+  "fields": {
+    "player": 3,
+    "signal": 7,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "L",
+    "piece": 0,
+    "quantity": 24,
+    "price_opened": "10340.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-07-02T15:30:03",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 400,
+  "fields": {
+    "player": 3,
+    "signal": 7,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "L",
+    "piece": 0,
+    "quantity": 24,
+    "price_opened": "10340.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-07-02T15:30:03",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 401,
+  "fields": {
+    "player": 3,
+    "signal": 7,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "S",
+    "piece": 0,
+    "quantity": 31,
+    "price_opened": "7950.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-07-03T15:30:03",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 402,
+  "fields": {
+    "player": 3,
+    "signal": 6,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "L",
+    "piece": 0,
+    "quantity": 24,
+    "price_opened": "12570.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-07-02T15:30:03",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 403,
+  "fields": {
+    "player": 2,
+    "signal": 40,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "L",
+    "piece": 0,
+    "quantity": 1,
+    "price_opened": "34400.00",
+    "price_closed": "30050.00",
+    "difference": "-4350.00",
+    "change": "-12.65",
+    "date_opened": "2019-05-16T09:30:20",
+    "date_closed": "2019-11-04T11:55:00",
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 404,
+  "fields": {
+    "player": 2,
+    "signal": 40,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "L",
+    "piece": 0,
+    "quantity": 1,
+    "price_opened": "29000.00",
+    "price_closed": "30050.00",
+    "difference": "1050.00",
+    "change": "3.62",
+    "date_opened": "2019-07-29T10:37:50",
+    "date_closed": "2019-11-04T11:55:00",
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 405,
+  "fields": {
+    "player": 2,
+    "signal": 40,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "L",
+    "piece": 0,
+    "quantity": 1,
+    "price_opened": "24100.00",
+    "price_closed": "30050.00",
+    "difference": "5950.00",
+    "change": "24.69",
+    "date_opened": "2019-08-08T09:40:48",
+    "date_closed": "2019-11-04T11:55:00",
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 406,
+  "fields": {
+    "player": 2,
+    "signal": 9,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "L",
+    "piece": 0,
+    "quantity": 31,
+    "price_opened": "16300.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-11-01T09:28:00",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 407,
+  "fields": {
+    "player": 2,
+    "signal": 9,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "L",
+    "piece": 0,
+    "quantity": 30,
+    "price_opened": "16300.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-11-01T09:28:00",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 408,
+  "fields": {
+    "player": 2,
+    "signal": 9,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "S",
+    "piece": 0,
+    "quantity": 3,
+    "price_opened": "16300.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-11-01T09:28:00",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 409,
+  "fields": {
+    "player": 2,
+    "signal": 3,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "L",
+    "piece": 0,
+    "quantity": 24,
+    "price_opened": "10325.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-10-31T13:35:37",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 410,
+  "fields": {
+    "player": 2,
+    "signal": 3,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "L",
+    "piece": 0,
+    "quantity": 24,
+    "price_opened": "10325.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-10-31T13:35:37",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 411,
+  "fields": {
+    "player": 2,
+    "signal": 3,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "S",
+    "piece": 0,
+    "quantity": 32,
+    "price_opened": "7775.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-10-31T13:31:09",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 412,
+  "fields": {
+    "player": 17,
+    "signal": 23,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "L",
+    "piece": 0,
+    "quantity": 15,
+    "price_opened": "32250.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-11-04T11:44:31",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 413,
+  "fields": {
+    "player": 17,
+    "signal": 23,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "L",
+    "piece": 0,
+    "quantity": 16,
+    "price_opened": "32250.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-11-04T11:44:31",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 414,
+  "fields": {
+    "player": 17,
+    "signal": 23,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "S",
+    "piece": 0,
+    "quantity": 1,
+    "price_opened": "32250.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-11-04T11:44:33",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 415,
+  "fields": {
+    "player": 17,
+    "signal": 9,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "L",
+    "piece": 0,
+    "quantity": 30,
+    "price_opened": "16550.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-11-04T13:27:24",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 416,
+  "fields": {
+    "player": 17,
+    "signal": 9,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "L",
+    "piece": 0,
+    "quantity": 30,
+    "price_opened": "16550.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-11-04T13:27:24",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 417,
+  "fields": {
+    "player": 17,
+    "signal": 9,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "S",
+    "piece": 0,
+    "quantity": 3,
+    "price_opened": "16550.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-11-04T14:00:08",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 418,
+  "fields": {
+    "player": 8,
+    "signal": 9,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "L",
+    "piece": 0,
+    "quantity": 30,
+    "price_opened": "16500.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-10-31T14:36:00",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 419,
+  "fields": {
+    "player": 8,
+    "signal": 9,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "L",
+    "piece": 0,
+    "quantity": 30,
+    "price_opened": "16500.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-10-31T14:36:00",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 420,
+  "fields": {
+    "player": 8,
+    "signal": 9,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "S",
+    "piece": 0,
+    "quantity": 3,
+    "price_opened": "16550.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-10-31T14:31:00",
+    "date_closed": null,
+    "is_manual": true,
+    "is_active": true
+  }
+},
+{
+  "model": "players.trade",
+  "pk": 421,
+  "fields": {
+    "player": 8,
+    "signal": 6,
+    "order_opened": null,
+    "order_closed": null,
+    "level": 0,
+    "position_choice": "S",
+    "piece": 0,
+    "quantity": 35,
+    "price_opened": "7105.00",
+    "price_closed": null,
+    "difference": null,
+    "change": null,
+    "date_opened": "2019-11-01T11:43:00",
     "date_closed": null,
     "is_manual": true,
     "is_active": true

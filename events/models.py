@@ -25,6 +25,7 @@ class Launch(models.Model):
     def __str__(self):
         return self.name
 
+    @property
     def masked_name(self):
         return f'{self.name[:2]}*'
 

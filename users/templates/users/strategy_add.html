@@ -21,43 +21,61 @@
 {% endblock %}
 
 {% block main %}
-<section class="box text-kr">
-  <!-- Section Body -->
-  {% if strategy_list %}
-  <div class="box-pad">
-    {% for strategy in strategy_list %}
-    <!-- Card -->
-    <div class="card mb-3">
-      <div class="card-header d-flex align-items-center">
-        <h4 class="mb-0 mr-3">{{ strategy }}</h4>
-        <span class="mr-auto text-dark">{{ strategy.price|intcomma }}원 </span>
-        <a class="btn btn-success btn-xm" href="#" role="button">추가</a>
-      </div>
-      <div class="card-body">
-        <p class="card-text">
-          <small class="text-muted">{{ strategy.summary|linebreaksbr }}</small>
-        </p>
-        <hr>
-        <p class="card-text d-flex justify-content-between">
-          <span>Long Positions</span>
-          <span>최대 {{ strategy.long_positions }}</span>
-        </p>
-        <p class="card-text d-flex justify-content-between">
-          <span>Short Positions</span>
-          <span>최대 {{ strategy.short_positions }}</span>
-        </p>
-        <hr>
-        <p class="card-text">
-          <small class="text-muted">{{ strategy.date_created|date:'Y-m-d' }} 등록</small>
-        </p>
-      </div>
+<!-- Section -->
+{% if user.account.has_havister %}
+
+{% if strategy_list %}
+{% for strategy in strategy_list %}
+<!-- Strategy -->
+<section class="box-pad text-kr">
+  <div class="card">
+    <div class="card-header d-flex align-items-center">
+      <h4 class="mb-0 mr-3">{{ strategy }}</h4>
+      {% if strategy.price > 0 %}
+      <span class="mr-auto text-dark">{{ strategy.price|intcomma }}원</span>
+      <span class="badge badge-pill badge-secondary p-2">구매 문의</span>
+      {% else %}
+      <span class="mr-auto text-dark">무료</span>
+      <form action="{% url 'users:strategy_add_done' %}" method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-success btn-xm" name="strategy_id" value="{{ strategy.id }}">추가</button>
+      </form>
+      {% endif %}
     </div>
-    {% endfor %}
+    <div class="card-body">
+      <p class="card-text">
+        <small class="text-muted">{{ strategy.summary|linebreaksbr }}</small>
+      </p>
+      <hr>
+      <p class="card-text d-flex justify-content-between">
+        <span>Long Positions</span>
+        <span>최대 {{ strategy.long_positions }}</span>
+      </p>
+      <p class="card-text d-flex justify-content-between">
+        <span>Short Positions</span>
+        <span>최대 {{ strategy.short_positions }}</span>
+      </p>
+      <hr>
+      <p class="card-text">
+        <small class="text-muted">{{ strategy.date_created|date:'Y-m-d' }} 등록</small>
+      </p>
+    </div>
   </div>
-  {% else %}
-  <div class="box-pad">
-    <span>구매한 전략이 없습니다.</span>
-  </div>
-  {% endif %}
 </section>
+{% endfor %}
+{% else %}
+<section class="box text-kr">
+  <div class="box-pad">
+    <span>추가할 전략이 없습니다.</span>
+  </div>
+</section>
+{% endif %}
+
+{% else %}
+<section class="box text-kr">
+  <div class="box-pad">
+    <span class="text-danger">하비스터 사용 권한이 필요합니다.</span>
+  </div>
+</section>
+{% endif %}
 {% endblock %}

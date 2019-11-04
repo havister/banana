@@ -8,8 +8,8 @@ from strategies.models import Strategy, Signal, Order
 
 class Account(models.Model):
     player = models.OneToOneField(User, on_delete=models.CASCADE, related_name='account')
-    long_fund = models.DecimalField(max_digits=10, decimal_places=0)
-    short_fund = models.DecimalField(max_digits=10, decimal_places=0)
+    primary_budget = models.DecimalField(max_digits=10, decimal_places=0)
+    secondary_budget = models.DecimalField(max_digits=10, decimal_places=0)
     is_real = models.BooleanField(default=True)
     has_havister = models.BooleanField(default=False)
     date_bound = models.DateField(default=timezone.now)
@@ -19,31 +19,31 @@ class Account(models.Model):
         return f'{self.player}'
 
 
-class Basket(models.Model):
-    player = models.ForeignKey(User, on_delete=models.CASCADE, related_name='baskets')
-    strategy = models.ForeignKey(Strategy, on_delete=models.CASCADE, related_name='baskets')
-    date_bound = models.DateField(default=timezone.now)
-    is_active = models.BooleanField(default=True)
+class Shopping(models.Model):
+    player = models.ForeignKey(User, on_delete=models.CASCADE, related_name='shoppings')
+    strategy = models.ForeignKey(Strategy, on_delete=models.CASCADE, related_name='shoppings')
+    date_bound = models.DateTimeField(default=timezone.now)
+    date_unbound = models.DateTimeField(null=True, blank=True)
 
     def __str__(self):
-        return f'{self.strategy}'
+        return f'{self.player} | {self.strategy}'
 
 
 class Play(models.Model):
     player = models.ForeignKey(User, on_delete=models.CASCADE, related_name='plays')
-    signal = models.OneToOneField(Signal, on_delete=models.CASCADE, related_name='plays')
+    signal = models.ForeignKey(Signal, on_delete=models.CASCADE, related_name='plays')
     date_bound = models.DateTimeField(default=timezone.now)
-    is_active = models.BooleanField(default=True)
+    date_unbound = models.DateTimeField(null=True, blank=True)
 
     def __str__(self):
-        return f'{self.signal}'
+        return f'{self.player} | {self.signal}'
 
 
 class Trade(models.Model):
     player = models.ForeignKey(User, on_delete=models.CASCADE, related_name='trades')
     signal = models.ForeignKey(Signal, on_delete=models.CASCADE, related_name='trades')
-    order_opened = models.ForeignKey(Order, on_delete=models.CASCADE, null=True, blank=True, related_name='trades_opened')
-    order_closed = models.ForeignKey(Order, on_delete=models.CASCADE, null=True, blank=True, related_name='trades_closed')
+    order_opened = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='trades_opened', null=True, blank=True)
+    order_closed = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='trades_closed', null=True, blank=True)
     level = models.PositiveSmallIntegerField(default=0)
     position_choice = models.CharField(max_length=1, choices=ChoiceInfo.POSITION_CHOICES, null=True)
     piece = models.PositiveSmallIntegerField(default=0)
@@ -58,7 +58,7 @@ class Trade(models.Model):
     is_active = models.BooleanField(default=True)
 
     def __str__(self):
-        return f'{self.signal}'
+        return f'{self.player} | {self.signal}'
 
     @property
     def position(self):
