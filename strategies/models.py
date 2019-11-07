@@ -43,7 +43,7 @@ class Signal(models.Model):
     @property
     def asset(self):
         asset = self.index_asset if self.index_asset else self.stock_asset
-        return f'{asset.name}'
+        return f'{asset}'
 
     @property
     def long_item(self):
@@ -64,7 +64,6 @@ class Watch(models.Model):
     start_time = models.TimeField()
     end_time = models.TimeField()
     date_started = models.DateField(default=timezone.now)
-    date_ended = models.DateField(null=True, blank=True)
     date_touched = models.DateTimeField(null=True, blank=True)
     date_created = models.DateTimeField(default=timezone.now)
     date_updated = models.DateTimeField(default=timezone.now)

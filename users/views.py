@@ -1,7 +1,9 @@
+from django.utils import timezone
 from django.shortcuts import get_object_or_404, redirect
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.base import TemplateView, View
 from django.db.models import Subquery, Sum
+from markets.models import SpecialDay
 from strategies.models import Strategy, Signal
 from players.models import Shopping, Play
 
@@ -130,6 +132,29 @@ class SignalAddDoneView(LoginRequiredMixin, View):
 
 class HavisterView(LoginRequiredMixin, TemplateView):
     template_name = 'users/havister.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        user = self.request.user
+        # Today
+        today = timezone.now().date()
+        logs = user.logs.filter(datetime__date=today).order_by('datetime')
+        specialday = SpecialDay.objects.filter(date=today, is_active=True).first()
+        # Messages
+        messages = []
+        if logs:
+            for log in logs:
+                messages.append(log.time_message)
+        else:
+            if today.weekday() >= 5: # 5-Saturday, 6-Sunday
+                messages.append("오늘은 휴장일 입니다.")
+            if specialday:
+                if specialday.is_holiday:
+                    messages.append("오늘은 휴장일 입니다.")
+            if len(messages) == 0:
+                messages.append("클라우드에서 하비스터가 준비중입니다.")
+        context['messages'] = messages
+        return context
 
 
 class ClosedView(LoginRequiredMixin, TemplateView):

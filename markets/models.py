@@ -2,6 +2,17 @@ from django.db import models
 from django.utils import timezone
 
 
+class SpecialDay(models.Model): 
+    date = models.DateField()
+    is_holiday = models.BooleanField(default=True)
+    start_time = models.TimeField(null=True, blank=True)
+    end_time = models.TimeField(null=True, blank=True)
+    is_active = models.BooleanField(default=True)
+
+    def __str__(self):
+        return f'{self.date}'
+
+
 class Expiration(models.Model):
     code = models.CharField(max_length=4, primary_key=True)
     date_expired = models.DateField(default=timezone.now)

@@ -1,0 +1,92 @@
+[
+{
+  "model": "strategies.order",
+  "pk": 12,
+  "fields": {
+    "watch": 6,
+    "level": 11,
+    "position_choice": "L",
+    "piece": 1,
+    "status_choice": "O",
+    "order_choice": "B",
+    "date_created": "2019-11-07T15:11:57",
+    "date_updated": "2019-11-07T15:11:57",
+    "is_active": true
+  }
+},
+{
+  "model": "strategies.order",
+  "pk": 13,
+  "fields": {
+    "watch": 6,
+    "level": 11,
+    "position_choice": "L",
+    "piece": 2,
+    "status_choice": "O",
+    "order_choice": "B",
+    "date_created": "2019-11-07T15:12:24",
+    "date_updated": "2019-11-07T15:12:24",
+    "is_active": true
+  }
+},
+{
+  "model": "strategies.order",
+  "pk": 14,
+  "fields": {
+    "watch": 6,
+    "level": 11,
+    "position_choice": "S",
+    "piece": 1,
+    "status_choice": "O",
+    "order_choice": "S",
+    "date_created": "2019-11-07T15:12:34",
+    "date_updated": "2019-11-07T15:12:34",
+    "is_active": true
+  }
+},
+{
+  "model": "strategies.order",
+  "pk": 15,
+  "fields": {
+    "watch": 7,
+    "level": 11,
+    "position_choice": "L",
+    "piece": 1,
+    "status_choice": "O",
+    "order_choice": "B",
+    "date_created": "2019-11-07T15:12:57",
+    "date_updated": "2019-11-07T15:12:57",
+    "is_active": true
+  }
+},
+{
+  "model": "strategies.order",
+  "pk": 16,
+  "fields": {
+    "watch": 7,
+    "level": 11,
+    "position_choice": "L",
+    "piece": 2,
+    "status_choice": "O",
+    "order_choice": "B",
+    "date_created": "2019-11-07T15:13:18",
+    "date_updated": "2019-11-07T15:13:18",
+    "is_active": true
+  }
+},
+{
+  "model": "strategies.order",
+  "pk": 17,
+  "fields": {
+    "watch": 7,
+    "level": 11,
+    "position_choice": "S",
+    "piece": 1,
+    "status_choice": "O",
+    "order_choice": "S",
+    "date_created": "2019-11-07T15:13:30",
+    "date_updated": "2019-11-07T15:13:30",
+    "is_active": true
+  }
+}
+]

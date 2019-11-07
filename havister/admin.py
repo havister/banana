@@ -1,3 +1,4 @@
 from django.contrib import admin
+from havister import models
 
-# Register your models here.
+admin.site.register(models.Log)

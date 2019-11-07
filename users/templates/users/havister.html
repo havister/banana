@@ -22,9 +22,9 @@
     <form class="pb-3">
       <div class="form-group mb-0 p-2 border">
         {% if user.account.has_havister %}
-        <textarea class="havister" id="havister-status" rows="10" disabled>>>> 오늘은 휴장일 입니다.</textarea>
+        <textarea class="havister" id="havister-status" rows="10">{% for message in messages %}{{ message }}&#13;{% endfor %}</textarea>
         {% else %}
-        <textarea class="havister" rows="10" disabled>>>> 하비스터 사용권 등록이 필요합니다.</textarea>
+        <textarea class="havister" rows="10" disabled>하비스터 사용권 등록이 필요합니다.</textarea>
         {% endif %}
       </div>
     </form>

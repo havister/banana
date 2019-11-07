@@ -1,0 +1,36 @@
+[
+{
+  "model": "strategies.watch",
+  "pk": 6,
+  "fields": {
+    "signal": 41,
+    "price": "286.00",
+    "price_touched": null,
+    "condition_choice": "P",
+    "start_time": "09:10:00",
+    "end_time": "15:20:00",
+    "date_started": "2019-11-07",
+    "date_touched": null,
+    "date_created": "2019-11-07T14:54:55",
+    "date_updated": "2019-11-07T14:54:55",
+    "is_active": true
+  }
+},
+{
+  "model": "strategies.watch",
+  "pk": 7,
+  "fields": {
+    "signal": 42,
+    "price": "1000.00",
+    "price_touched": null,
+    "condition_choice": "M",
+    "start_time": "09:10:00",
+    "end_time": "15:20:00",
+    "date_started": "2019-11-07",
+    "date_touched": null,
+    "date_created": "2019-11-07T15:04:09",
+    "date_updated": "2019-11-07T15:04:09",
+    "is_active": true
+  }
+}
+]

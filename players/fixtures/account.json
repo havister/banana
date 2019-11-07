@@ -180,5 +180,122 @@
     "date_bound": "2019-09-18",
     "is_active": true
   }
+},
+{
+  "model": "players.account",
+  "pk": 15,
+  "fields": {
+    "player": 18,
+    "primary_budget": "100000000",
+    "secondary_budget": "0",
+    "is_real": false,
+    "has_havister": true,
+    "date_bound": "2019-11-07",
+    "is_active": true
+  }
+},
+{
+  "model": "players.account",
+  "pk": 16,
+  "fields": {
+    "player": 19,
+    "primary_budget": "100000000",
+    "secondary_budget": "0",
+    "is_real": false,
+    "has_havister": true,
+    "date_bound": "2019-11-07",
+    "is_active": true
+  }
+},
+{
+  "model": "players.account",
+  "pk": 17,
+  "fields": {
+    "player": 20,
+    "primary_budget": "100000000",
+    "secondary_budget": "0",
+    "is_real": false,
+    "has_havister": true,
+    "date_bound": "2019-11-07",
+    "is_active": true
+  }
+},
+{
+  "model": "players.account",
+  "pk": 18,
+  "fields": {
+    "player": 21,
+    "primary_budget": "100000000",
+    "secondary_budget": "0",
+    "is_real": false,
+    "has_havister": true,
+    "date_bound": "2019-11-07",
+    "is_active": true
+  }
+},
+{
+  "model": "players.account",
+  "pk": 19,
+  "fields": {
+    "player": 22,
+    "primary_budget": "100000000",
+    "secondary_budget": "0",
+    "is_real": false,
+    "has_havister": true,
+    "date_bound": "2019-11-07",
+    "is_active": true
+  }
+},
+{
+  "model": "players.account",
+  "pk": 20,
+  "fields": {
+    "player": 23,
+    "primary_budget": "100000000",
+    "secondary_budget": "0",
+    "is_real": false,
+    "has_havister": true,
+    "date_bound": "2019-11-07",
+    "is_active": true
+  }
+},
+{
+  "model": "players.account",
+  "pk": 21,
+  "fields": {
+    "player": 24,
+    "primary_budget": "100000000",
+    "secondary_budget": "0",
+    "is_real": false,
+    "has_havister": true,
+    "date_bound": "2019-11-07",
+    "is_active": true
+  }
+},
+{
+  "model": "players.account",
+  "pk": 22,
+  "fields": {
+    "player": 25,
+    "primary_budget": "100000000",
+    "secondary_budget": "0",
+    "is_real": false,
+    "has_havister": true,
+    "date_bound": "2019-11-07",
+    "is_active": true
+  }
+},
+{
+  "model": "players.account",
+  "pk": 23,
+  "fields": {
+    "player": 26,
+    "primary_budget": "100000000",
+    "secondary_budget": "0",
+    "is_real": false,
+    "has_havister": true,
+    "date_bound": "2019-11-07",
+    "is_active": true
+  }
 }
 ]
