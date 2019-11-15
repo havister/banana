@@ -1,35 +1,52 @@
 [
 {
   "model": "strategies.watch",
-  "pk": 6,
+  "pk": 1,
   "fields": {
     "signal": 41,
-    "price": "286.00",
-    "price_touched": null,
-    "condition_choice": "P",
-    "start_time": "09:10:00",
-    "end_time": "15:20:00",
-    "date_started": "2019-11-07",
-    "date_touched": null,
-    "date_created": "2019-11-07T14:54:55",
-    "date_updated": "2019-11-07T14:54:55",
-    "is_active": true
-  }
-},
-{
-  "model": "strategies.watch",
-  "pk": 7,
-  "fields": {
-    "signal": 42,
-    "price": "1000.00",
+    "price": "282.00",
     "price_touched": null,
     "condition_choice": "M",
     "start_time": "09:10:00",
     "end_time": "15:20:00",
     "date_started": "2019-11-07",
     "date_touched": null,
-    "date_created": "2019-11-07T15:04:09",
-    "date_updated": "2019-11-07T15:04:09",
+    "date_created": "2019-11-07T14:54:55",
+    "date_updated": "2019-11-13T09:00:00",
+    "is_active": true
+  }
+},
+{
+  "model": "strategies.watch",
+  "pk": 2,
+  "fields": {
+    "signal": 42,
+    "price": "1192.80",
+    "price_touched": "1192.80",
+    "condition_choice": "M",
+    "start_time": "09:10:00",
+    "end_time": "15:20:00",
+    "date_started": "2019-11-07",
+    "date_touched": "2019-05-09T09:30:00",
+    "date_created": "2019-05-08T17:00:00",
+    "date_updated": "2019-05-08T17:00:00",
+    "is_active": true
+  }
+},
+{
+  "model": "strategies.watch",
+  "pk": 3,
+  "fields": {
+    "signal": 42,
+    "price": "1010.65",
+    "price_touched": null,
+    "condition_choice": "P",
+    "start_time": "09:10:00",
+    "end_time": "12:00:00",
+    "date_started": "2019-11-08",
+    "date_touched": null,
+    "date_created": "2019-10-21T17:40:43",
+    "date_updated": "2019-10-21T17:40:43",
     "is_active": true
   }
 }

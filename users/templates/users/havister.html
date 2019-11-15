@@ -15,8 +15,8 @@
 <!-- Header -->
 <header class="box text-kr">
   <div class="box-pad d-flex justify-content-between align-items-center">
-    <h1 class="my-1"><i class="fas fa-desktop text-gray"></i> 하비스터</h1>
-    <p class="mb-0 h5">{% now "Y년 m월 d일" %}</p>
+    <h1 class="my-1">하비스터</h1>
+    <a class="btn btn-outline-secondary" href="{% url 'users:havister' %}" role="button"><i class='fas fa-redo'></i></a>
   </div>
   <div class="box-pad-x">
     <form class="pb-3">
@@ -42,6 +42,32 @@
   <!-- Section Body -->
   {% if closed_trade_list %}
   <div class="box">
+    {% for trade in closed_trade_list %}
+    <div class="box-pad d-flex align-items-center border-top">
+      <div class="d-none d-sm-block w-25 text-center pr-3">
+        <p class="h3 font-weight-normal text-darkgray">{{ forloop.counter }}</p>
+      </div>
+      <div class="box flex-grow-1">
+        <div class="d-flex align-items-center">
+          <h5 class="mr-auto">{{ trade.signal.asset|upper }}</h5>
+          <p class="h5 {{ trade.change|change_class }}">
+            <span>{{ trade.change|stringformat:"+0.2f" }}%</span>
+          </p>
+        </div>
+        <div class="d-flex">
+          <p class="mb-0 small text-muted mr-auto">
+            <span>{{ trade.date_opened|date:'Y.m.d' }}</span>
+            <span>~</span>
+            <span>{{ trade.date_closed|date:'Y.m.d' }}</span>
+          </p>
+          <p class="mb-0 small text-muted">
+            <span>{{ trade.signal.strategy }}</span> /
+            <span>{{ trade.position }}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
   </div>
   {% else %}
   <div class="box-pad">
@@ -59,6 +85,32 @@
   <!-- Section Body -->
   {% if opened_trade_list %}
   <div class="box">
+    {% for trade in opened_trade_list %}
+    <div class="box-pad d-flex align-items-center border-top">
+      <div class="d-none d-sm-block w-25 text-center pr-3">
+        <p class="h3 font-weight-normal text-darkgray">{{ forloop.counter }}</p>
+      </div>
+      <div class="box flex-grow-1">
+        <div class="d-flex align-items-center">
+          <h5 class="mr-auto">{{ trade.signal.asset|upper }}</h5>
+          <p class="h5 text-muted">
+            <span class="text-cyan"><i class="fas fa-plane-departure"></i></span>
+          </p>
+        </div>
+        <div class="d-flex">
+          <p class="mb-0 small text-muted mr-auto">
+            <span>{{ trade.date_opened|date:'Y.m.d' }}</span>
+            <span class="mr-3">~</span>
+            <span><i class="far fa-hourglass"></i> Signal Waiting</span>
+          </p>
+          <p class="mb-0 small text-muted">
+            <span>{{ trade.signal.strategy }}</span> /
+            <span>{{ trade.position }}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
   </div>
   {% else %}
   <div class="box-pad">

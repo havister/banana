@@ -38,7 +38,12 @@ class Signal(models.Model):
     is_active = models.BooleanField(default=True)
 
     def __str__(self):
-        return f'{self.strategy} | {self.asset}'
+        return f'{self.strategy} | {self.asset} | {"{:,}".format(self.total_amount)}'
+
+    @property
+    def is_index(self):
+        is_index = True if self.index_asset else False
+        return f'{is_index}'
 
     @property
     def asset(self):
@@ -46,14 +51,45 @@ class Signal(models.Model):
         return f'{asset}'
 
     @property
+    def asset_code(self):
+        asset = self.index_asset if self.index_asset else self.stock_asset
+        return f'{asset.code}'
+
+    @property
     def long_item(self):
         long_item = self.long_etf if self.long_etf else self.long_stock
         return f'{long_item}'
 
     @property
+    def long_item_code(self):
+        long_item = self.long_etf if self.long_etf else self.long_stock
+        return f'{long_item.code}'
+
+    @property
     def short_item(self):
         short_item = self.short_etf if self.short_etf else self.short_future
         return f'{short_item}'
+
+    @property
+    def short_item_code(self):
+        short_item = self.short_etf if self.short_etf else self.short_future
+        return f'{short_item.code}'
+
+    @property
+    def as_dict(self):
+        data = {
+            'pk': self.pk,
+            'strategy': self.strategy.name,
+            'is_index': self.is_index,
+            'asset': self.asset,
+            'asset_code': self.asset_code,
+            'long_item': self.long_item,
+            'long_item_code': self.long_item_code,
+            'short_item': self.short_item,
+            'short_item_code': self.short_item_code,
+            'unit_amount': int(self.unit_amount)
+        }
+        return data
 
 
 class Watch(models.Model):
@@ -69,12 +105,26 @@ class Watch(models.Model):
     date_updated = models.DateTimeField(default=timezone.now)
     is_active = models.BooleanField(default=True)
 
+    class Meta:
+        verbose_name_plural = "watches"
+
     def __str__(self):
-        return f'{self.signal} | {self.price} {self.condition}'
+        return f'{self.signal} | {self.price} | {self.condition}'
 
     @property
     def condition(self):
         return ChoiceInfo.CONDITIONS[self.condition_choice]
+
+    @property
+    def as_dict(self):
+        data = {
+            'pk': self.pk,
+            'price': float(self.price),
+            'condition': self.condition_choice,
+            'start_time': self.start_time,
+            'end_time': self.end_time,
+        }
+        return data
 
 
 class Order(models.Model):
@@ -89,7 +139,7 @@ class Order(models.Model):
     is_active = models.BooleanField(default=True)
 
     def __str__(self):
-        return f'{self.watch} | {self.level}-{self.position}-{self.piece}'
+        return f'{self.watch} | {self.level}-{self.position}-{self.piece} | {self.status} | {self.order}'
 
     @property
     def position(self):
@@ -102,4 +152,15 @@ class Order(models.Model):
     @property
     def order(self):
         return ChoiceInfo.ORDERS[self.order_choice]
+
+    @property
+    def as_dict(self):
+        data = {
+            'level': self.level,
+            'position': self.position_choice,
+            'piece': self.piece,
+            'status': self.status_choice,
+            'order': self.order_choice
+        }
+        return data
     

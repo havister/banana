@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.utils import timezone
 from pointnut.commons import ChoiceInfo
 from markets.models import Index, Stock
-from strategies.models import Strategy, Signal, Order
+from strategies.models import Strategy, Signal
 
 
 class Account(models.Model):
@@ -17,6 +17,18 @@ class Account(models.Model):
 
     def __str__(self):
         return f'{self.player}'
+
+    @property
+    def as_dict(self):
+        data = {
+            'player': self.player.username,
+            'primary_budget': int(self.primary_budget),
+            'secondary_budget': int(self.secondary_budget),
+            'is_real': self.is_real,
+            'has_havister': self.has_havister,
+            'is_active': self.is_active
+        }
+        return data
 
 
 class Shopping(models.Model):
@@ -42,8 +54,6 @@ class Play(models.Model):
 class Trade(models.Model):
     player = models.ForeignKey(User, on_delete=models.CASCADE, related_name='trades')
     signal = models.ForeignKey(Signal, on_delete=models.CASCADE, related_name='trades')
-    order_opened = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='trades_opened', null=True, blank=True)
-    order_closed = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='trades_closed', null=True, blank=True)
     level = models.PositiveSmallIntegerField(default=0)
     position_choice = models.CharField(max_length=1, choices=ChoiceInfo.POSITION_CHOICES, null=True)
     piece = models.PositiveSmallIntegerField(default=0)
@@ -52,13 +62,13 @@ class Trade(models.Model):
     price_closed = models.DecimalField(max_digits=9, decimal_places=2, null=True, blank=True)
     difference = models.DecimalField(max_digits=9, decimal_places=2, null=True, blank=True)
     change = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
-    date_opened = models.DateTimeField(default=timezone.now)
+    date_opened = models.DateTimeField(null=True, blank=True)
     date_closed = models.DateTimeField(null=True, blank=True)
     is_manual = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
 
     def __str__(self):
-        return f'{self.player} | {self.signal}'
+        return f'{self.player} | {self.signal} | {self.position}'
 
     @property
     def position(self):

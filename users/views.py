@@ -154,6 +154,12 @@ class HavisterView(LoginRequiredMixin, TemplateView):
             if len(messages) == 0:
                 messages.append("클라우드에서 하비스터가 준비중입니다.")
         context['messages'] = messages
+        # Closed trade list
+        context['closed_trade_list'] = user.trades.filter(date_closed__date=today). \
+            order_by('-date_closed')
+        # Opened trade list
+        context['opened_trade_list'] = user.trades.filter(date_opened__date=today, date_closed__isnull=True). \
+            order_by('-date_opened')
         return context
 
 
