@@ -19,14 +19,14 @@ class Account(models.Model):
         return f'{self.player}'
 
     @property
-    def as_dict(self):
+    def as_json_dict(self):
         data = {
-            'player': self.player.username,
-            'primary_budget': int(self.primary_budget),
-            'secondary_budget': int(self.secondary_budget),
-            'is_real': self.is_real,
-            'has_havister': self.has_havister,
-            'is_active': self.is_active
+            'Player': self.player.username,
+            'PrimaryBudget': int(self.primary_budget),
+            'SecondaryBudget': int(self.secondary_budget),
+            'IsReal': self.is_real,
+            'HasHavister': self.has_havister,
+            'IsActive': self.is_active
         }
         return data
 

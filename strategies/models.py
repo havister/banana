@@ -76,18 +76,18 @@ class Signal(models.Model):
         return f'{short_item.code}'
 
     @property
-    def as_dict(self):
+    def as_json_dict(self):
         data = {
-            'pk': self.pk,
-            'strategy': self.strategy.name,
-            'is_index': self.is_index,
-            'asset': self.asset,
-            'asset_code': self.asset_code,
-            'long_item': self.long_item,
-            'long_item_code': self.long_item_code,
-            'short_item': self.short_item,
-            'short_item_code': self.short_item_code,
-            'unit_amount': int(self.unit_amount)
+            'Pk': self.pk,
+            'Strategy': self.strategy.name,
+            'IsIndex': self.is_index,
+            'Asset': self.asset,
+            'AssetCode': self.asset_code,
+            'LongItem': self.long_item,
+            'LongItemCode': self.long_item_code,
+            'ShortItem': self.short_item,
+            'ShortItemCode': self.short_item_code,
+            'UnitAmount': int(self.unit_amount)
         }
         return data
 
@@ -116,13 +116,13 @@ class Watch(models.Model):
         return ChoiceInfo.CONDITIONS[self.condition_choice]
 
     @property
-    def as_dict(self):
+    def as_json_dict(self):
         data = {
-            'pk': self.pk,
-            'price': float(self.price),
-            'condition': self.condition_choice,
-            'start_time': self.start_time,
-            'end_time': self.end_time,
+            'Pk': self.pk,
+            'Price': float(self.price),
+            'Condition': self.condition_choice,
+            'StartTime': self.start_time,
+            'EndTime': self.end_time,
         }
         return data
 
@@ -154,13 +154,13 @@ class Order(models.Model):
         return ChoiceInfo.ORDERS[self.order_choice]
 
     @property
-    def as_dict(self):
+    def as_json_dict(self):
         data = {
-            'level': self.level,
-            'position': self.position_choice,
-            'piece': self.piece,
-            'status': self.status_choice,
-            'order': self.order_choice
+            'Level': self.level,
+            'Position': self.position_choice,
+            'Piece': self.piece,
+            'Status': self.status_choice,
+            'Order': self.order_choice
         }
         return data
     
