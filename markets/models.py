@@ -4,9 +4,9 @@ from django.utils import timezone
 
 class Market(models.Model): 
     date = models.DateField()
-    is_holiday = models.BooleanField(default=True)
     start_time = models.TimeField(null=True, blank=True)
     end_time = models.TimeField(null=True, blank=True)
+    is_holiday = models.BooleanField(default=True)
     is_active = models.BooleanField(default=True)
 
     def __str__(self):

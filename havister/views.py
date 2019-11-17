@@ -21,9 +21,9 @@ def market(request):
     date = timezone.now().date()
     today = Market.objects.filter(date=date, is_active=True).first()
     if today is None:
-        is_holiday = False
         start_time = "09:00:00"
         end_time = "15:20:00"
+        is_holiday = False
     else:
         is_holiday = today.is_holiday
         start_time = today.start_time
@@ -31,9 +31,9 @@ def market(request):
     # Today data
     data = {
         'Date': date,
-        'IsHoliday': is_holiday,
         'StartTime': start_time,
-        'EndTime': end_time
+        'EndTime': end_time,
+        'IsHoliday': is_holiday
     }
     return JsonResponse(data, safe=False)
 

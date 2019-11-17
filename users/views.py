@@ -6,6 +6,7 @@ from django.db.models import Subquery, Sum
 from markets.models import Market
 from strategies.models import Strategy, Signal
 from players.models import Shopping, Play
+import datetime
 
 
 class IndexView(LoginRequiredMixin, TemplateView):
@@ -136,8 +137,13 @@ class HavisterView(LoginRequiredMixin, TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         user = self.request.user
+        # Market time
+        start_time = datetime.time(9, 0)
+        end_time = datetime.time(15, 45)
         # Today
-        today = timezone.now().date()
+        now = timezone.now()
+        today = now.date()
+        time = now.time()
         messages = user.messages.filter(datetime__date=today).order_by('datetime')
         market = Market.objects.filter(date=today, is_active=True).first()
         # Messages
@@ -152,7 +158,12 @@ class HavisterView(LoginRequiredMixin, TemplateView):
                 if market.is_holiday:
                     message_list.append("오늘은 휴장일 입니다.")
             if len(message_list) == 0:
-                message_list.append("클라우드에서 하비스터가 준비중입니다.")
+                message_list.append("하비스터가 준비 중 입니다.")
+                if time >= start_time:
+                    message_list.append(start_time.strftime('%H:%M:%S') + " | 하비스터가 시장을 감시 중 입니다.")
+                if time > end_time:
+                    message_list.append(end_time.strftime('%H:%M:%S') + " | 시장이 마감 되었습니다.")
+                    message_list.append("하비스터가 종료 되었습니다.")
         context['messages'] = message_list
         # Closed trade list
         context['closed_trade_list'] = user.trades.filter(date_closed__date=today). \
