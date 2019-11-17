@@ -2,7 +2,7 @@ from django.db import models
 from django.utils import timezone
 
 
-class SpecialDay(models.Model): 
+class Market(models.Model): 
     date = models.DateField()
     is_holiday = models.BooleanField(default=True)
     start_time = models.TimeField(null=True, blank=True)

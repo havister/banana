@@ -6,8 +6,8 @@ app_name = 'havister'
 urlpatterns = [
     # /havister/
     path('', views.IndexView.as_view(), name='index'),
-    # /havister/v1/run/
-    path('v1/run/', views.run, name='run'),
+    # /havister/v1/market/
+    path('v1/market/', views.market, name='market'),
     # /havister/v1/account/
     path('v1/account/', views.account, name='account'),
     # /havister/v1/signals/

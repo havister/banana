@@ -3,7 +3,7 @@ from django.shortcuts import get_object_or_404, redirect
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.base import TemplateView, View
 from django.db.models import Subquery, Sum
-from markets.models import SpecialDay
+from markets.models import Market
 from strategies.models import Strategy, Signal
 from players.models import Shopping, Play
 
@@ -138,22 +138,22 @@ class HavisterView(LoginRequiredMixin, TemplateView):
         user = self.request.user
         # Today
         today = timezone.now().date()
-        logs = user.logs.filter(datetime__date=today).order_by('datetime')
-        specialday = SpecialDay.objects.filter(date=today, is_active=True).first()
+        messages = user.messages.filter(datetime__date=today).order_by('datetime')
+        market = Market.objects.filter(date=today, is_active=True).first()
         # Messages
-        messages = []
-        if logs:
-            for log in logs:
-                messages.append(log.time_message)
+        message_list = []
+        if messages:
+            for message in messages:
+                message_list.append(message.time_str)
         else:
             if today.weekday() >= 5: # 5-Saturday, 6-Sunday
-                messages.append("오늘은 휴장일 입니다.")
-            if specialday:
-                if specialday.is_holiday:
-                    messages.append("오늘은 휴장일 입니다.")
-            if len(messages) == 0:
-                messages.append("클라우드에서 하비스터가 준비중입니다.")
-        context['messages'] = messages
+                message_list.append("오늘은 휴장일 입니다.")
+            if market:
+                if market.is_holiday:
+                    message_list.append("오늘은 휴장일 입니다.")
+            if len(message_list) == 0:
+                message_list.append("클라우드에서 하비스터가 준비중입니다.")
+        context['messages'] = message_list
         # Closed trade list
         context['closed_trade_list'] = user.trades.filter(date_closed__date=today). \
             order_by('-date_closed')

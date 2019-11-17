@@ -4,8 +4,8 @@ from django.views.decorators.csrf import csrf_exempt
 from django.views.generic import TemplateView
 from django.contrib.auth.models import User
 from pointnut.commons import ChoiceInfo
-from havister.models import Log
-from markets.models import SpecialDay
+from havister.models import Message
+from markets.models import Market
 from strategies.models import Signal
 from players.models import Play, Trade
 from decimal import Decimal, ROUND_HALF_UP
@@ -16,10 +16,10 @@ class IndexView(TemplateView):
     template_name = 'havister/index.html'
 
 
-def run(request):
+def market(request):
     # Today
     date = timezone.now().date()
-    today = SpecialDay.objects.filter(date=date, is_active=True).first()
+    today = Market.objects.filter(date=date, is_active=True).first()
     if today is None:
         is_holiday = False
         start_time = "09:00:00"
@@ -124,12 +124,12 @@ def message(request):
         # JSON
         json_data = json.loads(request.body.decode('utf-8'))
         player = User.objects.filter(username=json_data['Player']).first()
+        level = json_data['Level']
         message = json_data['Message']
-        code = json_data['Code']
         datetime = json_data['Datetime']
-        # Log Create
-        Log.objects.create(
-            player=player, message=message, code=code, datetime=datetime
+        # Message Create
+        Message.objects.create(
+            player=player, level=level, message=message, datetime=datetime
         )
     return HttpResponse('OK')
 
