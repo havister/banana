@@ -47,6 +47,6 @@ class NoticeView(TemplateView):
         # Tester list
         context['tester_list'] = Launch.objects.filter(
             date_been_tester__year=2019,
-            date_been_tester__month=10
+            date_been_tester__month=11
         ).order_by('name')
         return context
