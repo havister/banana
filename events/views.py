@@ -9,10 +9,14 @@ class IndexView(TemplateView):
     template_name = 'events/index.html'
 
 
-class LaunchView(FormView):
-    form_class = LaunchForm
+class LaunchView(TemplateView):
     template_name = 'events/launch.html'
-    success_url = reverse_lazy('events:thanks')
+
+
+class LaunchApplyView(FormView):
+    form_class = LaunchForm
+    template_name = 'events/launch_apply.html'
+    success_url = reverse_lazy('events:launch_thanks')
 
     def form_valid(self, form):
         # Cleaned Data
@@ -35,12 +39,12 @@ class LaunchView(FormView):
         return super().form_valid(form)
 
 
-class ThanksView(TemplateView):
-    template_name = 'events/thanks.html'
+class LaunchThanksView(TemplateView):
+    template_name = 'events/launch_thanks.html'
 
 
-class NoticeView(TemplateView):
-    template_name = 'events/notice.html'
+class LaunchNoticeView(TemplateView):
+    template_name = 'events/launch_notice.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -50,3 +54,7 @@ class NoticeView(TemplateView):
             date_been_tester__month=11
         ).order_by('name')
         return context
+
+
+class StudyView(TemplateView):
+    template_name = 'events/study.html'

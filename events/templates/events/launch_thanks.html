@@ -2,11 +2,11 @@
 {% load static %}
 
 {% block title %}
-<title>Events - POINTNUT | 포인트넛</title>
+<title>런칭 - 이벤트 - 포인트넛 | POINTNUT</title>
 {% endblock %}
 
 {% block nav-title %}
-<a class="mr-2 green" href="{% url 'events:index' %}"><i class="fas fa-chevron-left"></i></a>
+<a class="mr-2 green" href="{% url 'events:launch' %}"><i class="fas fa-chevron-left"></i></a>
 <span>Events</span>
 {% endblock %}
 
@@ -28,7 +28,7 @@
   <div class="my-2">
     <h2>Thanks!</h2>
     <p>이벤트 신청이 완료되었습니다.</p>
-    <a class="btn btn-success px-4" href="{% url 'events:index' %}" role="button">확인</a>
+    <a class="btn btn-success px-4" href="{% url 'events:launch' %}" role="button">확인</a>
   </div>
 </section>
 {% endblock %}

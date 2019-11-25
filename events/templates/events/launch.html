@@ -1,25 +1,20 @@
 {% extends "base.html" %}
 {% load static %}
-{% load form_extras %}
 
 {% block title %}
-<title>Events - POINTNUT | 포인트넛</title>
+<title>런칭 - 이벤트 - 포인트넛 | POINTNUT</title>
 {% endblock %}
 
 {% block nav-title %}
-<a class="mr-2 green" href="{% url 'events:index' %}"><i class="fas fa-chevron-left"></i></a>
+<a class="mr-2 green" href="/"><i class="fas fa-chevron-left"></i></a>
 <span>Events</span>
-{% endblock %}
-
-{% block nav-link %}
 {% endblock %}
 
 {% block header %}
 <!-- Header -->
 <header class="box">
   <div class="box-pad">
-    <h1>런칭 이벤트</h1>
-    <p class="mb-0">아래 양식을 올바르게 입력한 다음 신청하기 버튼을 눌러주십시오.</p>
+    <h1 class="mb-0">런칭 이벤트</h1>
   </div>
 </header>
 {% endblock %}
@@ -27,104 +22,74 @@
 {% block main %}
 <!-- Section -->
 <section class="box-pad">
-  <div class="card mb-0">
-    <div class="card-body">
-      <!-- Form -->
-      <form class="needs-validation" method="post" novalidate>
-        {% csrf_token %}
-        <div class="form-group row">
-          <label class="col-sm-4 col-form-label" for="{{ form.name.id_for_label }}"><strong>이름</strong></label>
-          <div class="col-sm-8">
-            {{ form.name|tag_class:"form-control" }}
-          </div>
-        </div>
-        <div class="form-group row">
-          <legend class="col-sm-4 col-form-label"><strong>성별</strong></legend>
-          <div class="col-sm-8 d-flex align-items-center">
-            {% for radio in form.gender_choice %} 
-            <div class="form-check form-check-inline">
-              {{ radio.tag }}
-              <label class="form-check-label" for="{{ radio.id_for_label }}">{{ radio.choice_label }}</label>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-        <div class="form-group row">
-          <label class="col-sm-4 col-form-label" for="{{ form.age.id_for_label }}"><strong>나이</strong></label>
-          <div class="col-sm-8">
-            {{ form.age|tag_class:"form-control" }}
-            <small class="form-text text-muted">20 ~ 99까지 숫자로 작성해야 합니다.</small>
-          </div>
-        </div>
-        <div class="form-group row">
-          <label class="col-sm-4 col-form-label" for="{{ form.phone.id_for_label }}"><strong>휴대폰</strong></label>
-          <div class="col-sm-8">
-            {{ form.phone|tag_class:"form-control" }}
-            {% if form.phone.errors %}
-            <strong class="form-text text-danger">형식이 틀렸습니다.</strong>
-            {% endif %}
-            <small class="form-text text-muted">하이픈(-) 없이 숫자로 작성해야 합니다.</small>
-          </div>
-        </div>
-        <div class="form-group row">
-          <legend class="col-sm-4 col-form-label"><strong>결혼 유무</strong></legend>
-          <div class="col-sm-8 d-flex align-items-center">
-            <div class="form-check">
-              {{ form.is_married|tag_class:"form-check-input" }}
-              <label class="form-check-label" for="{{ form.is_married.id_for_label }}">기혼</label>
-            </div>
-          </div>
-        </div>
-        <div class="form-group row">
-          <label class="col-sm-4 col-form-label" for="{{ form.job.id_for_label }}"><strong>직업</strong></label>
-          <div class="col-sm-8">
-            {{ form.job|tag_class:"form-control" }}
-          </div>
-        </div>
-        <div class="form-group row">
-          <label class="col-sm-4 col-form-label" for="{{ form.city.id_for_label }}"><strong>주소</strong></label>
-          <div class="col-sm-8">
-            {{ form.city|tag_class:"form-control" }}
-            <small class="form-text text-muted">간략히 시(도), 구(군)까지 작성할 수 있습니다.</small>
-          </div>
-        </div>
-        <div class="form-group row">
-          <legend class="col-sm-4 col-form-label"><strong>투자 경험</strong></legend>
-          <div class="col-sm-8 d-flex align-items-center">
-            <div class="form-check form-check-inline">
-              {{ form.has_fund|tag_class:"form-check-input" }}
-              <label class="form-check-label" for="{{ form.has_fund.id_for_label }}">펀드</label>
-            </div>
-            <div class="form-check form-check-inline">
-              {{ form.has_stock|tag_class:"form-check-input" }}
-              <label class="form-check-label" for="{{ form.has_stock.id_for_label }}">주식</label>
-            </div>
-            <div class="form-check form-check-inline">
-              {{ form.has_derivative|tag_class:"form-check-input" }}
-              <label class="form-check-label" for="{{ form.has_derivative.id_for_label }}">파생상품</label>
-            </div>
-          </div>
-        </div>
-        <div class="form-group row">
-          <label class="col-sm-4 col-form-label" for="{{ form.recommender.id_for_label }}"><strong>추천인</strong> <sup class="text-muted">(선택)</sup></label>
-          <div class="col-sm-8">
-            {{ form.recommender|tag_class:"form-control" }}
-            <small class="form-text text-muted">이름을 작성하거나 생략할 수 있습니다.</small>
-          </div>
-        </div>
-        <hr>
-        <div class="form-group row mb-0">
-          <div class="col-sm-4">
-            <button type="submit" class="btn btn-success py-2 px-4">신청하기</button>
-          </div>
-          <div class="col-sm-8"></div>
-        </div>
-      </form>
-    </div>
-  </div>
+  <img class="box-img" src="{% static 'images/events/launch.jpg' %}" alt="Launch Poster">
 </section>
-{% endblock %}
-
-{% block script %}
-<script src="{% static 'js/validation.js' %}"></script>
+<!-- Section -->
+<section class="box-pad">
+  <ul class="list-group">
+    <li class="list-group-item">
+      <div class="d-flex justify-content-between my-2">
+        <h3>이벤트 신청</h3>
+        <p class="h5"><span class="badge badge-orange badge-pill">STEP 1</span></p>
+      </div>
+      <p><strong class="text-orange">신청 양식</strong>을 작성해 주세요.
+        신청 양식은 이벤트 참여자를 추첨하고 발표하기 위해 사용됩니다.
+        양식이 작성되면 신청이 완료됩니다.</p>
+      <!--
+        <p><a class="btn btn-success px-4" href="{% url 'events:launch_apply' %}" role="button">이벤트 신청하기</a></p>
+      -->
+    </li>
+    <li class="list-group-item">
+      <div class="d-flex justify-content-between my-2">
+        <h3>참여자 발표</h3>
+        <p class="h5"><span class="badge badge-orange badge-pill">STEP 2</span></p>
+      </div>
+      <p><strong class="text-orange">매월 10명</strong>을 추첨하여 발표합니다.
+        이벤트 추첨은 당사의 내부 규정에 따라 진행되며, <strong class="text-orange">매월 20일</strong> 참여자를 발표합니다.
+        개별 연락이 진행되며, 웹사이트에서 확인할 수 있습니다.</p>
+      <p><a class="btn btn-success px-4" href="{% url 'events:launch_notice' %}" role="button">11월 참여자 보기</a></p>
+    </li>
+    <li class="list-group-item">
+      <div class="d-flex justify-content-between my-2">
+        <h3>모의계좌 개설</h3>
+        <p class="h5"><span class="badge badge-orange badge-pill">STEP 3</span></p>
+      </div>
+      <p><strong class="text-orange">증권사</strong>의 모의 계좌를 개설합니다.
+        모의 계좌를 이용하면 <strong class="text-orange">가상의 투자금</strong>으로 위험없이 하비스터를 경험할 수 있습니다.
+        이벤트에서는 (주)이베스트증권의 계좌를 사용합니다.
+      </p>
+    </li>
+    <li class="list-group-item">
+      <div class="d-flex justify-content-between my-2">
+        <h3>하비스터 운영</h3>
+        <p class="h5"><span class="badge badge-orange badge-pill">STEP 4</span></p>
+      </div>
+      <p>하비스터는 자동화된 금융 트레이딩 <strong class="text-orange">로봇</strong>입니다.
+        아마존 클라우드 서버에 설치되어, 국내 금융시장에 365일 자동으로 참여합니다.
+        설치와 운영에 필요한 <strong class="text-orange">교육</strong>을 위해 본사 내방이 필요합니다.
+      </p>
+    </li>
+    <li class="list-group-item">
+      <div class="d-flex justify-content-between my-2">
+        <h3>후기 올리기</h3>
+        <p class="h5"><span class="badge badge-orange badge-pill">STEP 5</span></p>
+      </div>
+      <p>하비스터를 운영하면 <strong class="text-orange">수익</strong>이 발생합니다.
+        수익이 발생하면 <strong class="text-orange">블로그</strong>나 <strong class="text-orange">SNS</strong>에 로봇 사용 후기를 올려야 합니다.
+        참여자 모두 수익도 얻고 재미있는 후기도 남기시기 바랍니다.
+      </p>
+    </li>
+    <li class="list-group-item">
+      <div class="d-flex justify-content-between my-2">
+        <h3>수익금 받기</h3>
+        <p class="h5"><span class="badge badge-orange badge-pill">STEP 6</span></p>
+      </div>
+      <p><strong class="text-orange">1인</strong> 당
+        <strong class="text-orange">최대 100만원</strong>의 수익금을 받을 수 있습니다.
+        관련 법에 따라 이벤트 수익금이 5만원을 초과할 경우,
+        제세 공과금(22%)를 제외 한 금액을 일시 또는 분할하여 지급합니다.
+      </p>
+    </li>
+  </ul>
+</section>
 {% endblock %}
