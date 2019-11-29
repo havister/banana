@@ -164,7 +164,7 @@ class HavisterView(LoginRequiredMixin, TemplateView):
                 if time > end_time:
                     message_list.append(end_time.strftime('%H:%M:%S') + " | 시장이 마감 되었습니다.")
                     message_list.append("하비스터가 종료 되었습니다.")
-        context['messages'] = message_list
+        context['message_list'] = message_list
         # Closed trade list
         context['closed_trade_list'] = user.trades.filter(date_closed__date=today). \
             order_by('-date_closed')

@@ -125,11 +125,11 @@ def message(request):
         json_data = json.loads(request.body.decode('utf-8'))
         player = User.objects.filter(username=json_data['Player']).first()
         level = json_data['Level']
-        message = json_data['Message']
+        text = json_data['Text']
         datetime = json_data['Datetime']
         # Message Create
         Message.objects.create(
-            player=player, level=level, message=message, datetime=datetime
+            player=player, level=level, text=text, datetime=datetime
         )
     return HttpResponse('OK')
 

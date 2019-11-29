@@ -3,7 +3,7 @@
 {% load extras %}
 
 {% block title %}
-<title>하비스터 - 포인트넛 | POINTNUT</title>
+<title>하비스터 - 포인트넛</title>
 {% endblock %}
 
 {% block nav-title %}
@@ -22,7 +22,7 @@
     <form class="pb-3">
       <div class="form-group mb-0 p-2 border">
         {% if user.account.has_havister %}
-        <textarea class="havister" id="havister-status" rows="10">{% for message in messages %}{{ message }}&#13;{% endfor %}</textarea>
+        <textarea class="havister" id="havister-status" rows="10">{% for message in message_list %}{{ message }}&#13;{% endfor %}</textarea>
         {% else %}
         <textarea class="havister" rows="10" disabled>하비스터 사용권 등록이 필요합니다.</textarea>
         {% endif %}
