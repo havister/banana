@@ -43,7 +43,7 @@ class Signal(models.Model):
     @property
     def is_index(self):
         is_index = True if self.index_asset else False
-        return f'{is_index}'
+        return is_index
 
     @property
     def asset(self):
@@ -61,7 +61,7 @@ class Signal(models.Model):
         return f'{long_item}'
 
     @property
-    def long_item_code(self):
+    def long_code(self):
         long_item = self.long_etf if self.long_etf else self.long_stock
         return f'{long_item.code}'
 
@@ -71,7 +71,7 @@ class Signal(models.Model):
         return f'{short_item}'
 
     @property
-    def short_item_code(self):
+    def short_code(self):
         short_item = self.short_etf if self.short_etf else self.short_future
         return f'{short_item.code}'
 
@@ -84,9 +84,9 @@ class Signal(models.Model):
             'Asset': self.asset,
             'AssetCode': self.asset_code,
             'LongItem': self.long_item,
-            'LongItemCode': self.long_item_code,
+            'LongCode': self.long_code,
             'ShortItem': self.short_item,
-            'ShortItemCode': self.short_item_code,
+            'ShortCode': self.short_code,
             'UnitAmount': int(self.unit_amount)
         }
         return data

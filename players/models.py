@@ -21,7 +21,6 @@ class Account(models.Model):
     @property
     def as_json_dict(self):
         data = {
-            'Player': self.player.username,
             'PrimaryBudget': int(self.primary_budget),
             'SecondaryBudget': int(self.secondary_budget),
             'IsReal': self.is_real,
