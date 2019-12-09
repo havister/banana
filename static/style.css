@@ -24,6 +24,17 @@ nav, header, section {
 footer {
   background-color: white;
 }
+textarea {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 0.5rem;
+  line-height: 1.5;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  resize: none;
+}
 textarea.havister {
   display: block;
   width: 100%;

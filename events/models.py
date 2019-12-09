@@ -58,7 +58,7 @@ class Study(models.Model):
         verbose_name_plural = "studies"
 
     def __str__(self):
-        return f'{self.name} | {self.recommender} | {self.date_submitted}'
+        return f"{self.name} | {self.recommender} | {self.date_submitted.strftime('%Y-%m-%d %H:%M:%S')}"
 
     @property
     def gender(self):

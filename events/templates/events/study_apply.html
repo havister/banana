@@ -19,12 +19,28 @@
 <header class="box">
   <div class="box-pad">
     <h1>교육 이벤트</h1>
-    <p class="mb-0">아래 양식을 올바르게 입력한 다음 신청하기 버튼을 눌러주십시오.</p>
+    <p class="mb-0">아래 양식을 올바르게 입력한 다음 신청하기 버튼을 눌러 주십시오. 신청하기 버튼을 누르면 개인정보 수집 및 이용에 동의하시는 것입니다.</p>
   </div>
 </header>
 {% endblock %}
 
 {% block main %}
+<!-- Section -->
+<section class="box">
+  <div class="box-pad">
+    <textarea rows="8">
+[개인정보 수집 및 이용 동의 안내]
+포인트넛은 개인정보 관련 법률(개인정보보호법, 정보통신망 이용촉진 및 정보보호에 관한 법률)을 준수하며 수집된 개인 정보는 해당 서비스 외에 다른 용도로 절대 사용하지 않으며, 사용자 요청 시 바로 삭제할 수 있습니다.
+1. 수집항목 및 이용목적
+- 수집항목: 이름, 성별, 나이, 연락처, 결혼유무, 직업, 주소, 투자경험, 추천인
+- 이용목적: 교육 이벤트 참여 안내, 공지사항 전달, 이벤트 참여에 따른 본인식별 및 실명 확인, 기타 원활한 양질의 서비스 제공 등
+2. 개인정보 보유 및 이용기간
+- 수집 및 이용 동의일로부터 개인정보의 수집 및 이용 목적을 달성할 때까지
+3. 동의 거부 관리
+- 귀하께서는 본 안내에 따른 개인정보 수집 및 이용에 대하여 동의를 거부하실 있습니다. 다만, 귀하가 개인정보의 수집 및 이용에 동의하지 않을 경우 교육 이벤트에 참여를 하실 수 없음을 알려드립니다.</textarea>
+  </div>
+</section>
+
 <!-- Section -->
 <section class="box-pad">
   <div class="card mb-0">
@@ -85,7 +101,7 @@
           <label class="col-sm-4 col-form-label" for="{{ form.city.id_for_label }}"><strong>주소</strong></label>
           <div class="col-sm-8">
             {{ form.city|tag_class:"form-control" }}
-            <small class="form-text text-muted">간략히 시(도), 구(군)까지 작성할 수 있습니다.</small>
+            <small class="form-text text-muted">간략히 시(도), 구(군), 동(읍)까지 작성해야 합니다.</small>
           </div>
         </div>
         <div class="form-group row">
