@@ -5,7 +5,7 @@ app_name = 'havister'
 
 urlpatterns = [
     # /havister/
-    path('', views.IndexView.as_view(), name='index'),
+    #path('', views.IndexView.as_view(), name='index'),
     # /havister/v1/market/
     path('v1/market/', views.market, name='market'),
     # /havister/v1/account/

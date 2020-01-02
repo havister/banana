@@ -35,15 +35,15 @@ urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
     
     # /creators/
-    path('creators/', include('creators.urls')),
+    #path('creators/', include('creators.urls')),
     # /events/
-    path('events/', include('events.urls')),
+    #path('events/', include('events.urls')),
     # /havister/
     path('havister/', include('havister.urls')),
     # /players/
-    path('players/', include('players.urls')),
+    #path('players/', include('players.urls')),
     # /strategies/
-    path('strategies/', include('strategies.urls')),
+    #path('strategies/', include('strategies.urls')),
     # /users/
     path('users/', include('users.urls')), 
 ]

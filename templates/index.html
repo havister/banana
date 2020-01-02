@@ -12,15 +12,6 @@
 {% endblock %}
 
 {% block header %}
-<!-- Header -->
-<header class="box-pad p-2 bg-yellow">
-  <div class="jumbotron text-center">
-    <h1 class="mb-3">2020년, 금융 재테크 교육과 멘토링</h1>
-    <p class="mb-2 lead">지금 참여해 보세요! 다양한 금융상품을 이해하고 위험관리도 배울 수 있습니다.</p>
-    <p class="mb-4"><strong>Cycle Book 공개 이벤트</strong></p>
-    <a class="btn btn-warning px-4" href="{% url 'events:study' %}" role="button">이벤트 보기 ></a>
-  </div>
-</header>
 {% endblock %}
 
 {% block main %}
@@ -31,7 +22,6 @@
     <h4 class="my-3">하비스터(Havister)</h4>
     <p>하비스터는 금융 거래를 위한 자동화된 프로그램 매매 시스템입니다. 지금껏 금융사들의 전유물이었던 이 훌륭한 도구를 이제는 개인들도 사용할 수 있게 되었습니다.</p>
     <p>이 시스템은 로봇 소프트웨어(Havister), 플레이어(Player), 매매 전략(Strategy), 크리에이터(Creator)가 함께 구성하는 강력하고도 견고한 플랫폼입니다.</p>
-    <p><a class="btn btn-success px-4" href="{% url 'havister:index' %}" role="button">자세히 보기</a></p>
   </div>
 </section>
 
@@ -42,7 +32,6 @@
     <h4 class="my-3">플레이어(Player)</h4>
     <p>플레이어(Player)는 포인트넛 웹사이트에 로그인하여 하비스터를 플레이(Play)할 수 있습니다. 단지 자신의 매매를 하비스터에게 지시하기만 하면 됩니다.</p>
     <p>필요하다면 다른 사람의 매매를 따라 할 수도 있습니다. 하비스터에는 검증된 매매 전략(Strategy)들이 준비되어 있으며, 이는 크리에이터(Creator)들의 오랜 연구 결과입니다.</p>
-    <p><a class="btn btn-success px-4" href="{% url 'players:index' %}" role="button">자세히 보기</a></p>
   </div>
 </section>
 
@@ -53,7 +42,6 @@
     <h4 class="my-3">매매 전략(Strategy)</h4>
     <p>매매 전략(Strategy)은 하비스터 자동화 서비스의 원천 기술입니다. 플레이어(Player) 누구나 자신의 포트폴리오에 맞는 전략을 선택하고 따라 할 수 있습니다.</p>
     <p>이 전략들은 크리에이터(Creator)들에 의해 개발되고 검증되었으며, 실전 계좌에서 운용됨으로써 그 가치가 입증되었습니다.</p>
-    <!-- <p><a class="btn btn-success px-4" href="{% url 'strategies:index' %}" role="button">자세히 보기</a></p> -->
   </div>
 </section>
 
@@ -64,7 +52,6 @@
     <h4 class="my-3">크리에이터(Creator)</h4>
     <p>크리에이터(Creator)는 하비스터 플랫폼의 핵심 자산입니다. 이들은 다양한 매매 전략(Strategy)을 개발하며, 이를 플레이어(Player)에게 공개합니다.</p>
     <p>이들은 마치 음악을 작곡하듯, 처음 영감을 얻는 것부터 마지막 시연에 이르기까지 헌신적인 노력을 기울여 매매 전략(Strategy)을 창조합니다.</p>
-    <!-- <a class="btn btn-success px-4" href="{% url 'creators:index' %}" role="button">자세히 보기</a></p> -->
   </div>
 </section>
 

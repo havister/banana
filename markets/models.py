@@ -13,14 +13,6 @@ class Market(models.Model):
         return f'{self.date}'
 
 
-class Expiration(models.Model):
-    code = models.CharField(max_length=4, primary_key=True)
-    date_expired = models.DateField(default=timezone.now)
-
-    def __str__(self):
-        return f'{self.code[:2]}년 {self.code[2:]}월'
-
-
 class Index(models.Model):
     name = models.CharField(max_length=20)
     code = models.CharField(max_length=20, unique=True)
@@ -60,15 +52,3 @@ class Etf(models.Model):
 
     def __str__(self):
         return self.name
-
-
-class Future(models.Model):
-    index_asset = models.ForeignKey(Index, on_delete=models.CASCADE, null=True, blank=True, related_name='futures')
-    stock_asset = models.ForeignKey(Stock, on_delete=models.CASCADE, null=True, blank=True, related_name='futures')
-    code = models.CharField(max_length=20, unique=True)
-    expiration = models.ForeignKey(Expiration, on_delete=models.CASCADE)
-    is_active = models.BooleanField(default=True)
-
-    def __str__(self):
-        asset = self.index_asset if self.index_asset else self.stock_asset
-        return f'{asset.name} F {self.expiration.code}'

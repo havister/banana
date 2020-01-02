@@ -63,6 +63,8 @@ def signals(request):
         for play in plays:
             # Signal
             signal = play.signal
+            if signal.is_index is False:
+                continue
             signal_data = signal.as_json_dict
 
             # Watch list

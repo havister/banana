@@ -42,15 +42,11 @@
       <hr>
       <p class="card-text d-flex justify-content-between">
         <span>Long</span>
-        <strong>{{ play.signal.long_item }}</strong>
+        <strong>{{ play.signal.long_etf }}</strong>
       </p>
       <p class="card-text d-flex justify-content-between">
         <span>Short</span>
-        {% if play.signal.short_item %}
-        <strong>{{ play.signal.short_item }}</strong>
-        {% else %}
-        <span>없음</span>
-        {% endif %}
+        <strong>{{ play.signal.short_etf|default_if_none:"없음" }}</strong>
       </p>
       <hr>
       <p class="card-text">

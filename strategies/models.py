@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
 from pointnut.commons import ChoiceInfo
-from markets.models import Index, Stock, Etf, Future
+from markets.models import Index, Stock, Etf
 
 
 class Strategy(models.Model):
@@ -27,10 +27,8 @@ class Signal(models.Model):
     strategy = models.ForeignKey(Strategy, on_delete=models.CASCADE, related_name='signals')
     index_asset = models.ForeignKey(Index, on_delete=models.CASCADE, null=True, blank=True, related_name='signals_asset')
     stock_asset = models.ForeignKey(Stock, on_delete=models.CASCADE, null=True, blank=True, related_name='signals_asset')
-    long_stock = models.ForeignKey(Stock, on_delete=models.CASCADE, null=True, blank=True, related_name='signals_long')
     long_etf = models.ForeignKey(Etf, on_delete=models.CASCADE, null=True, blank=True, related_name='signals_long')
     short_etf = models.ForeignKey(Etf, on_delete=models.CASCADE, null=True, blank=True, related_name='signals_short')
-    short_future = models.ForeignKey(Future, on_delete=models.CASCADE, null=True, blank=True, related_name='signals_short')
     total_amount = models.DecimalField(max_digits=10, decimal_places=0)
     unit_amount = models.DecimalField(max_digits=8, decimal_places=0)
     date_created = models.DateField(default=timezone.now)
@@ -57,30 +55,29 @@ class Signal(models.Model):
 
     @property
     def long_item(self):
-        long_item = self.long_etf if self.long_etf else self.long_stock
-        return f'{long_item}'
+        long_item = f'{self.long_etf}' if self.long_etf else ""
+        return long_item
 
     @property
     def long_code(self):
-        long_item = self.long_etf if self.long_etf else self.long_stock
-        return f'{long_item.code}'
+        long_code = self.long_etf.code if self.long_etf else ""
+        return long_code
 
     @property
     def short_item(self):
-        short_item = self.short_etf if self.short_etf else self.short_future
-        return f'{short_item}'
+        short_item = f'{self.short_etf}' if self.short_etf else ""
+        return short_item
 
     @property
     def short_code(self):
-        short_item = self.short_etf if self.short_etf else self.short_future
-        return f'{short_item.code}'
+        short_code = self.short_etf.code if self.short_etf else ""
+        return short_code
 
     @property
     def as_json_dict(self):
         data = {
             'Pk': self.pk,
             'Strategy': self.strategy.name,
-            'IsIndex': self.is_index,
             'Asset': self.asset,
             'AssetCode': self.asset_code,
             'LongItem': self.long_item,
