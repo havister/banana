@@ -94,8 +94,6 @@ class Watch(models.Model):
     price = models.DecimalField(max_digits=9, decimal_places=2)
     price_touched = models.DecimalField(max_digits=9, decimal_places=2, null=True, blank=True)
     condition_choice = models.CharField(max_length=1, choices=ChoiceInfo.CONDITION_CHOICES)
-    start_time = models.TimeField()
-    end_time = models.TimeField()
     date_started = models.DateField(default=timezone.now)
     date_touched = models.DateTimeField(null=True, blank=True)
     date_created = models.DateTimeField(default=timezone.now)
@@ -118,8 +116,6 @@ class Watch(models.Model):
             'Pk': self.pk,
             'Price': float(self.price),
             'Condition': self.condition_choice,
-            'StartTime': self.start_time,
-            'EndTime': self.end_time,
         }
         return data
 
