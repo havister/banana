@@ -21,13 +21,14 @@ def market(request):
     date = timezone.now().date()
     today = Market.objects.filter(date=date, is_active=True).first()
     if today is None:
-        start_time = "09:00:00"
-        end_time = "15:20:00"
-        is_holiday = False
+        start_time = "09:01:00"
+        end_time = "15:19:00"
+        # 5-Saturday, 6-Sunday
+        is_holiday = True if date.weekday() >= 5 else False
     else:
-        is_holiday = today.is_holiday
         start_time = today.start_time
         end_time = today.end_time
+        is_holiday = today.is_holiday
     # Today data
     data = {
         'Date': date,
@@ -100,6 +101,7 @@ def signals(request):
                     ).order_by('-date_opened').first()
                     if trade:
                         close_data = order.as_json_dict
+                        close_data['Quantity'] = trade.quantity
                         watch_data['CloseOrders'].append(close_data)
                 # Watch <- Open order list
                 watch_data['OpenOrders'] = []

@@ -153,7 +153,7 @@ class Order(models.Model):
             'Position': self.position_choice,
             'Piece': self.piece,
             'Status': self.status_choice,
-            'Order': self.order_choice
+            'Order': self.order_choice,
+            'Quantity': 0
         }
         return data
-    
