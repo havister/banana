@@ -9,7 +9,7 @@ class Message(models.Model):
     datetime = models.DateTimeField()
 
     def __str__(self):
-        return f'{self.player} | {self.datetime}'
+        return f'{self.player} | {self.degree} | {self.text} | {self.datetime}'
 
     @property
     def time_str(self):
