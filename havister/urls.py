@@ -14,6 +14,8 @@ urlpatterns = [
     path('v1/signals/', views.signals, name='signals'),
     # /havister/v1/message/
     path('v1/message/', views.message, name='message'),
-    # /havister/v1/trades/
-    path('v1/trades/', views.trades, name='trades'),
+    # /havister/v1/trade/open/
+    path('v1/trade/open/', views.trade_open, name='trade_open'),
+    # /havister/v1/trade/close/
+    path('v1/trade/close/', views.trade_close, name='trade_close'),
 ]

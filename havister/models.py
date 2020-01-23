@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 class Message(models.Model):
     player = models.ForeignKey(User, on_delete=models.CASCADE, related_name='messages')
-    level = models.CharField(max_length=20, null=True, blank=True)
+    degree = models.CharField(max_length=20, null=True, blank=True)
     text = models.CharField(max_length=200)
     datetime = models.DateTimeField()
 

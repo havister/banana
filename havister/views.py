@@ -21,8 +21,8 @@ def market(request):
     date = timezone.now().date()
     today = Market.objects.filter(date=date, is_active=True).first()
     if today is None:
-        start_time = "09:01:00"
-        end_time = "15:19:00"
+        start_time = "09:05:00"
+        end_time = "15:15:00"
         # 5-Saturday, 6-Sunday
         is_holiday = True if date.weekday() >= 5 else False
     else:
@@ -128,58 +128,61 @@ def message(request):
         # JSON
         json_data = json.loads(request.body.decode('utf-8'))
         player = User.objects.filter(username=json_data['Player']).first()
-        level = json_data['Level']
+        degree = json_data['Degree']
         text = json_data['Text']
         datetime = json_data['Datetime']
         # Message Create
         Message.objects.create(
-            player=player, level=level, text=text, datetime=datetime
+            player=player, degree=degree, text=text, datetime=datetime
         )
     return HttpResponse('OK')
 
 
 @csrf_exempt
-def trades(request):
+def trade_open(request):
     if request.method == 'POST':
         # JSON
         json_data = json.loads(request.body.decode('utf-8'))
         player = User.objects.filter(username=json_data['Player']).first()
         signal = Signal.objects.filter(pk=json_data['SignalPk']).first()
         
-        # Close trade list
-        for close_trade in json_data['CloseTrades']:
-            trade = Trade.objects.filter(
-                player=player,
-                signal=signal,
-                level=close_trade['Level'],
-                position_choice=close_trade['PositionChoice'],
-                piece=close_trade['Piece'],
-                date_closed__isnull=True
-            ).order_by('-date_opened').first()
-            
-            # Price
-            price_opened = trade.price_opened
-            price_closed = Decimal(close_trade['PriceClosed'])
-            difference = Decimal(0)
-            if signal.is_index or trade.position_choice == ChoiceInfo.LONG:
-                difference = price_closed - price_opened
-            else:
-                difference = price_opened - price_closed
-            change = (difference / price_opened * 100).quantize(Decimal('.01'), rounding=ROUND_HALF_UP)
+        # Trade create
+        Trade.objects.create(
+            player=player, signal=signal,
+            level=json_data['Level'], position_choice=json_data['PositionChoice'], piece=json_data['Piece'],
+            quantity=json_data['Quantity'], price_opened=json_data['PriceOpened'], date_opened=json_data['DateOpened']
+        )
+    return HttpResponse('OK')
 
-            # Trade update
-            trade.price_closed = price_closed
-            trade.difference = difference
-            trade.change = change
-            trade.date_closed = close_trade['DateClosed']
-            trade.save()
-            
-        # Open trade list
-        for trade in json_data['OpenTrades']:
-            # Trade create
-            Trade.objects.create(
-                player=player, signal=signal,
-                level=trade['Level'], position_choice=trade['PositionChoice'], piece=trade['Piece'],
-                quantity=trade['Quantity'], price_opened=trade['PriceOpened'], date_opened=trade['DateOpened']
-            )
+
+@csrf_exempt
+def trade_close(request):
+    if request.method == 'POST':
+        # JSON
+        json_data = json.loads(request.body.decode('utf-8'))
+        player = User.objects.filter(username=json_data['Player']).first()
+        signal = Signal.objects.filter(pk=json_data['SignalPk']).first()
+        
+        # Trade
+        trade = Trade.objects.filter(
+            player=player,
+            signal=signal,
+            level=json_data['Level'],
+            position_choice=json_data['PositionChoice'],
+            piece=json_data['Piece'],
+            date_closed__isnull=True
+        ).order_by('-date_opened').first()
+        
+        # Price
+        price_opened = trade.price_opened
+        price_closed = Decimal(close_trade['PriceClosed'])
+        difference = price_closed - price_opened
+        change = (difference / price_opened * 100).quantize(Decimal('.01'), rounding=ROUND_HALF_UP)
+
+        # Trade update
+        trade.price_closed = price_closed
+        trade.difference = difference
+        trade.change = change
+        trade.date_closed = close_trade['DateClosed']
+        trade.save()
     return HttpResponse('OK')
