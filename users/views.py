@@ -144,7 +144,7 @@ class HavisterView(LoginRequiredMixin, TemplateView):
         now = timezone.now()
         today = now.date()
         time = now.time()
-        messages = user.messages.filter(datetime__date=today).order_by('datetime')
+        messages = user.messages.filter(datetime__date=today).order_by('pk')
         market = Market.objects.filter(date=today, is_active=True).first()
         # Messages
         message_list = []
