@@ -175,7 +175,7 @@ def trade_close(request):
         
         # Price
         price_opened = trade.price_opened
-        price_closed = Decimal(close_trade['PriceClosed'])
+        price_closed = Decimal(json_data['PriceClosed'])
         difference = price_closed - price_opened
         change = (difference / price_opened * 100).quantize(Decimal('.01'), rounding=ROUND_HALF_UP)
 
@@ -183,6 +183,6 @@ def trade_close(request):
         trade.price_closed = price_closed
         trade.difference = difference
         trade.change = change
-        trade.date_closed = close_trade['DateClosed']
+        trade.date_closed = json_data['DateClosed']
         trade.save()
     return HttpResponse('OK')
